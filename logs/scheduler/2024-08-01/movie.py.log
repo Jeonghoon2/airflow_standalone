@@ -89,3 +89,17 @@
 [2024-08-01T10:06:13.630+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:06:13.630+0900] {dag.py:3089} INFO - Sync 1 DAGs
 [2024-08-01T10:06:13.636+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:06:13.636+0900] {dag.py:3947} INFO - Setting next_dagrun for movie to 2024-07-31 02:10:00+00:00, run_after=2024-08-01 02:10:00+00:00
 [2024-08-01T10:06:13.643+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/movie.py took 0.119 seconds
+[2024-08-01T10:06:44.446+0900] {processor.py:161} INFO - Started process (PID=6460) to work on /Users/DE32/airflow/dags/movie.py
+[2024-08-01T10:06:44.446+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/movie.py for tasks to queue
+[2024-08-01T10:06:44.447+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:06:44.447+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/movie.py
+[2024-08-01T10:06:44.459+0900] {processor.py:840} INFO - DAG(s) 'movie' retrieved from /Users/DE32/airflow/dags/movie.py
+[2024-08-01T10:06:44.550+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:06:44.550+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-01T10:06:44.556+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:06:44.556+0900] {dag.py:3947} INFO - Setting next_dagrun for movie to 2024-07-31 02:10:00+00:00, run_after=2024-08-01 02:10:00+00:00
+[2024-08-01T10:06:44.563+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/movie.py took 0.118 seconds
+[2024-08-01T10:07:15.506+0900] {processor.py:161} INFO - Started process (PID=7143) to work on /Users/DE32/airflow/dags/movie.py
+[2024-08-01T10:07:15.507+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/movie.py for tasks to queue
+[2024-08-01T10:07:15.507+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:07:15.507+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/movie.py
+[2024-08-01T10:07:15.519+0900] {processor.py:840} INFO - DAG(s) 'movie' retrieved from /Users/DE32/airflow/dags/movie.py
+[2024-08-01T10:07:15.609+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:07:15.609+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-01T10:07:15.615+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:07:15.615+0900] {dag.py:3947} INFO - Setting next_dagrun for movie to 2024-07-31 02:10:00+00:00, run_after=2024-08-01 02:10:00+00:00
+[2024-08-01T10:07:15.622+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/movie.py took 0.117 seconds

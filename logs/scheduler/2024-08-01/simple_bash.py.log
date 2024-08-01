@@ -89,3 +89,17 @@
 [2024-08-01T10:06:19.507+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:06:19.507+0900] {dag.py:3089} INFO - Sync 1 DAGs
 [2024-08-01T10:06:19.542+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:06:19.542+0900] {dag.py:3947} INFO - Setting next_dagrun for simple_bash to 2024-07-31 00:00:00+00:00, run_after=2024-08-01 00:00:00+00:00
 [2024-08-01T10:06:19.549+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/simple_bash.py took 0.084 seconds
+[2024-08-01T10:06:50.447+0900] {processor.py:161} INFO - Started process (PID=6477) to work on /Users/DE32/airflow/dags/simple_bash.py
+[2024-08-01T10:06:50.447+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/simple_bash.py for tasks to queue
+[2024-08-01T10:06:50.447+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:06:50.447+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/simple_bash.py
+[2024-08-01T10:06:50.451+0900] {processor.py:840} INFO - DAG(s) 'simple_bash' retrieved from /Users/DE32/airflow/dags/simple_bash.py
+[2024-08-01T10:06:50.486+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:06:50.486+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-01T10:06:50.520+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:06:50.520+0900] {dag.py:3947} INFO - Setting next_dagrun for simple_bash to 2024-07-31 00:00:00+00:00, run_after=2024-08-01 00:00:00+00:00
+[2024-08-01T10:06:50.527+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/simple_bash.py took 0.081 seconds
+[2024-08-01T10:07:21.265+0900] {processor.py:161} INFO - Started process (PID=7158) to work on /Users/DE32/airflow/dags/simple_bash.py
+[2024-08-01T10:07:21.266+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/simple_bash.py for tasks to queue
+[2024-08-01T10:07:21.266+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:07:21.266+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/simple_bash.py
+[2024-08-01T10:07:21.269+0900] {processor.py:840} INFO - DAG(s) 'simple_bash' retrieved from /Users/DE32/airflow/dags/simple_bash.py
+[2024-08-01T10:07:21.304+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:07:21.304+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-01T10:07:21.336+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:07:21.336+0900] {dag.py:3947} INFO - Setting next_dagrun for simple_bash to 2024-07-31 00:00:00+00:00, run_after=2024-08-01 00:00:00+00:00
+[2024-08-01T10:07:21.343+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/simple_bash.py took 0.079 seconds

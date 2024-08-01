@@ -89,3 +89,17 @@
 [2024-08-01T10:06:16.817+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:06:16.816+0900] {dag.py:3089} INFO - Sync 1 DAGs
 [2024-08-01T10:06:16.851+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:06:16.851+0900] {dag.py:3947} INFO - Setting next_dagrun for import_db to 2024-07-31 00:00:00+00:00, run_after=2024-08-01 00:00:00+00:00
 [2024-08-01T10:06:16.858+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/import_db.py took 0.083 seconds
+[2024-08-01T10:06:47.601+0900] {processor.py:161} INFO - Started process (PID=6472) to work on /Users/DE32/airflow/dags/import_db.py
+[2024-08-01T10:06:47.601+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/import_db.py for tasks to queue
+[2024-08-01T10:06:47.601+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:06:47.601+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/import_db.py
+[2024-08-01T10:06:47.604+0900] {processor.py:840} INFO - DAG(s) 'import_db' retrieved from /Users/DE32/airflow/dags/import_db.py
+[2024-08-01T10:06:47.639+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:06:47.639+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-01T10:06:47.673+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:06:47.673+0900] {dag.py:3947} INFO - Setting next_dagrun for import_db to 2024-07-31 00:00:00+00:00, run_after=2024-08-01 00:00:00+00:00
+[2024-08-01T10:06:47.681+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/import_db.py took 0.081 seconds
+[2024-08-01T10:07:18.453+0900] {processor.py:161} INFO - Started process (PID=7145) to work on /Users/DE32/airflow/dags/import_db.py
+[2024-08-01T10:07:18.453+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/import_db.py for tasks to queue
+[2024-08-01T10:07:18.453+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:07:18.453+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/import_db.py
+[2024-08-01T10:07:18.456+0900] {processor.py:840} INFO - DAG(s) 'import_db' retrieved from /Users/DE32/airflow/dags/import_db.py
+[2024-08-01T10:07:18.492+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:07:18.492+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-01T10:07:18.524+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:07:18.524+0900] {dag.py:3947} INFO - Setting next_dagrun for import_db to 2024-07-31 00:00:00+00:00, run_after=2024-08-01 00:00:00+00:00
+[2024-08-01T10:07:18.530+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/import_db.py took 0.079 seconds

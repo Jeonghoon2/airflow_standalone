@@ -137,3 +137,17 @@ airflow.exceptions.AirflowException: missing keyword argument 'python_callable'
 [2024-08-01T10:06:32.514+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:06:32.513+0900] {dag.py:3089} INFO - Sync 1 DAGs
 [2024-08-01T10:06:32.521+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:06:32.521+0900] {dag.py:3947} INFO - Setting next_dagrun for movie_summary to 2024-07-29 02:10:00+00:00, run_after=2024-07-30 02:10:00+00:00
 [2024-08-01T10:06:32.528+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/movie_summary.py took 0.141 seconds
+[2024-08-01T10:07:03.362+0900] {processor.py:161} INFO - Started process (PID=6852) to work on /Users/DE32/airflow/dags/movie_summary.py
+[2024-08-01T10:07:03.362+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/movie_summary.py for tasks to queue
+[2024-08-01T10:07:03.362+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:07:03.362+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/movie_summary.py
+[2024-08-01T10:07:03.376+0900] {processor.py:840} INFO - DAG(s) 'movie_summary' retrieved from /Users/DE32/airflow/dags/movie_summary.py
+[2024-08-01T10:07:03.470+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:07:03.469+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-01T10:07:03.476+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:07:03.476+0900] {dag.py:3947} INFO - Setting next_dagrun for movie_summary to 2024-07-29 02:10:00+00:00, run_after=2024-07-30 02:10:00+00:00
+[2024-08-01T10:07:03.483+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/movie_summary.py took 0.122 seconds
+[2024-08-01T10:07:34.204+0900] {processor.py:161} INFO - Started process (PID=7358) to work on /Users/DE32/airflow/dags/movie_summary.py
+[2024-08-01T10:07:34.205+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/movie_summary.py for tasks to queue
+[2024-08-01T10:07:34.205+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:07:34.205+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/movie_summary.py
+[2024-08-01T10:07:34.218+0900] {processor.py:840} INFO - DAG(s) 'movie_summary' retrieved from /Users/DE32/airflow/dags/movie_summary.py
+[2024-08-01T10:07:34.307+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:07:34.307+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-01T10:07:34.313+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:07:34.313+0900] {dag.py:3947} INFO - Setting next_dagrun for movie_summary to 2024-07-29 02:10:00+00:00, run_after=2024-07-30 02:10:00+00:00
+[2024-08-01T10:07:34.320+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/movie_summary.py took 0.117 seconds
