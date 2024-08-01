@@ -1,5 +1,7 @@
 .DS_Store
 .idea
+airflow-webserver.pid
+standalone_admin_password.txt
 airflow.db
 logs
 __pycache__
