@@ -1,0 +1,42 @@
+[2024-07-24T14:10:19.873+0900] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-24T14:10:19.880+0900] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: simple_bash.count.log scheduled__2024-07-17T00:00:00+00:00 [queued]>
+[2024-07-24T14:10:19.883+0900] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: simple_bash.count.log scheduled__2024-07-17T00:00:00+00:00 [queued]>
+[2024-07-24T14:10:19.883+0900] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2024-07-24T14:10:19.887+0900] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): count.log> on 2024-07-17 00:00:00+00:00
+[2024-07-24T14:10:19.889+0900] {standard_task_runner.py:64} INFO - Started process 89740 to run task
+[2024-07-24T14:10:19.892+0900] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'simple_bash', 'count.log', 'scheduled__2024-07-17T00:00:00+00:00', '--job-id', '43', '--raw', '--subdir', 'DAGS_FOLDER/simple_bash.py', '--cfg-path', '/var/folders/qv/0knwm5h50ml0skpppwpbks_r0000gp/T/tmplrxlg04t']
+[2024-07-24T14:10:19.893+0900] {standard_task_runner.py:91} INFO - Job 43: Subtask count.log
+[2024-07-24T14:10:19.907+0900] {task_command.py:426} INFO - Running <TaskInstance: simple_bash.count.log scheduled__2024-07-17T00:00:00+00:00 [running]> on host jeongui-MacBookPro.local
+[2024-07-24T14:10:19.931+0900] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='simple_bash' AIRFLOW_CTX_TASK_ID='count.log' AIRFLOW_CTX_EXECUTION_DATE='2024-07-17T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-17T00:00:00+00:00'
+[2024-07-24T14:10:19.931+0900] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-24T14:10:19.937+0900] {subprocess.py:63} INFO - Tmp dir root location: /var/folders/qv/0knwm5h50ml0skpppwpbks_r0000gp/T
+[2024-07-24T14:10:19.938+0900] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', '\n            echo "count"\n        ']
+[2024-07-24T14:10:19.941+0900] {subprocess.py:86} INFO - Output:
+[2024-07-24T14:10:19.943+0900] {subprocess.py:93} INFO - count
+[2024-07-24T14:10:19.943+0900] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-07-24T14:10:19.943+0900] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-24T14:10:19.949+0900] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=simple_bash, task_id=count.log, run_id=scheduled__2024-07-17T00:00:00+00:00, execution_date=20240717T000000, start_date=20240724T051019, end_date=20240724T051019
+[2024-07-24T14:10:19.996+0900] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2024-07-24T14:10:20.003+0900] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-07-24T14:10:20.003+0900] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-07-24T14:22:26.267+0900] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-24T14:22:26.274+0900] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: simple_bash.count.log scheduled__2024-07-17T00:00:00+00:00 [queued]>
+[2024-07-24T14:22:26.277+0900] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: simple_bash.count.log scheduled__2024-07-17T00:00:00+00:00 [queued]>
+[2024-07-24T14:22:26.277+0900] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-07-24T14:22:26.280+0900] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): count.log> on 2024-07-17 00:00:00+00:00
+[2024-07-24T14:22:26.283+0900] {standard_task_runner.py:64} INFO - Started process 91124 to run task
+[2024-07-24T14:22:26.285+0900] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'simple_bash', 'count.log', 'scheduled__2024-07-17T00:00:00+00:00', '--job-id', '138', '--raw', '--subdir', 'DAGS_FOLDER/simple_bash.py', '--cfg-path', '/var/folders/qv/0knwm5h50ml0skpppwpbks_r0000gp/T/tmpkkbldfyx']
+[2024-07-24T14:22:26.287+0900] {standard_task_runner.py:91} INFO - Job 138: Subtask count.log
+[2024-07-24T14:22:26.300+0900] {task_command.py:426} INFO - Running <TaskInstance: simple_bash.count.log scheduled__2024-07-17T00:00:00+00:00 [running]> on host jeongui-MacBookPro.local
+[2024-07-24T14:22:26.324+0900] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='simple_bash' AIRFLOW_CTX_TASK_ID='count.log' AIRFLOW_CTX_EXECUTION_DATE='2024-07-17T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-17T00:00:00+00:00'
+[2024-07-24T14:22:26.324+0900] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-24T14:22:26.330+0900] {subprocess.py:63} INFO - Tmp dir root location: /var/folders/qv/0knwm5h50ml0skpppwpbks_r0000gp/T
+[2024-07-24T14:22:26.330+0900] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', '\n            echo "count"\n\t\t\tLANG=C\n\t\t\tmkdir -p ~/data/count/20240717\n\t\t\tcat ~/data/sort/20240717/sort.log | uniq -c > ~/data/count/20240717/count.log\n        ']
+[2024-07-24T14:22:26.333+0900] {subprocess.py:86} INFO - Output:
+[2024-07-24T14:22:26.335+0900] {subprocess.py:93} INFO - count
+[2024-07-24T14:22:26.339+0900] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-07-24T14:22:26.339+0900] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-24T14:22:26.345+0900] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=simple_bash, task_id=count.log, run_id=scheduled__2024-07-17T00:00:00+00:00, execution_date=20240717T000000, start_date=20240724T052226, end_date=20240724T052226
+[2024-07-24T14:22:26.392+0900] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2024-07-24T14:22:26.399+0900] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-07-24T14:22:26.399+0900] {local_task_job_runner.py:222} INFO - ::endgroup::

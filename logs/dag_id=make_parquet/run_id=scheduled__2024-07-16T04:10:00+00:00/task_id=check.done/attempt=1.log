@@ -1,0 +1,22 @@
+[2024-07-24T16:30:30.406+0900] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-24T16:30:30.414+0900] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: make_parquet.check.done scheduled__2024-07-16T04:10:00+00:00 [queued]>
+[2024-07-24T16:30:30.416+0900] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: make_parquet.check.done scheduled__2024-07-16T04:10:00+00:00 [queued]>
+[2024-07-24T16:30:30.416+0900] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2024-07-24T16:30:30.420+0900] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): check.done> on 2024-07-16 04:10:00+00:00
+[2024-07-24T16:30:30.423+0900] {standard_task_runner.py:64} INFO - Started process 448 to run task
+[2024-07-24T16:30:30.425+0900] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'make_parquet', 'check.done', 'scheduled__2024-07-16T04:10:00+00:00', '--job-id', '485', '--raw', '--subdir', 'DAGS_FOLDER/make_parquet.py', '--cfg-path', '/var/folders/qv/0knwm5h50ml0skpppwpbks_r0000gp/T/tmp8bx1tmwk']
+[2024-07-24T16:30:30.427+0900] {standard_task_runner.py:91} INFO - Job 485: Subtask check.done
+[2024-07-24T16:30:30.442+0900] {task_command.py:426} INFO - Running <TaskInstance: make_parquet.check.done scheduled__2024-07-16T04:10:00+00:00 [running]> on host jeongui-MacBookPro.local
+[2024-07-24T16:30:30.466+0900] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='make_parquet' AIRFLOW_CTX_TASK_ID='check.done' AIRFLOW_CTX_EXECUTION_DATE='2024-07-16T04:10:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-16T04:10:00+00:00'
+[2024-07-24T16:30:30.466+0900] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-24T16:30:30.472+0900] {subprocess.py:63} INFO - Tmp dir root location: /var/folders/qv/0knwm5h50ml0skpppwpbks_r0000gp/T
+[2024-07-24T16:30:30.472+0900] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', '\n        DONE_FILE=~/data/done/_import/20240716/_DONE\n        bash /Users/DE32/airflow/sh/simple_done_check.sh $DONE_FILE\n        ']
+[2024-07-24T16:30:30.475+0900] {subprocess.py:86} INFO - Output:
+[2024-07-24T16:30:30.479+0900] {subprocess.py:93} INFO - _DONE Path = /Users/DE32/data/done/_import/20240716/_DONE
+[2024-07-24T16:30:30.480+0900] {subprocess.py:93} INFO - /Users/DE32/airflow/sh/simple_done_check.sh: line 7: figlet: command not found
+[2024-07-24T16:30:30.480+0900] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-07-24T16:30:30.481+0900] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-24T16:30:30.487+0900] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=make_parquet, task_id=check.done, run_id=scheduled__2024-07-16T04:10:00+00:00, execution_date=20240716T041000, start_date=20240724T073030, end_date=20240724T073030
+[2024-07-24T16:30:30.532+0900] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2024-07-24T16:30:30.542+0900] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-07-24T16:30:30.543+0900] {local_task_job_runner.py:222} INFO - ::endgroup::

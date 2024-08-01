@@ -1,0 +1,139 @@
+[2024-08-01T09:59:56.711+0900] {processor.py:161} INFO - Started process (PID=4168) to work on /Users/DE32/airflow/dags/movie_summary.py
+[2024-08-01T09:59:56.712+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/movie_summary.py for tasks to queue
+[2024-08-01T09:59:56.713+0900] {logging_mixin.py:188} INFO - [2024-08-01T09:59:56.712+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/movie_summary.py
+[2024-08-01T09:59:56.725+0900] {logging_mixin.py:188} INFO - [2024-08-01T09:59:56.723+0900] {dagbag.py:355} ERROR - Failed to import: /Users/DE32/airflow/dags/movie_summary.py
+Traceback (most recent call last):
+  File "/Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/DE32/airflow/dags/movie_summary.py", line 169, in <module>
+    summary_df = PythonVirtualenvOperator(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 468, in apply_defaults
+    raise AirflowException(f"missing keyword argument {missing_args.pop()!r}")
+airflow.exceptions.AirflowException: missing keyword argument 'python_callable'
+[2024-08-01T09:59:56.726+0900] {processor.py:842} WARNING - No viable dags retrieved from /Users/DE32/airflow/dags/movie_summary.py
+[2024-08-01T09:59:56.754+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/movie_summary.py took 0.044 seconds
+[2024-08-01T10:00:28.697+0900] {processor.py:161} INFO - Started process (PID=4202) to work on /Users/DE32/airflow/dags/movie_summary.py
+[2024-08-01T10:00:28.698+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/movie_summary.py for tasks to queue
+[2024-08-01T10:00:28.699+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:00:28.699+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/movie_summary.py
+[2024-08-01T10:00:28.716+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:00:28.714+0900] {dagbag.py:355} ERROR - Failed to import: /Users/DE32/airflow/dags/movie_summary.py
+Traceback (most recent call last):
+  File "/Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/DE32/airflow/dags/movie_summary.py", line 169, in <module>
+    summary_df = PythonVirtualenvOperator(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 468, in apply_defaults
+    raise AirflowException(f"missing keyword argument {missing_args.pop()!r}")
+airflow.exceptions.AirflowException: missing keyword argument 'python_callable'
+[2024-08-01T10:00:28.716+0900] {processor.py:842} WARNING - No viable dags retrieved from /Users/DE32/airflow/dags/movie_summary.py
+[2024-08-01T10:00:28.746+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/movie_summary.py took 0.051 seconds
+[2024-08-01T10:01:00.426+0900] {processor.py:161} INFO - Started process (PID=4212) to work on /Users/DE32/airflow/dags/movie_summary.py
+[2024-08-01T10:01:00.426+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/movie_summary.py for tasks to queue
+[2024-08-01T10:01:00.426+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:01:00.426+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/movie_summary.py
+[2024-08-01T10:01:00.437+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:01:00.436+0900] {dagbag.py:355} ERROR - Failed to import: /Users/DE32/airflow/dags/movie_summary.py
+Traceback (most recent call last):
+  File "/Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/DE32/airflow/dags/movie_summary.py", line 169, in <module>
+    summary_df = PythonVirtualenvOperator(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 468, in apply_defaults
+    raise AirflowException(f"missing keyword argument {missing_args.pop()!r}")
+airflow.exceptions.AirflowException: missing keyword argument 'python_callable'
+[2024-08-01T10:01:00.437+0900] {processor.py:842} WARNING - No viable dags retrieved from /Users/DE32/airflow/dags/movie_summary.py
+[2024-08-01T10:01:00.467+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/movie_summary.py took 0.042 seconds
+[2024-08-01T10:01:17.375+0900] {processor.py:161} INFO - Started process (PID=4220) to work on /Users/DE32/airflow/dags/movie_summary.py
+[2024-08-01T10:01:17.375+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/movie_summary.py for tasks to queue
+[2024-08-01T10:01:17.376+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:01:17.376+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/movie_summary.py
+[2024-08-01T10:01:17.389+0900] {processor.py:840} INFO - DAG(s) 'movie_summary' retrieved from /Users/DE32/airflow/dags/movie_summary.py
+[2024-08-01T10:01:17.482+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:01:17.482+0900] {override.py:1858} INFO - Created Permission View: can edit on DAG:movie_summary
+[2024-08-01T10:01:17.485+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:01:17.485+0900] {override.py:1858} INFO - Created Permission View: can delete on DAG:movie_summary
+[2024-08-01T10:01:17.487+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:01:17.486+0900] {override.py:1858} INFO - Created Permission View: can read on DAG:movie_summary
+[2024-08-01T10:01:17.487+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:01:17.487+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-01T10:01:17.491+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:01:17.490+0900] {dag.py:3111} INFO - Creating ORM DAG for movie_summary
+[2024-08-01T10:01:17.493+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:01:17.493+0900] {dag.py:3947} INFO - Setting next_dagrun for movie_summary to 2024-07-29 02:10:00+00:00, run_after=2024-07-30 02:10:00+00:00
+[2024-08-01T10:01:17.499+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/movie_summary.py took 0.125 seconds
+[2024-08-01T10:01:19.253+0900] {processor.py:161} INFO - Started process (PID=4227) to work on /Users/DE32/airflow/dags/movie_summary.py
+[2024-08-01T10:01:19.253+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/movie_summary.py for tasks to queue
+[2024-08-01T10:01:19.254+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:01:19.254+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/movie_summary.py
+[2024-08-01T10:01:19.269+0900] {processor.py:840} INFO - DAG(s) 'movie_summary' retrieved from /Users/DE32/airflow/dags/movie_summary.py
+[2024-08-01T10:01:19.274+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:01:19.274+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-01T10:01:19.337+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:01:19.337+0900] {dag.py:3947} INFO - Setting next_dagrun for movie_summary to 2024-07-29 02:10:00+00:00, run_after=2024-07-30 02:10:00+00:00
+[2024-08-01T10:01:19.346+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/movie_summary.py took 0.094 seconds
+[2024-08-01T10:01:50.269+0900] {processor.py:161} INFO - Started process (PID=4242) to work on /Users/DE32/airflow/dags/movie_summary.py
+[2024-08-01T10:01:50.269+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/movie_summary.py for tasks to queue
+[2024-08-01T10:01:50.270+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:01:50.269+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/movie_summary.py
+[2024-08-01T10:01:50.282+0900] {processor.py:840} INFO - DAG(s) 'movie_summary' retrieved from /Users/DE32/airflow/dags/movie_summary.py
+[2024-08-01T10:01:50.372+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:01:50.372+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-01T10:01:50.378+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:01:50.378+0900] {dag.py:3947} INFO - Setting next_dagrun for movie_summary to 2024-07-29 02:10:00+00:00, run_after=2024-07-30 02:10:00+00:00
+[2024-08-01T10:01:50.384+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/movie_summary.py took 0.117 seconds
+[2024-08-01T10:02:21.352+0900] {processor.py:161} INFO - Started process (PID=4247) to work on /Users/DE32/airflow/dags/movie_summary.py
+[2024-08-01T10:02:21.353+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/movie_summary.py for tasks to queue
+[2024-08-01T10:02:21.353+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:02:21.353+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/movie_summary.py
+[2024-08-01T10:02:21.365+0900] {processor.py:840} INFO - DAG(s) 'movie_summary' retrieved from /Users/DE32/airflow/dags/movie_summary.py
+[2024-08-01T10:02:21.455+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:02:21.455+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-01T10:02:21.461+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:02:21.461+0900] {dag.py:3947} INFO - Setting next_dagrun for movie_summary to 2024-07-29 02:10:00+00:00, run_after=2024-07-30 02:10:00+00:00
+[2024-08-01T10:02:21.468+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/movie_summary.py took 0.117 seconds
+[2024-08-01T10:02:52.428+0900] {processor.py:161} INFO - Started process (PID=4252) to work on /Users/DE32/airflow/dags/movie_summary.py
+[2024-08-01T10:02:52.428+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/movie_summary.py for tasks to queue
+[2024-08-01T10:02:52.429+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:02:52.429+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/movie_summary.py
+[2024-08-01T10:02:52.441+0900] {processor.py:840} INFO - DAG(s) 'movie_summary' retrieved from /Users/DE32/airflow/dags/movie_summary.py
+[2024-08-01T10:02:52.531+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:02:52.530+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-01T10:02:52.537+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:02:52.537+0900] {dag.py:3947} INFO - Setting next_dagrun for movie_summary to 2024-07-29 02:10:00+00:00, run_after=2024-07-30 02:10:00+00:00
+[2024-08-01T10:02:52.544+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/movie_summary.py took 0.117 seconds
+[2024-08-01T10:03:23.531+0900] {processor.py:161} INFO - Started process (PID=4260) to work on /Users/DE32/airflow/dags/movie_summary.py
+[2024-08-01T10:03:23.531+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/movie_summary.py for tasks to queue
+[2024-08-01T10:03:23.531+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:03:23.531+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/movie_summary.py
+[2024-08-01T10:03:23.544+0900] {processor.py:840} INFO - DAG(s) 'movie_summary' retrieved from /Users/DE32/airflow/dags/movie_summary.py
+[2024-08-01T10:03:23.634+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:03:23.634+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-01T10:03:23.640+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:03:23.640+0900] {dag.py:3947} INFO - Setting next_dagrun for movie_summary to 2024-07-29 02:10:00+00:00, run_after=2024-07-30 02:10:00+00:00
+[2024-08-01T10:03:23.647+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/movie_summary.py took 0.117 seconds
+[2024-08-01T10:03:55.170+0900] {processor.py:161} INFO - Started process (PID=4268) to work on /Users/DE32/airflow/dags/movie_summary.py
+[2024-08-01T10:03:55.171+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/movie_summary.py for tasks to queue
+[2024-08-01T10:03:55.171+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:03:55.171+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/movie_summary.py
+[2024-08-01T10:03:55.190+0900] {processor.py:840} INFO - DAG(s) 'movie_summary' retrieved from /Users/DE32/airflow/dags/movie_summary.py
+[2024-08-01T10:03:55.303+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:03:55.303+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-01T10:03:55.309+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:03:55.309+0900] {dag.py:3947} INFO - Setting next_dagrun for movie_summary to 2024-07-29 02:10:00+00:00, run_after=2024-07-30 02:10:00+00:00
+[2024-08-01T10:03:55.316+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/movie_summary.py took 0.147 seconds
+[2024-08-01T10:04:27.114+0900] {processor.py:161} INFO - Started process (PID=4275) to work on /Users/DE32/airflow/dags/movie_summary.py
+[2024-08-01T10:04:27.116+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/movie_summary.py for tasks to queue
+[2024-08-01T10:04:27.116+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:04:27.116+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/movie_summary.py
+[2024-08-01T10:04:27.134+0900] {processor.py:840} INFO - DAG(s) 'movie_summary' retrieved from /Users/DE32/airflow/dags/movie_summary.py
+[2024-08-01T10:04:27.244+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:04:27.244+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-01T10:04:27.250+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:04:27.250+0900] {dag.py:3947} INFO - Setting next_dagrun for movie_summary to 2024-07-29 02:10:00+00:00, run_after=2024-07-30 02:10:00+00:00
+[2024-08-01T10:04:27.257+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/movie_summary.py took 0.144 seconds
+[2024-08-01T10:04:58.411+0900] {processor.py:161} INFO - Started process (PID=4976) to work on /Users/DE32/airflow/dags/movie_summary.py
+[2024-08-01T10:04:58.411+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/movie_summary.py for tasks to queue
+[2024-08-01T10:04:58.412+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:04:58.412+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/movie_summary.py
+[2024-08-01T10:04:58.424+0900] {processor.py:840} INFO - DAG(s) 'movie_summary' retrieved from /Users/DE32/airflow/dags/movie_summary.py
+[2024-08-01T10:04:58.517+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:04:58.516+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-01T10:04:58.523+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:04:58.523+0900] {dag.py:3947} INFO - Setting next_dagrun for movie_summary to 2024-07-29 02:10:00+00:00, run_after=2024-07-30 02:10:00+00:00
+[2024-08-01T10:04:58.529+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/movie_summary.py took 0.119 seconds
+[2024-08-01T10:05:29.636+0900] {processor.py:161} INFO - Started process (PID=5322) to work on /Users/DE32/airflow/dags/movie_summary.py
+[2024-08-01T10:05:29.639+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/movie_summary.py for tasks to queue
+[2024-08-01T10:05:29.639+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:05:29.639+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/movie_summary.py
+[2024-08-01T10:05:29.652+0900] {processor.py:840} INFO - DAG(s) 'movie_summary' retrieved from /Users/DE32/airflow/dags/movie_summary.py
+[2024-08-01T10:05:29.744+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:05:29.744+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-01T10:05:29.750+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:05:29.750+0900] {dag.py:3947} INFO - Setting next_dagrun for movie_summary to 2024-07-29 02:10:00+00:00, run_after=2024-07-30 02:10:00+00:00
+[2024-08-01T10:05:29.757+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/movie_summary.py took 0.122 seconds
+[2024-08-01T10:06:01.365+0900] {processor.py:161} INFO - Started process (PID=5802) to work on /Users/DE32/airflow/dags/movie_summary.py
+[2024-08-01T10:06:01.365+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/movie_summary.py for tasks to queue
+[2024-08-01T10:06:01.365+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:06:01.365+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/movie_summary.py
+[2024-08-01T10:06:01.378+0900] {processor.py:840} INFO - DAG(s) 'movie_summary' retrieved from /Users/DE32/airflow/dags/movie_summary.py
+[2024-08-01T10:06:01.471+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:06:01.470+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-01T10:06:01.477+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:06:01.477+0900] {dag.py:3947} INFO - Setting next_dagrun for movie_summary to 2024-07-29 02:10:00+00:00, run_after=2024-07-30 02:10:00+00:00
+[2024-08-01T10:06:01.484+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/movie_summary.py took 0.120 seconds
+[2024-08-01T10:06:32.388+0900] {processor.py:161} INFO - Started process (PID=5930) to work on /Users/DE32/airflow/dags/movie_summary.py
+[2024-08-01T10:06:32.389+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/movie_summary.py for tasks to queue
+[2024-08-01T10:06:32.389+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:06:32.389+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/movie_summary.py
+[2024-08-01T10:06:32.405+0900] {processor.py:840} INFO - DAG(s) 'movie_summary' retrieved from /Users/DE32/airflow/dags/movie_summary.py
+[2024-08-01T10:06:32.514+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:06:32.513+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-01T10:06:32.521+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:06:32.521+0900] {dag.py:3947} INFO - Setting next_dagrun for movie_summary to 2024-07-29 02:10:00+00:00, run_after=2024-07-30 02:10:00+00:00
+[2024-08-01T10:06:32.528+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/movie_summary.py took 0.141 seconds

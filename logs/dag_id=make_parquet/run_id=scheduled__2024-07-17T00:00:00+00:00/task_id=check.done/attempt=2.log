@@ -1,0 +1,83 @@
+[2024-07-24T17:12:11.269+0900] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-24T17:12:11.277+0900] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: make_parquet.check.done scheduled__2024-07-17T00:00:00+00:00 [queued]>
+[2024-07-24T17:12:11.279+0900] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: make_parquet.check.done scheduled__2024-07-17T00:00:00+00:00 [queued]>
+[2024-07-24T17:12:11.279+0900] {taskinstance.py:2306} INFO - Starting attempt 2 of 3
+[2024-07-24T17:12:11.283+0900] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): check.done> on 2024-07-17 00:00:00+00:00
+[2024-07-24T17:12:11.286+0900] {standard_task_runner.py:64} INFO - Started process 4985 to run task
+[2024-07-24T17:12:11.288+0900] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'make_parquet', 'check.done', 'scheduled__2024-07-17T00:00:00+00:00', '--job-id', '421', '--raw', '--subdir', 'DAGS_FOLDER/make_parquet2.py', '--cfg-path', '/var/folders/qv/0knwm5h50ml0skpppwpbks_r0000gp/T/tmpu9pwx93e']
+[2024-07-24T17:12:11.289+0900] {standard_task_runner.py:91} INFO - Job 421: Subtask check.done
+[2024-07-24T17:12:11.303+0900] {task_command.py:426} INFO - Running <TaskInstance: make_parquet.check.done scheduled__2024-07-17T00:00:00+00:00 [running]> on host jeongui-MacBookPro.local
+[2024-07-24T17:12:11.319+0900] {abstractoperator.py:725} ERROR - Exception rendering Jinja template for task 'check.done', field 'bash_command'. Template: '\n        DONE_FILE={{var.value.IMPORT_DONE_PATH}}/{{ds_nodash}}/_DONE\n        bash {{var.value.CHECK_SH}} $DONE_FILE\n        '
+Traceback (most recent call last):
+  File "/Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/models/abstractoperator.py", line 717, in _do_render_template_fields
+    rendered_content = self.render_template(
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/template/templater.py", line 169, in render_template
+    return self._render(template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/models/abstractoperator.py", line 675, in _render
+    return super()._render(template, context, dag=dag)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/template/templater.py", line 126, in _render
+    return render_template_to_string(template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/utils/helpers.py", line 289, in render_template_to_string
+    return render_template(template, cast(MutableMapping[str, Any], context), native=False)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/utils/helpers.py", line 284, in render_template
+    return "".join(nodes)
+           ^^^^^^^^^^^^^^
+  File "<template>", line 14, in root
+  File "/Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/jinja2/sandbox.py", line 327, in getattr
+    value = getattr(obj, attribute)
+            ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/utils/context.py", line 110, in __getattr__
+    self.var = Variable.get(key, deserialize_json=self._deserialize_json)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/models/variable.py", line 143, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable IMPORT_DONE_PATH does not exist'
+[2024-07-24T17:12:11.320+0900] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 2479, in _run_raw_task
+    self._execute_task_with_callbacks(context, test_mode, session=session)
+  File "/Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 2633, in _execute_task_with_callbacks
+    task_orig = self.render_templates(context=context, jinja_env=jinja_env)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 3094, in render_templates
+    original_task.render_template_fields(context, jinja_env)
+  File "/Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 1337, in render_template_fields
+    self._do_render_template_fields(self, self.template_fields, context, jinja_env, set())
+  File "/Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/models/abstractoperator.py", line 717, in _do_render_template_fields
+    rendered_content = self.render_template(
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/template/templater.py", line 169, in render_template
+    return self._render(template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/models/abstractoperator.py", line 675, in _render
+    return super()._render(template, context, dag=dag)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/template/templater.py", line 126, in _render
+    return render_template_to_string(template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/utils/helpers.py", line 289, in render_template_to_string
+    return render_template(template, cast(MutableMapping[str, Any], context), native=False)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/utils/helpers.py", line 284, in render_template
+    return "".join(nodes)
+           ^^^^^^^^^^^^^^
+  File "<template>", line 14, in root
+  File "/Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/jinja2/sandbox.py", line 327, in getattr
+    value = getattr(obj, attribute)
+            ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/utils/context.py", line 110, in __getattr__
+    self.var = Variable.get(key, deserialize_json=self._deserialize_json)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/models/variable.py", line 143, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable IMPORT_DONE_PATH does not exist'
+[2024-07-24T17:12:11.322+0900] {taskinstance.py:1206} INFO - Marking task as UP_FOR_RETRY. dag_id=make_parquet, task_id=check.done, run_id=scheduled__2024-07-17T00:00:00+00:00, execution_date=20240717T000000, start_date=20240724T081211, end_date=20240724T081211
+[2024-07-24T17:12:11.325+0900] {standard_task_runner.py:110} ERROR - Failed to execute job 421 for task check.done ('Variable IMPORT_DONE_PATH does not exist'; 4985)
+[2024-07-24T17:12:11.350+0900] {local_task_job_runner.py:243} INFO - Task exited with return code 1
+[2024-07-24T17:12:11.358+0900] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-07-24T17:12:11.358+0900] {local_task_job_runner.py:222} INFO - ::endgroup::

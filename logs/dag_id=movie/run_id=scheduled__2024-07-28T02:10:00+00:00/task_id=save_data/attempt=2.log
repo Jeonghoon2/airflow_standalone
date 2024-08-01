@@ -1,0 +1,21 @@
+[2024-07-29T12:31:54.042+0900] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-29T12:31:54.054+0900] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: movie.save_data scheduled__2024-07-28T02:10:00+00:00 [queued]>
+[2024-07-29T12:31:54.057+0900] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: movie.save_data scheduled__2024-07-28T02:10:00+00:00 [queued]>
+[2024-07-29T12:31:54.057+0900] {taskinstance.py:2306} INFO - Starting attempt 2 of 3
+[2024-07-29T12:31:54.063+0900] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): save_data> on 2024-07-28 02:10:00+00:00
+[2024-07-29T12:31:54.065+0900] {standard_task_runner.py:64} INFO - Started process 72080 to run task
+[2024-07-29T12:31:54.068+0900] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'movie', 'save_data', 'scheduled__2024-07-28T02:10:00+00:00', '--job-id', '527', '--raw', '--subdir', 'DAGS_FOLDER/movie.py', '--cfg-path', '/var/folders/qv/0knwm5h50ml0skpppwpbks_r0000gp/T/tmplqliyi27']
+[2024-07-29T12:31:54.069+0900] {standard_task_runner.py:91} INFO - Job 527: Subtask save_data
+[2024-07-29T12:31:54.084+0900] {task_command.py:426} INFO - Running <TaskInstance: movie.save_data scheduled__2024-07-28T02:10:00+00:00 [running]> on host jeongui-MacBookPro.local
+[2024-07-29T12:31:54.107+0900] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='movie' AIRFLOW_CTX_TASK_ID='save_data' AIRFLOW_CTX_EXECUTION_DATE='2024-07-28T02:10:00+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-28T02:10:00+00:00'
+[2024-07-29T12:31:54.107+0900] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-29T12:31:54.112+0900] {subprocess.py:63} INFO - Tmp dir root location: /var/folders/qv/0knwm5h50ml0skpppwpbks_r0000gp/T
+[2024-07-29T12:31:54.113+0900] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'date']
+[2024-07-29T12:31:54.116+0900] {subprocess.py:86} INFO - Output:
+[2024-07-29T12:31:54.118+0900] {subprocess.py:93} INFO - 2024년 7월 29일 월요일 12시 31분 54초 KST
+[2024-07-29T12:31:54.119+0900] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-07-29T12:31:54.119+0900] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-29T12:31:54.125+0900] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=movie, task_id=save_data, run_id=scheduled__2024-07-28T02:10:00+00:00, execution_date=20240728T021000, start_date=20240729T033154, end_date=20240729T033154
+[2024-07-29T12:31:54.130+0900] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2024-07-29T12:31:54.136+0900] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-07-29T12:31:54.136+0900] {local_task_job_runner.py:222} INFO - ::endgroup::

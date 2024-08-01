@@ -1,0 +1,74 @@
+[2024-07-24T16:22:35.432+0900] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-24T16:22:35.440+0900] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: make_parquet.check.done scheduled__2024-07-23T00:00:00+00:00 [queued]>
+[2024-07-24T16:22:35.443+0900] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: make_parquet.check.done scheduled__2024-07-23T00:00:00+00:00 [queued]>
+[2024-07-24T16:22:35.443+0900] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2024-07-24T16:22:35.447+0900] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): check.done> on 2024-07-23 00:00:00+00:00
+[2024-07-24T16:22:35.449+0900] {standard_task_runner.py:64} INFO - Started process 98944 to run task
+[2024-07-24T16:22:35.453+0900] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'make_parquet', 'check.done', 'scheduled__2024-07-23T00:00:00+00:00', '--job-id', '413', '--raw', '--subdir', 'DAGS_FOLDER/make_parquet.py', '--cfg-path', '/var/folders/qv/0knwm5h50ml0skpppwpbks_r0000gp/T/tmpk9hwklum']
+[2024-07-24T16:22:35.455+0900] {standard_task_runner.py:91} INFO - Job 413: Subtask check.done
+[2024-07-24T16:22:35.470+0900] {task_command.py:426} INFO - Running <TaskInstance: make_parquet.check.done scheduled__2024-07-23T00:00:00+00:00 [running]> on host jeongui-MacBookPro.local
+[2024-07-24T16:22:35.493+0900] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='make_parquet' AIRFLOW_CTX_TASK_ID='check.done' AIRFLOW_CTX_EXECUTION_DATE='2024-07-23T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-23T00:00:00+00:00'
+[2024-07-24T16:22:35.493+0900] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-24T16:22:35.499+0900] {subprocess.py:63} INFO - Tmp dir root location: /var/folders/qv/0knwm5h50ml0skpppwpbks_r0000gp/T
+[2024-07-24T16:22:35.500+0900] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', '\n        DONE_FILE=~/data/done/_import/20240723/_DONE\n        bash /Users/DE32/airflow/sh/simple_done_check.sh $DONE_FILE\n        ']
+[2024-07-24T16:22:35.503+0900] {subprocess.py:86} INFO - Output:
+[2024-07-24T16:22:35.506+0900] {subprocess.py:93} INFO - _DONE Path = /Users/DE32/data/done/_import/20240723/_DONE
+[2024-07-24T16:22:35.507+0900] {subprocess.py:93} INFO - I'll be back =>
+[2024-07-24T16:22:35.507+0900] {subprocess.py:97} INFO - Command exited with return code 1
+[2024-07-24T16:22:35.507+0900] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-24T16:22:35.510+0900] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/operators/bash.py", line 243, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2024-07-24T16:22:35.512+0900] {taskinstance.py:1206} INFO - Marking task as UP_FOR_RETRY. dag_id=make_parquet, task_id=check.done, run_id=scheduled__2024-07-23T00:00:00+00:00, execution_date=20240723T000000, start_date=20240724T072235, end_date=20240724T072235
+[2024-07-24T16:22:35.515+0900] {standard_task_runner.py:110} ERROR - Failed to execute job 413 for task check.done (Bash command failed. The command returned a non-zero exit code 1.; 98944)
+[2024-07-24T16:22:35.560+0900] {local_task_job_runner.py:243} INFO - Task exited with return code 1
+[2024-07-24T16:22:35.569+0900] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-07-24T16:22:35.569+0900] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-07-24T16:37:58.153+0900] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-24T16:37:58.161+0900] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: make_parquet.check.done scheduled__2024-07-23T00:00:00+00:00 [queued]>
+[2024-07-24T16:37:58.163+0900] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: make_parquet.check.done scheduled__2024-07-23T00:00:00+00:00 [queued]>
+[2024-07-24T16:37:58.163+0900] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2024-07-24T16:37:58.167+0900] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): check.done> on 2024-07-23 00:00:00+00:00
+[2024-07-24T16:37:58.170+0900] {standard_task_runner.py:64} INFO - Started process 1564 to run task
+[2024-07-24T16:37:58.172+0900] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'make_parquet', 'check.done', 'scheduled__2024-07-23T00:00:00+00:00', '--job-id', '405', '--raw', '--subdir', 'DAGS_FOLDER/make_parquet.py', '--cfg-path', '/var/folders/qv/0knwm5h50ml0skpppwpbks_r0000gp/T/tmpwmoc7oru']
+[2024-07-24T16:37:58.174+0900] {standard_task_runner.py:91} INFO - Job 405: Subtask check.done
+[2024-07-24T16:37:58.186+0900] {task_command.py:426} INFO - Running <TaskInstance: make_parquet.check.done scheduled__2024-07-23T00:00:00+00:00 [running]> on host jeongui-MacBookPro.local
+[2024-07-24T16:37:58.210+0900] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='make_parquet' AIRFLOW_CTX_TASK_ID='check.done' AIRFLOW_CTX_EXECUTION_DATE='2024-07-23T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-23T00:00:00+00:00'
+[2024-07-24T16:37:58.211+0900] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-24T16:37:58.216+0900] {subprocess.py:63} INFO - Tmp dir root location: /var/folders/qv/0knwm5h50ml0skpppwpbks_r0000gp/T
+[2024-07-24T16:37:58.217+0900] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', '\n        DONE_FILE=~/data/done/_import/20240723/_DONE\n        bash /Users/DE32/airflow/sh/simple_done_check.sh $DONE_FILE\n        ']
+[2024-07-24T16:37:58.220+0900] {subprocess.py:86} INFO - Output:
+[2024-07-24T16:37:58.223+0900] {subprocess.py:93} INFO - _DONE Path = /Users/DE32/data/done/_import/20240723/_DONE
+[2024-07-24T16:37:58.224+0900] {subprocess.py:93} INFO - I'll be back =>
+[2024-07-24T16:37:58.224+0900] {subprocess.py:97} INFO - Command exited with return code 1
+[2024-07-24T16:37:58.224+0900] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-24T16:37:58.227+0900] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/operators/bash.py", line 243, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2024-07-24T16:37:58.229+0900] {taskinstance.py:1206} INFO - Marking task as UP_FOR_RETRY. dag_id=make_parquet, task_id=check.done, run_id=scheduled__2024-07-23T00:00:00+00:00, execution_date=20240723T000000, start_date=20240724T073758, end_date=20240724T073758
+[2024-07-24T16:37:58.233+0900] {standard_task_runner.py:110} ERROR - Failed to execute job 405 for task check.done (Bash command failed. The command returned a non-zero exit code 1.; 1564)
+[2024-07-24T16:37:58.279+0900] {local_task_job_runner.py:243} INFO - Task exited with return code 1
+[2024-07-24T16:37:58.288+0900] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-07-24T16:37:58.288+0900] {local_task_job_runner.py:222} INFO - ::endgroup::

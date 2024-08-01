@@ -1,0 +1,25 @@
+[2024-07-24T16:33:57.980+0900] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-24T16:33:57.987+0900] {taskinstance.py:2066} INFO - Dependencies not met for <TaskInstance: make_parquet.make.done scheduled__2024-07-15T00:00:00+00:00 [None]>, dependency 'Trigger Rule' FAILED: Task's trigger rule 'all_success' requires all upstream tasks to have succeeded, but found 1 non-success(es). upstream_states=_UpstreamTIStates(success=0, skipped=0, failed=0, upstream_failed=0, removed=0, done=0, success_setup=0, skipped_setup=0), upstream_task_ids={'to.parquet'}
+[2024-07-24T16:33:57.987+0900] {local_task_job_runner.py:163} INFO - Task is not able to be run
+[2024-07-24T17:39:09.278+0900] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-24T17:39:09.286+0900] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: make_parquet.make.done scheduled__2024-07-15T00:00:00+00:00 [queued]>
+[2024-07-24T17:39:09.288+0900] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: make_parquet.make.done scheduled__2024-07-15T00:00:00+00:00 [queued]>
+[2024-07-24T17:39:09.288+0900] {taskinstance.py:2306} INFO - Starting attempt 2 of 3
+[2024-07-24T17:39:09.292+0900] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): make.done> on 2024-07-15 00:00:00+00:00
+[2024-07-24T17:39:09.295+0900] {standard_task_runner.py:64} INFO - Started process 8350 to run task
+[2024-07-24T17:39:09.297+0900] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'make_parquet', 'make.done', 'scheduled__2024-07-15T00:00:00+00:00', '--job-id', '452', '--raw', '--subdir', 'DAGS_FOLDER/make_parquet2.py', '--cfg-path', '/var/folders/qv/0knwm5h50ml0skpppwpbks_r0000gp/T/tmp3q48tux9']
+[2024-07-24T17:39:09.300+0900] {standard_task_runner.py:91} INFO - Job 452: Subtask make.done
+[2024-07-24T17:39:09.317+0900] {task_command.py:426} INFO - Running <TaskInstance: make_parquet.make.done scheduled__2024-07-15T00:00:00+00:00 [running]> on host jeongui-MacBookPro.local
+[2024-07-24T17:39:09.348+0900] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='make_parquet' AIRFLOW_CTX_TASK_ID='make.done' AIRFLOW_CTX_EXECUTION_DATE='2024-07-15T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-15T00:00:00+00:00'
+[2024-07-24T17:39:09.348+0900] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-24T17:39:09.357+0900] {subprocess.py:63} INFO - Tmp dir root location: /var/folders/qv/0knwm5h50ml0skpppwpbks_r0000gp/T
+[2024-07-24T17:39:09.357+0900] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', '\n        figlet "DONE"\n        PARQUET_DONE_PATH=~/data/make_done/2024-07-15\n        mkdir -p $PARQUET_DONE_PATH\n        echo "PATH=$PARQUET_DONE_PATH"\n        touch $PARQUET_DONE_PATH/_DONE\n        ']
+[2024-07-24T17:39:09.361+0900] {subprocess.py:86} INFO - Output:
+[2024-07-24T17:39:09.365+0900] {subprocess.py:93} INFO - /bin/bash: line 1: figlet: command not found
+[2024-07-24T17:39:09.366+0900] {subprocess.py:93} INFO - PATH=/Users/DE32/data/make_done/2024-07-15
+[2024-07-24T17:39:09.367+0900] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-07-24T17:39:09.368+0900] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-24T17:39:09.374+0900] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=make_parquet, task_id=make.done, run_id=scheduled__2024-07-15T00:00:00+00:00, execution_date=20240715T000000, start_date=20240724T083909, end_date=20240724T083909
+[2024-07-24T17:39:09.403+0900] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2024-07-24T17:39:09.409+0900] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-07-24T17:39:09.409+0900] {local_task_job_runner.py:222} INFO - ::endgroup::

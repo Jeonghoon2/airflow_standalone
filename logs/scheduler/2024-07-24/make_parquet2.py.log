@@ -1,0 +1,952 @@
+[2024-07-24T17:09:07.211+0900] {processor.py:161} INFO - Started process (PID=4539) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:09:07.211+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T17:09:07.211+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:09:07.211+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:09:07.217+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:09:07.295+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:09:07.295+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T17:09:07.301+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:09:07.300+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-23 04:10:00+00:00, run_after=2024-07-24 04:10:00+00:00
+[2024-07-24T17:09:07.308+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.098 seconds
+[2024-07-24T17:09:38.539+0900] {processor.py:161} INFO - Started process (PID=4646) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:09:38.539+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T17:09:38.539+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:09:38.539+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:09:38.544+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:09:38.579+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:09:38.579+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T17:09:38.585+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:09:38.585+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T17:09:38.593+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.055 seconds
+[2024-07-24T17:10:09.405+0900] {processor.py:161} INFO - Started process (PID=4840) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:10:09.406+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T17:10:09.407+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:10:09.407+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:10:09.423+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:10:09.430+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:10:09.430+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T17:10:09.487+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:10:09.487+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T17:10:09.494+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.095 seconds
+[2024-07-24T17:10:40.211+0900] {processor.py:161} INFO - Started process (PID=4855) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:10:40.212+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T17:10:40.212+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:10:40.212+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:10:40.216+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:10:40.221+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:10:40.221+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T17:10:40.252+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:10:40.251+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T17:10:40.258+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.048 seconds
+[2024-07-24T17:11:10.954+0900] {processor.py:161} INFO - Started process (PID=4968) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:11:10.954+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T17:11:10.954+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:11:10.954+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:11:10.959+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:11:11.022+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:11:11.022+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T17:11:11.028+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:11:11.028+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T17:11:11.035+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.082 seconds
+[2024-07-24T17:13:06.600+0900] {processor.py:161} INFO - Started process (PID=5029) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:13:06.600+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T17:13:06.600+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:13:06.600+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:13:06.605+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:13:06.669+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:13:06.669+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T17:13:06.675+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:13:06.675+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T17:13:06.682+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.083 seconds
+[2024-07-24T17:38:51.523+0900] {processor.py:161} INFO - Started process (PID=8332) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:38:51.524+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T17:38:51.524+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:38:51.524+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:38:51.529+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:38:51.534+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:38:51.534+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T17:38:51.565+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:38:51.565+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T17:38:51.572+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.049 seconds
+[2024-07-24T17:39:27.053+0900] {processor.py:161} INFO - Started process (PID=8377) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:39:27.054+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T17:39:27.054+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:39:27.054+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:39:27.059+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:39:27.063+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:39:27.063+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T17:39:27.094+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:39:27.094+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T17:39:27.100+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.049 seconds
+[2024-07-24T17:39:58.162+0900] {processor.py:161} INFO - Started process (PID=8389) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:39:58.162+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T17:39:58.162+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:39:58.162+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:39:58.167+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:39:58.236+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:39:58.236+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T17:39:58.242+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:39:58.242+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T17:39:58.250+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.090 seconds
+[2024-07-24T17:40:29.310+0900] {processor.py:161} INFO - Started process (PID=8399) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:40:29.311+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T17:40:29.311+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:40:29.311+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:40:29.315+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:40:29.352+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:40:29.352+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T17:40:29.358+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:40:29.358+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T17:40:29.365+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.056 seconds
+[2024-07-24T17:41:00.551+0900] {processor.py:161} INFO - Started process (PID=8410) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:41:00.551+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T17:41:00.552+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:41:00.552+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:41:00.557+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:41:00.562+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:41:00.562+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T17:41:00.595+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:41:00.595+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T17:41:00.602+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.053 seconds
+[2024-07-24T17:41:31.725+0900] {processor.py:161} INFO - Started process (PID=8425) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:41:31.726+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T17:41:31.726+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:41:31.726+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:41:31.731+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:41:31.818+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:41:31.818+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T17:41:31.824+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:41:31.824+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T17:41:31.831+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.107 seconds
+[2024-07-24T17:42:02.667+0900] {processor.py:161} INFO - Started process (PID=8436) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:42:02.667+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T17:42:02.668+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:42:02.668+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:42:02.672+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:42:02.706+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:42:02.706+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T17:42:02.712+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:42:02.712+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T17:42:02.719+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.053 seconds
+[2024-07-24T17:42:33.526+0900] {processor.py:161} INFO - Started process (PID=8447) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:42:33.528+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T17:42:33.528+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:42:33.528+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:42:33.536+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:42:33.541+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:42:33.541+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T17:42:33.575+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:42:33.574+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T17:42:33.581+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.056 seconds
+[2024-07-24T17:43:05.431+0900] {processor.py:161} INFO - Started process (PID=8789) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:43:05.432+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T17:43:05.432+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:43:05.432+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:43:05.437+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:43:05.531+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:43:05.531+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T17:43:05.537+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:43:05.537+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T17:43:05.544+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.114 seconds
+[2024-07-24T17:43:36.248+0900] {processor.py:161} INFO - Started process (PID=8800) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:43:36.249+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T17:43:36.249+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:43:36.249+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:43:36.255+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:43:36.292+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:43:36.292+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T17:43:36.299+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:43:36.299+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T17:43:36.306+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.058 seconds
+[2024-07-24T17:44:07.896+0900] {processor.py:161} INFO - Started process (PID=8811) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:44:07.898+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T17:44:07.901+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:44:07.898+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:44:07.909+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:44:07.914+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:44:07.914+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T17:44:07.946+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:44:07.946+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T17:44:07.952+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.057 seconds
+[2024-07-24T17:44:38.684+0900] {processor.py:161} INFO - Started process (PID=8819) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:44:38.685+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T17:44:38.685+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:44:38.685+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:44:38.690+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:44:38.770+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:44:38.770+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T17:44:38.776+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:44:38.776+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T17:44:38.782+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.100 seconds
+[2024-07-24T17:45:09.518+0900] {processor.py:161} INFO - Started process (PID=8834) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:45:09.519+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T17:45:09.519+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:45:09.519+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:45:09.524+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:45:09.559+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:45:09.559+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T17:45:09.565+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:45:09.565+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T17:45:09.572+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.055 seconds
+[2024-07-24T17:45:41.776+0900] {processor.py:161} INFO - Started process (PID=9139) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:45:41.777+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T17:45:41.777+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:45:41.777+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:45:41.782+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:45:41.786+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:45:41.786+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T17:45:41.817+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:45:41.817+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T17:45:41.823+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.049 seconds
+[2024-07-24T17:46:12.547+0900] {processor.py:161} INFO - Started process (PID=9152) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:46:12.547+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T17:46:12.547+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:46:12.547+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:46:12.553+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:46:12.631+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:46:12.631+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T17:46:12.637+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:46:12.637+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T17:46:12.643+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.098 seconds
+[2024-07-24T17:46:43.374+0900] {processor.py:161} INFO - Started process (PID=9164) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:46:43.375+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T17:46:43.375+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:46:43.375+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:46:43.379+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:46:43.413+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:46:43.413+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T17:46:43.419+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:46:43.419+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T17:46:43.426+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.053 seconds
+[2024-07-24T17:47:14.099+0900] {processor.py:161} INFO - Started process (PID=9492) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:47:14.100+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T17:47:14.100+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:47:14.100+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:47:14.105+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:47:14.109+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:47:14.109+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T17:47:14.143+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:47:14.143+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T17:47:14.150+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.053 seconds
+[2024-07-24T17:47:44.881+0900] {processor.py:161} INFO - Started process (PID=9761) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:47:44.883+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T17:47:44.883+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:47:44.883+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:47:44.888+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:47:44.969+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:47:44.969+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T17:47:44.974+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:47:44.974+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T17:47:44.981+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.100 seconds
+[2024-07-24T17:48:15.621+0900] {processor.py:161} INFO - Started process (PID=9962) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:48:15.621+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T17:48:15.622+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:48:15.622+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:48:15.627+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:48:15.661+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:48:15.660+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T17:48:15.666+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:48:15.666+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T17:48:15.673+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.053 seconds
+[2024-07-24T17:48:46.347+0900] {processor.py:161} INFO - Started process (PID=10054) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:48:46.349+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T17:48:46.349+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:48:46.349+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:48:46.354+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:48:46.359+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:48:46.359+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T17:48:46.390+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:48:46.390+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T17:48:46.396+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.050 seconds
+[2024-07-24T17:49:18.239+0900] {processor.py:161} INFO - Started process (PID=10066) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:49:18.239+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T17:49:18.239+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:49:18.239+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:49:18.244+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:49:18.325+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:49:18.325+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T17:49:18.330+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:49:18.330+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T17:49:18.337+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.099 seconds
+[2024-07-24T17:49:49.036+0900] {processor.py:161} INFO - Started process (PID=10075) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:49:49.036+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T17:49:49.036+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:49:49.036+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:49:49.041+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:49:49.077+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:49:49.077+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T17:49:49.083+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:49:49.083+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T17:49:49.091+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.056 seconds
+[2024-07-24T17:50:19.917+0900] {processor.py:161} INFO - Started process (PID=10086) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:50:19.917+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T17:50:19.917+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:50:19.917+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:50:19.922+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:50:19.927+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:50:19.927+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T17:50:19.958+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:50:19.958+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T17:50:19.964+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.049 seconds
+[2024-07-24T17:50:50.639+0900] {processor.py:161} INFO - Started process (PID=10370) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:50:50.641+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T17:50:50.641+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:50:50.641+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:50:50.646+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:50:50.724+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:50:50.724+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T17:50:50.730+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:50:50.730+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T17:50:50.736+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.099 seconds
+[2024-07-24T17:51:21.455+0900] {processor.py:161} INFO - Started process (PID=10613) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:51:21.457+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T17:51:21.458+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:51:21.458+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:51:21.463+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:51:21.496+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:51:21.496+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T17:51:21.502+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:51:21.502+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T17:51:21.509+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.055 seconds
+[2024-07-24T17:51:52.439+0900] {processor.py:161} INFO - Started process (PID=10653) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:51:52.439+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T17:51:52.440+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:51:52.439+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:51:52.445+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:51:52.449+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:51:52.449+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T17:51:52.480+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:51:52.480+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T17:51:52.486+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.048 seconds
+[2024-07-24T17:52:24.118+0900] {processor.py:161} INFO - Started process (PID=10659) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:52:24.119+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T17:52:24.120+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:52:24.120+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:52:24.125+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:52:24.203+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:52:24.203+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T17:52:24.209+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:52:24.209+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T17:52:24.216+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.099 seconds
+[2024-07-24T17:52:55.264+0900] {processor.py:161} INFO - Started process (PID=10668) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:52:55.265+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T17:52:55.266+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:52:55.265+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:52:55.271+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:52:55.305+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:52:55.305+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T17:52:55.311+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:52:55.311+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T17:52:55.318+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.055 seconds
+[2024-07-24T17:53:26.695+0900] {processor.py:161} INFO - Started process (PID=10695) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:53:26.696+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T17:53:26.696+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:53:26.696+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:53:26.701+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:53:26.706+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:53:26.706+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T17:53:26.737+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:53:26.737+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T17:53:26.743+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.050 seconds
+[2024-07-24T17:53:58.266+0900] {processor.py:161} INFO - Started process (PID=10958) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:53:58.266+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T17:53:58.267+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:53:58.266+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:53:58.272+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:53:58.351+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:53:58.351+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T17:53:58.357+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:53:58.357+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T17:53:58.363+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.098 seconds
+[2024-07-24T17:54:29.473+0900] {processor.py:161} INFO - Started process (PID=10995) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:54:29.474+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T17:54:29.474+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:54:29.474+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:54:29.480+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:54:29.535+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:54:29.535+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T17:54:29.542+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:54:29.542+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T17:54:29.552+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.080 seconds
+[2024-07-24T17:55:00.398+0900] {processor.py:161} INFO - Started process (PID=11247) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:55:00.399+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T17:55:00.399+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:55:00.399+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:55:00.404+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:55:00.408+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:55:00.408+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T17:55:00.440+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:55:00.439+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T17:55:00.446+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.049 seconds
+[2024-07-24T17:55:31.550+0900] {processor.py:161} INFO - Started process (PID=11337) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:55:31.551+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T17:55:31.552+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:55:31.552+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:55:31.557+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:55:31.633+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:55:31.633+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T17:55:31.639+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:55:31.639+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T17:55:31.646+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.097 seconds
+[2024-07-24T17:56:03.095+0900] {processor.py:161} INFO - Started process (PID=11632) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:56:03.096+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T17:56:03.097+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:56:03.097+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:56:03.102+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:56:03.137+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:56:03.136+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T17:56:03.143+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:56:03.143+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T17:56:03.150+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.057 seconds
+[2024-07-24T17:56:34.375+0900] {processor.py:161} INFO - Started process (PID=11922) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:56:34.375+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T17:56:34.376+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:56:34.375+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:56:34.384+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:56:34.394+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:56:34.394+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T17:56:34.430+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:56:34.429+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T17:56:34.437+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.064 seconds
+[2024-07-24T17:57:05.131+0900] {processor.py:161} INFO - Started process (PID=12282) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:57:05.132+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T17:57:05.133+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:57:05.133+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:57:05.137+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:57:05.218+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:57:05.218+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T17:57:05.224+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:57:05.224+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T17:57:05.230+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.100 seconds
+[2024-07-24T17:57:35.977+0900] {processor.py:161} INFO - Started process (PID=12297) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:57:35.978+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T17:57:35.978+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:57:35.978+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:57:35.983+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:57:36.016+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:57:36.016+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T17:57:36.022+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:57:36.022+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T17:57:36.029+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.054 seconds
+[2024-07-24T17:58:07.199+0900] {processor.py:161} INFO - Started process (PID=12324) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:58:07.200+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T17:58:07.200+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:58:07.200+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:58:07.205+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:58:07.210+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:58:07.210+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T17:58:07.241+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:58:07.241+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T17:58:07.248+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.050 seconds
+[2024-07-24T17:58:37.973+0900] {processor.py:161} INFO - Started process (PID=12645) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:58:37.973+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T17:58:37.974+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:58:37.974+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:58:37.979+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:58:38.060+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:58:38.059+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T17:58:38.066+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:58:38.066+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T17:58:38.072+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.101 seconds
+[2024-07-24T17:59:08.719+0900] {processor.py:161} INFO - Started process (PID=12976) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:59:08.720+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T17:59:08.720+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:59:08.720+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:59:08.724+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:59:08.758+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:59:08.758+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T17:59:08.764+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:59:08.764+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T17:59:08.771+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.053 seconds
+[2024-07-24T17:59:39.559+0900] {processor.py:161} INFO - Started process (PID=13253) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:59:39.559+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T17:59:39.560+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:59:39.559+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:59:39.564+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T17:59:39.568+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:59:39.568+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T17:59:39.599+0900] {logging_mixin.py:188} INFO - [2024-07-24T17:59:39.599+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T17:59:39.606+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.048 seconds
+[2024-07-24T18:00:10.310+0900] {processor.py:161} INFO - Started process (PID=13319) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:00:10.310+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T18:00:10.310+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:00:10.310+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:00:10.315+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:00:10.377+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:00:10.377+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T18:00:10.383+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:00:10.383+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T18:00:10.389+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.081 seconds
+[2024-07-24T18:00:41.066+0900] {processor.py:161} INFO - Started process (PID=13325) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:00:41.066+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T18:00:41.066+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:00:41.066+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:00:41.071+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:00:41.104+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:00:41.104+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T18:00:41.110+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:00:41.110+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T18:00:41.118+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.053 seconds
+[2024-07-24T18:01:11.879+0900] {processor.py:161} INFO - Started process (PID=13329) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:01:11.879+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T18:01:11.879+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:01:11.879+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:01:11.884+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:01:11.888+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:01:11.888+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T18:01:11.920+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:01:11.920+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T18:01:11.927+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.049 seconds
+[2024-07-24T18:01:42.690+0900] {processor.py:161} INFO - Started process (PID=13339) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:01:42.690+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T18:01:42.690+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:01:42.690+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:01:42.695+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:01:42.760+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:01:42.760+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T18:01:42.766+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:01:42.766+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T18:01:42.773+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.084 seconds
+[2024-07-24T18:02:13.448+0900] {processor.py:161} INFO - Started process (PID=13343) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:02:13.449+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T18:02:13.449+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:02:13.449+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:02:13.454+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:02:13.487+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:02:13.487+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T18:02:13.493+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:02:13.493+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T18:02:13.500+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.053 seconds
+[2024-07-24T18:02:44.363+0900] {processor.py:161} INFO - Started process (PID=13352) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:02:44.364+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T18:02:44.364+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:02:44.364+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:02:44.368+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:02:44.373+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:02:44.373+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T18:02:44.404+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:02:44.404+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T18:02:44.410+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.048 seconds
+[2024-07-24T18:03:15.731+0900] {processor.py:161} INFO - Started process (PID=13356) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:03:15.731+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T18:03:15.732+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:03:15.732+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:03:15.736+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:03:15.799+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:03:15.799+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T18:03:15.804+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:03:15.804+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T18:03:15.811+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.081 seconds
+[2024-07-24T18:03:46.801+0900] {processor.py:161} INFO - Started process (PID=13360) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:03:46.801+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T18:03:46.802+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:03:46.802+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:03:46.806+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:03:46.840+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:03:46.840+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T18:03:46.846+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:03:46.845+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T18:03:46.853+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.053 seconds
+[2024-07-24T18:04:17.744+0900] {processor.py:161} INFO - Started process (PID=13398) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:04:17.745+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T18:04:17.745+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:04:17.745+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:04:17.750+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:04:17.756+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:04:17.755+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T18:04:17.790+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:04:17.790+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T18:04:17.798+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.056 seconds
+[2024-07-24T18:04:48.532+0900] {processor.py:161} INFO - Started process (PID=13673) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:04:48.532+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T18:04:48.533+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:04:48.533+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:04:48.537+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:04:48.601+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:04:48.600+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T18:04:48.606+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:04:48.606+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T18:04:48.613+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.082 seconds
+[2024-07-24T18:05:19.417+0900] {processor.py:161} INFO - Started process (PID=13681) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:05:19.417+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T18:05:19.417+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:05:19.417+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:05:19.422+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:05:19.456+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:05:19.456+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T18:05:19.462+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:05:19.462+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T18:05:19.470+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.054 seconds
+[2024-07-24T18:05:50.429+0900] {processor.py:161} INFO - Started process (PID=13737) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:05:50.429+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T18:05:50.429+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:05:50.429+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:05:50.434+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:05:50.441+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:05:50.441+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T18:05:50.479+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:05:50.479+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T18:05:50.493+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.066 seconds
+[2024-07-24T18:06:21.261+0900] {processor.py:161} INFO - Started process (PID=13751) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:06:21.262+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T18:06:21.262+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:06:21.262+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:06:21.266+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:06:21.329+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:06:21.329+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T18:06:21.335+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:06:21.335+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T18:06:21.342+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.082 seconds
+[2024-07-24T18:06:52.198+0900] {processor.py:161} INFO - Started process (PID=13866) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:06:52.199+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T18:06:52.199+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:06:52.199+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:06:52.203+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:06:52.237+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:06:52.237+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T18:06:52.243+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:06:52.243+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T18:06:52.250+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.053 seconds
+[2024-07-24T18:07:22.904+0900] {processor.py:161} INFO - Started process (PID=14143) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:07:22.905+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T18:07:22.905+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:07:22.905+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:07:22.909+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:07:22.914+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:07:22.913+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T18:07:22.944+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:07:22.944+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T18:07:22.951+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.048 seconds
+[2024-07-24T18:07:53.944+0900] {processor.py:161} INFO - Started process (PID=14382) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:07:53.946+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T18:07:53.946+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:07:53.946+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:07:53.951+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:07:54.046+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:07:54.046+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T18:07:54.052+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:07:54.052+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T18:07:54.060+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.117 seconds
+[2024-07-24T18:08:25.728+0900] {processor.py:161} INFO - Started process (PID=14394) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:08:25.728+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T18:08:25.729+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:08:25.729+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:08:25.733+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:08:25.768+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:08:25.768+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T18:08:25.775+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:08:25.775+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T18:08:25.783+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.056 seconds
+[2024-07-24T18:08:56.828+0900] {processor.py:161} INFO - Started process (PID=14723) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:08:56.829+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T18:08:56.829+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:08:56.829+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:08:56.834+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:08:56.838+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:08:56.838+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T18:08:56.869+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:08:56.869+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T18:08:56.876+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.049 seconds
+[2024-07-24T18:09:27.742+0900] {processor.py:161} INFO - Started process (PID=14732) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:09:27.742+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T18:09:27.742+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:09:27.742+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:09:27.748+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:09:27.839+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:09:27.839+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T18:09:27.847+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:09:27.846+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T18:09:27.856+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.116 seconds
+[2024-07-24T18:09:58.874+0900] {processor.py:161} INFO - Started process (PID=14757) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:09:58.875+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T18:09:58.876+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:09:58.876+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:09:58.881+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:09:58.917+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:09:58.916+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T18:09:58.925+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:09:58.925+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T18:09:58.935+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.062 seconds
+[2024-07-24T18:10:29.890+0900] {processor.py:161} INFO - Started process (PID=15032) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:10:29.891+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T18:10:29.891+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:10:29.891+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:10:29.897+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:10:29.901+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:10:29.901+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T18:10:29.935+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:10:29.935+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T18:10:29.942+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.054 seconds
+[2024-07-24T18:11:00.850+0900] {processor.py:161} INFO - Started process (PID=15587) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:11:00.851+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T18:11:00.852+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:11:00.852+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:11:00.857+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:11:00.934+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:11:00.933+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T18:11:00.939+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:11:00.939+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T18:11:00.946+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.097 seconds
+[2024-07-24T18:11:31.640+0900] {processor.py:161} INFO - Started process (PID=15600) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:11:31.640+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T18:11:31.641+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:11:31.640+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:11:31.645+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:11:31.679+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:11:31.679+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T18:11:31.685+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:11:31.685+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T18:11:31.692+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.054 seconds
+[2024-07-24T18:12:03.492+0900] {processor.py:161} INFO - Started process (PID=15608) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:12:03.492+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T18:12:03.492+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:12:03.492+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:12:03.497+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:12:03.501+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:12:03.501+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T18:12:03.532+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:12:03.532+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T18:12:03.538+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.048 seconds
+[2024-07-24T18:12:34.853+0900] {processor.py:161} INFO - Started process (PID=15612) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:12:34.853+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T18:12:34.854+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:12:34.854+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:12:34.858+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:12:34.921+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:12:34.921+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T18:12:34.926+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:12:34.926+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T18:12:34.933+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.081 seconds
+[2024-07-24T18:13:05.599+0900] {processor.py:161} INFO - Started process (PID=15707) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:13:05.599+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T18:13:05.600+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:13:05.599+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:13:05.605+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:13:05.641+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:13:05.641+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T18:13:05.647+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:13:05.647+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T18:13:05.654+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.057 seconds
+[2024-07-24T18:13:36.544+0900] {processor.py:161} INFO - Started process (PID=15894) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:13:36.545+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T18:13:36.545+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:13:36.545+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:13:36.550+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:13:36.555+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:13:36.555+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T18:13:36.586+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:13:36.586+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T18:13:36.592+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.049 seconds
+[2024-07-24T18:14:07.284+0900] {processor.py:161} INFO - Started process (PID=15902) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:14:07.284+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T18:14:07.285+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:14:07.284+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:14:07.290+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:14:07.368+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:14:07.368+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T18:14:07.374+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:14:07.374+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T18:14:07.382+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.100 seconds
+[2024-07-24T18:14:38.140+0900] {processor.py:161} INFO - Started process (PID=15919) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:14:38.140+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T18:14:38.140+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:14:38.140+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:14:38.145+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:14:38.178+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:14:38.178+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T18:14:38.184+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:14:38.184+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T18:14:38.191+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.053 seconds
+[2024-07-24T18:15:09.081+0900] {processor.py:161} INFO - Started process (PID=16187) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:15:09.081+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T18:15:09.082+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:15:09.081+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:15:09.086+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:15:09.090+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:15:09.090+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T18:15:09.122+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:15:09.121+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T18:15:09.128+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.048 seconds
+[2024-07-24T18:15:39.937+0900] {processor.py:161} INFO - Started process (PID=16714) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:15:39.937+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T18:15:39.938+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:15:39.938+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:15:39.942+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:15:40.021+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:15:40.021+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T18:15:40.026+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:15:40.026+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T18:15:40.047+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.111 seconds
+[2024-07-24T18:16:11.704+0900] {processor.py:161} INFO - Started process (PID=16986) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:16:11.704+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T18:16:11.704+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:16:11.704+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:16:11.709+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:16:11.743+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:16:11.743+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T18:16:11.749+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:16:11.749+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T18:16:11.756+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.053 seconds
+[2024-07-24T18:16:42.546+0900] {processor.py:161} INFO - Started process (PID=16997) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:16:42.546+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T18:16:42.547+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:16:42.547+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:16:42.551+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:16:42.556+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:16:42.556+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T18:16:42.587+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:16:42.587+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T18:16:42.593+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.049 seconds
+[2024-07-24T18:17:13.320+0900] {processor.py:161} INFO - Started process (PID=17296) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:17:13.321+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T18:17:13.321+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:17:13.321+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:17:13.325+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:17:13.389+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:17:13.389+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T18:17:13.394+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:17:13.394+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T18:17:13.401+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.082 seconds
+[2024-07-24T18:17:44.211+0900] {processor.py:161} INFO - Started process (PID=17695) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:17:44.211+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T18:17:44.212+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:17:44.212+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:17:44.217+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:17:44.254+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:17:44.254+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T18:17:44.260+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:17:44.260+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T18:17:44.268+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.059 seconds
+[2024-07-24T18:18:14.977+0900] {processor.py:161} INFO - Started process (PID=17786) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:18:14.977+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T18:18:14.977+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:18:14.977+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:18:14.982+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:18:14.987+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:18:14.987+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T18:18:15.019+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:18:15.019+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T18:18:15.025+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.050 seconds
+[2024-07-24T18:18:45.767+0900] {processor.py:161} INFO - Started process (PID=17829) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:18:45.767+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T18:18:45.768+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:18:45.768+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:18:45.772+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:18:45.836+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:18:45.836+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T18:18:45.842+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:18:45.842+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T18:18:45.849+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.083 seconds
+[2024-07-24T18:19:16.555+0900] {processor.py:161} INFO - Started process (PID=17875) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:19:16.555+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T18:19:16.556+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:19:16.556+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:19:16.560+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:19:16.594+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:19:16.594+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T18:19:16.600+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:19:16.600+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T18:19:16.607+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.053 seconds
+[2024-07-24T18:19:47.480+0900] {processor.py:161} INFO - Started process (PID=17879) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:19:47.481+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T18:19:47.481+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:19:47.481+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:19:47.486+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:19:47.490+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:19:47.490+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T18:19:47.521+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:19:47.521+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T18:19:47.527+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.049 seconds
+[2024-07-24T18:20:18.258+0900] {processor.py:161} INFO - Started process (PID=17883) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:20:18.258+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T18:20:18.258+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:20:18.258+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:20:18.263+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:20:18.328+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:20:18.328+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T18:20:18.334+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:20:18.334+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T18:20:18.341+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.085 seconds
+[2024-07-24T18:20:49.046+0900] {processor.py:161} INFO - Started process (PID=17889) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:20:49.047+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T18:20:49.047+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:20:49.047+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:20:49.051+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:20:49.089+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:20:49.089+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T18:20:49.096+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:20:49.096+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T18:20:49.104+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.058 seconds
+[2024-07-24T18:21:19.964+0900] {processor.py:161} INFO - Started process (PID=18087) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:21:19.965+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T18:21:19.965+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:21:19.965+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:21:19.970+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:21:19.975+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:21:19.975+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T18:21:20.007+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:21:20.007+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T18:21:20.013+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.051 seconds
+[2024-07-24T18:21:50.887+0900] {processor.py:161} INFO - Started process (PID=18096) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:21:50.887+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T18:21:50.888+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:21:50.888+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:21:50.893+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:21:50.975+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:21:50.975+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T18:21:50.980+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:21:50.980+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T18:21:50.987+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.101 seconds
+[2024-07-24T18:22:21.821+0900] {processor.py:161} INFO - Started process (PID=18101) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:22:21.821+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T18:22:21.822+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:22:21.822+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:22:21.826+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:22:21.860+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:22:21.860+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T18:22:21.866+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:22:21.866+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T18:22:21.873+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.053 seconds
+[2024-07-24T18:30:03.886+0900] {processor.py:161} INFO - Started process (PID=18111) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:30:03.886+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T18:30:03.887+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:30:03.886+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:30:03.892+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:30:03.896+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:30:03.896+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T18:30:03.928+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:30:03.927+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T18:30:03.934+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.049 seconds
+[2024-07-24T18:30:35.655+0900] {processor.py:161} INFO - Started process (PID=18127) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:30:35.655+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T18:30:35.656+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:30:35.655+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:30:35.660+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:30:35.726+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:30:35.726+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T18:30:35.731+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:30:35.731+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T18:30:35.738+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.084 seconds
+[2024-07-24T18:31:06.627+0900] {processor.py:161} INFO - Started process (PID=18144) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:31:06.628+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T18:31:06.628+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:31:06.628+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:31:06.633+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:31:06.670+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:31:06.670+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T18:31:06.676+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:31:06.675+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T18:31:06.683+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.057 seconds
+[2024-07-24T18:31:37.643+0900] {processor.py:161} INFO - Started process (PID=18148) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:31:37.643+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T18:31:37.644+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:31:37.644+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:31:37.649+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:31:37.653+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:31:37.653+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T18:31:37.685+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:31:37.685+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T18:31:37.691+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.050 seconds
+[2024-07-24T18:32:08.606+0900] {processor.py:161} INFO - Started process (PID=18163) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:32:08.607+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T18:32:08.607+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:32:08.607+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:32:08.611+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:32:08.675+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:32:08.674+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T18:32:08.680+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:32:08.680+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T18:32:08.687+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.082 seconds
+[2024-07-24T18:32:39.585+0900] {processor.py:161} INFO - Started process (PID=18178) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:32:39.586+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T18:32:39.586+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:32:39.586+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:32:39.591+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:32:39.624+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:32:39.624+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T18:32:39.630+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:32:39.630+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T18:32:39.637+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.053 seconds
+[2024-07-24T18:33:10.675+0900] {processor.py:161} INFO - Started process (PID=18201) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:33:10.676+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T18:33:10.676+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:33:10.676+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:33:10.681+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:33:10.686+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:33:10.685+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T18:33:10.717+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:33:10.717+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T18:33:10.724+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.051 seconds
+[2024-07-24T18:33:41.612+0900] {processor.py:161} INFO - Started process (PID=18315) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:33:41.613+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T18:33:41.613+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:33:41.613+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:33:41.618+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:33:41.700+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:33:41.700+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T18:33:41.706+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:33:41.706+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T18:33:41.712+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.102 seconds
+[2024-07-24T18:34:12.570+0900] {processor.py:161} INFO - Started process (PID=18330) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:34:12.571+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T18:34:12.571+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:34:12.571+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:34:12.576+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:34:12.612+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:34:12.612+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T18:34:12.618+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:34:12.618+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T18:34:12.625+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.056 seconds
+[2024-07-24T18:34:43.468+0900] {processor.py:161} INFO - Started process (PID=18606) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:34:43.468+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T18:34:43.469+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:34:43.469+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:34:43.474+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:34:43.479+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:34:43.479+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T18:34:43.512+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:34:43.512+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T18:34:43.519+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.052 seconds
+[2024-07-24T18:35:14.404+0900] {processor.py:161} INFO - Started process (PID=18828) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:35:14.405+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T18:35:14.406+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:35:14.405+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:35:14.410+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:35:14.489+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:35:14.488+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T18:35:14.494+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:35:14.494+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T18:35:14.501+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.098 seconds
+[2024-07-24T18:35:45.421+0900] {processor.py:161} INFO - Started process (PID=19436) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:35:45.422+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T18:35:45.422+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:35:45.422+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:35:45.427+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:35:45.464+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:35:45.464+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T18:35:45.470+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:35:45.470+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T18:35:45.477+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.057 seconds
+[2024-07-24T18:36:16.902+0900] {processor.py:161} INFO - Started process (PID=19526) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:36:16.903+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T18:36:16.903+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:36:16.903+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:36:16.908+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:36:16.912+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:36:16.912+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T18:36:16.943+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:36:16.943+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T18:36:16.950+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.049 seconds
+[2024-07-24T18:36:47.685+0900] {processor.py:161} INFO - Started process (PID=19543) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:36:47.686+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T18:36:47.686+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:36:47.686+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:36:47.691+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:36:47.774+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:36:47.774+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T18:36:47.779+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:36:47.779+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T18:36:47.786+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.103 seconds
+[2024-07-24T18:37:18.654+0900] {processor.py:161} INFO - Started process (PID=19555) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:37:18.654+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T18:37:18.655+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:37:18.655+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:37:18.660+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:37:18.696+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:37:18.696+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T18:37:18.702+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:37:18.702+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T18:37:18.709+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.057 seconds
+[2024-07-24T18:37:49.424+0900] {processor.py:161} INFO - Started process (PID=19570) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:37:49.425+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T18:37:49.425+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:37:49.425+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:37:49.430+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:37:49.435+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:37:49.435+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T18:37:49.468+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:37:49.468+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T18:37:49.475+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.052 seconds
+[2024-07-24T18:38:20.818+0900] {processor.py:161} INFO - Started process (PID=19836) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:38:20.818+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T18:38:20.818+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:38:20.818+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:38:20.823+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:38:20.914+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:38:20.914+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T18:38:20.922+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:38:20.922+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T18:38:20.931+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.114 seconds
+[2024-07-24T18:38:52.246+0900] {processor.py:161} INFO - Started process (PID=20186) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:38:52.247+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T18:38:52.247+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:38:52.247+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:38:52.252+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:38:52.288+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:38:52.288+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T18:38:52.294+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:38:52.294+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T18:38:52.301+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.056 seconds
+[2024-07-24T18:39:23.261+0900] {processor.py:161} INFO - Started process (PID=20199) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:39:23.261+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T18:39:23.262+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:39:23.262+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:39:23.266+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:39:23.271+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:39:23.270+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T18:39:23.301+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:39:23.301+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T18:39:23.308+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.048 seconds
+[2024-07-24T18:39:54.237+0900] {processor.py:161} INFO - Started process (PID=20208) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:39:54.238+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T18:39:54.238+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:39:54.238+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:39:54.243+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:39:54.317+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:39:54.317+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T18:39:54.323+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:39:54.323+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T18:39:54.333+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.096 seconds
+[2024-07-24T18:40:25.153+0900] {processor.py:161} INFO - Started process (PID=20224) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:40:25.153+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T18:40:25.154+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:40:25.154+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:40:25.158+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:40:25.192+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:40:25.192+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T18:40:25.198+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:40:25.198+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T18:40:25.205+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.053 seconds
+[2024-07-24T18:40:56.213+0900] {processor.py:161} INFO - Started process (PID=20236) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:40:56.213+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T18:40:56.213+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:40:56.213+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:40:56.218+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:40:56.222+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:40:56.222+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T18:40:56.253+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:40:56.253+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T18:40:56.260+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.048 seconds
+[2024-07-24T18:41:27.180+0900] {processor.py:161} INFO - Started process (PID=20241) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:41:27.180+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T18:41:27.180+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:41:27.180+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:41:27.185+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:41:27.250+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:41:27.250+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T18:41:27.255+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:41:27.255+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T18:41:27.262+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.084 seconds
+[2024-07-24T18:41:58.235+0900] {processor.py:161} INFO - Started process (PID=20259) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:41:58.235+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T18:41:58.235+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:41:58.235+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:41:58.240+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:41:58.274+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:41:58.273+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T18:41:58.279+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:41:58.279+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T18:41:58.286+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.053 seconds
+[2024-07-24T18:42:29.170+0900] {processor.py:161} INFO - Started process (PID=20393) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:42:29.170+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T18:42:29.170+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:42:29.170+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:42:29.175+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:42:29.180+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:42:29.180+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T18:42:29.213+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:42:29.213+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T18:42:29.220+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.052 seconds
+[2024-07-24T18:43:00.091+0900] {processor.py:161} INFO - Started process (PID=20851) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:43:00.092+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T18:43:00.093+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:43:00.093+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:43:00.100+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:43:00.195+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:43:00.195+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T18:43:00.201+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:43:00.201+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T18:43:00.208+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.118 seconds
+[2024-07-24T18:43:31.038+0900] {processor.py:161} INFO - Started process (PID=21278) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:43:31.039+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T18:43:31.039+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:43:31.039+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:43:31.044+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:43:31.081+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:43:31.081+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T18:43:31.087+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:43:31.087+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T18:43:31.094+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.058 seconds
+[2024-07-24T18:44:02.019+0900] {processor.py:161} INFO - Started process (PID=21397) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:44:02.019+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T18:44:02.020+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:44:02.019+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:44:02.025+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:44:02.030+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:44:02.030+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T18:44:02.066+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:44:02.066+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T18:44:02.075+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.057 seconds
+[2024-07-24T18:44:32.846+0900] {processor.py:161} INFO - Started process (PID=21707) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:44:32.848+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T18:44:32.848+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:44:32.848+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:44:32.856+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:44:32.951+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:44:32.951+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T18:44:32.959+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:44:32.959+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T18:44:32.968+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.123 seconds
+[2024-07-24T18:45:03.771+0900] {processor.py:161} INFO - Started process (PID=21749) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:45:03.772+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T18:45:03.772+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:45:03.772+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:45:03.777+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:45:03.814+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:45:03.813+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T18:45:03.820+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:45:03.820+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T18:45:03.827+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.057 seconds
+[2024-07-24T18:45:34.940+0900] {processor.py:161} INFO - Started process (PID=21754) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:45:34.941+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T18:45:34.941+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:45:34.941+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:45:34.945+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:45:34.950+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:45:34.950+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T18:45:34.981+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:45:34.980+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T18:45:34.987+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.048 seconds
+[2024-07-24T18:46:05.886+0900] {processor.py:161} INFO - Started process (PID=21758) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:46:05.887+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T18:46:05.887+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:46:05.887+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:46:05.891+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:46:05.955+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:46:05.955+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T18:46:05.960+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:46:05.960+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T18:46:05.967+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.082 seconds
+[2024-07-24T18:46:36.857+0900] {processor.py:161} INFO - Started process (PID=21764) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:46:36.857+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T18:46:36.857+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:46:36.857+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:46:36.862+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:46:36.896+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:46:36.896+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T18:46:36.902+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:46:36.901+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T18:46:36.909+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.053 seconds
+[2024-07-24T18:47:07.810+0900] {processor.py:161} INFO - Started process (PID=21768) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:47:07.811+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T18:47:07.811+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:47:07.811+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:47:07.815+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:47:07.820+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:47:07.820+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T18:47:07.851+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:47:07.851+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T18:47:07.858+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.048 seconds
+[2024-07-24T18:47:38.779+0900] {processor.py:161} INFO - Started process (PID=21773) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:47:38.780+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T18:47:38.780+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:47:38.780+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:47:38.784+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:47:38.847+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:47:38.847+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T18:47:38.853+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:47:38.853+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T18:47:38.860+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.082 seconds
+[2024-07-24T18:48:09.799+0900] {processor.py:161} INFO - Started process (PID=21777) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:48:09.800+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T18:48:09.800+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:48:09.800+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:48:09.805+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:48:09.839+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:48:09.839+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T18:48:09.845+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:48:09.845+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T18:48:09.852+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.054 seconds
+[2024-07-24T18:48:40.649+0900] {processor.py:161} INFO - Started process (PID=21821) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:48:40.650+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T18:48:40.650+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:48:40.650+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:48:40.654+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:48:40.659+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:48:40.659+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T18:48:40.691+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:48:40.691+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T18:48:40.698+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.050 seconds
+[2024-07-24T18:49:11.717+0900] {processor.py:161} INFO - Started process (PID=21925) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:49:11.718+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T18:49:11.718+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:49:11.718+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:49:11.723+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:49:11.801+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:49:11.801+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T18:49:11.807+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:49:11.807+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T18:49:11.814+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.099 seconds
+[2024-07-24T18:49:42.731+0900] {processor.py:161} INFO - Started process (PID=21930) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:49:42.731+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T18:49:42.731+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:49:42.731+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:49:42.736+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:49:42.770+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:49:42.770+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T18:49:42.776+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:49:42.776+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T18:49:42.784+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.054 seconds
+[2024-07-24T18:50:13.691+0900] {processor.py:161} INFO - Started process (PID=21934) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:50:13.691+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T18:50:13.691+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:50:13.691+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:50:13.696+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:50:13.700+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:50:13.700+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T18:50:13.731+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:50:13.731+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T18:50:13.738+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.048 seconds
+[2024-07-24T18:50:44.663+0900] {processor.py:161} INFO - Started process (PID=21939) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:50:44.663+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T18:50:44.664+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:50:44.663+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:50:44.668+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:50:44.733+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:50:44.733+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T18:50:44.738+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:50:44.738+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T18:50:44.745+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.083 seconds
+[2024-07-24T18:51:16.367+0900] {processor.py:161} INFO - Started process (PID=21945) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:51:16.368+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T18:51:16.368+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:51:16.368+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:51:16.373+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:51:16.408+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:51:16.408+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T18:51:16.414+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:51:16.414+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T18:51:16.421+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.055 seconds
+[2024-07-24T18:51:47.378+0900] {processor.py:161} INFO - Started process (PID=21957) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:51:47.378+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T18:51:47.379+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:51:47.379+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:51:47.383+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:51:47.388+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:51:47.388+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T18:51:47.419+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:51:47.419+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T18:51:47.425+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.049 seconds
+[2024-07-24T18:52:18.469+0900] {processor.py:161} INFO - Started process (PID=21966) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:52:18.469+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T18:52:18.470+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:52:18.470+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:52:18.474+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:52:18.553+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:52:18.553+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T18:52:18.559+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:52:18.559+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T18:52:18.565+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.097 seconds
+[2024-07-24T18:52:49.930+0900] {processor.py:161} INFO - Started process (PID=21970) to work on /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:52:49.932+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/make_parquet2.py for tasks to queue
+[2024-07-24T18:52:49.932+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:52:49.932+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:52:49.939+0900] {processor.py:840} INFO - DAG(s) 'make_parquet' retrieved from /Users/DE32/airflow/dags/make_parquet2.py
+[2024-07-24T18:52:49.981+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:52:49.981+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T18:52:49.988+0900] {logging_mixin.py:188} INFO - [2024-07-24T18:52:49.987+0900] {dag.py:3947} INFO - Setting next_dagrun for make_parquet to 2024-07-24 04:10:00+00:00, run_after=2024-07-25 04:10:00+00:00
+[2024-07-24T18:52:49.995+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/make_parquet2.py took 0.066 seconds

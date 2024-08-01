@@ -1,0 +1,18 @@
+[2024-07-24T12:28:15.529+0900] {processor.py:161} INFO - Started process (PID=86497) to work on /Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/example_dags/example_params_trigger_ui.py
+[2024-07-24T12:28:15.530+0900] {processor.py:830} INFO - Processing file /Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/example_dags/example_params_trigger_ui.py for tasks to queue
+[2024-07-24T12:28:15.530+0900] {logging_mixin.py:188} INFO - [2024-07-24T12:28:15.530+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/example_dags/example_params_trigger_ui.py
+[2024-07-24T12:28:15.544+0900] {processor.py:840} INFO - DAG(s) 'example_params_trigger_ui' retrieved from /Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/example_dags/example_params_trigger_ui.py
+[2024-07-24T12:28:15.615+0900] {logging_mixin.py:188} INFO - [2024-07-24T12:28:15.614+0900] {override.py:1858} INFO - Created Permission View: can edit on DAG:example_params_trigger_ui
+[2024-07-24T12:28:15.618+0900] {logging_mixin.py:188} INFO - [2024-07-24T12:28:15.617+0900] {override.py:1858} INFO - Created Permission View: can delete on DAG:example_params_trigger_ui
+[2024-07-24T12:28:15.619+0900] {logging_mixin.py:188} INFO - [2024-07-24T12:28:15.619+0900] {override.py:1858} INFO - Created Permission View: can read on DAG:example_params_trigger_ui
+[2024-07-24T12:28:15.620+0900] {logging_mixin.py:188} INFO - [2024-07-24T12:28:15.620+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T12:28:15.649+0900] {logging_mixin.py:188} INFO - [2024-07-24T12:28:15.649+0900] {dag.py:3111} INFO - Creating ORM DAG for example_params_trigger_ui
+[2024-07-24T12:28:15.649+0900] {logging_mixin.py:188} INFO - [2024-07-24T12:28:15.649+0900] {dag.py:3947} INFO - Setting next_dagrun for example_params_trigger_ui to None, run_after=None
+[2024-07-24T12:28:15.655+0900] {processor.py:183} INFO - Processing /Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/example_dags/example_params_trigger_ui.py took 0.127 seconds
+[2024-07-24T12:29:40.393+0900] {processor.py:161} INFO - Started process (PID=86705) to work on /Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/example_dags/example_params_trigger_ui.py
+[2024-07-24T12:29:40.394+0900] {processor.py:830} INFO - Processing file /Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/example_dags/example_params_trigger_ui.py for tasks to queue
+[2024-07-24T12:29:40.394+0900] {logging_mixin.py:188} INFO - [2024-07-24T12:29:40.394+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/example_dags/example_params_trigger_ui.py
+[2024-07-24T12:29:40.409+0900] {processor.py:840} INFO - DAG(s) 'example_params_trigger_ui' retrieved from /Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/example_dags/example_params_trigger_ui.py
+[2024-07-24T12:29:40.451+0900] {logging_mixin.py:188} INFO - [2024-07-24T12:29:40.450+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T12:29:40.454+0900] {logging_mixin.py:188} INFO - [2024-07-24T12:29:40.454+0900] {dag.py:3947} INFO - Setting next_dagrun for example_params_trigger_ui to None, run_after=None
+[2024-07-24T12:29:40.461+0900] {processor.py:183} INFO - Processing /Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/example_dags/example_params_trigger_ui.py took 0.069 seconds

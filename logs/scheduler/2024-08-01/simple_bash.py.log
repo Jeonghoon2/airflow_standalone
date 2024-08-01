@@ -1,0 +1,91 @@
+[2024-08-01T10:00:04.105+0900] {processor.py:161} INFO - Started process (PID=4200) to work on /Users/DE32/airflow/dags/simple_bash.py
+[2024-08-01T10:00:04.105+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/simple_bash.py for tasks to queue
+[2024-08-01T10:00:04.105+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:00:04.105+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/simple_bash.py
+[2024-08-01T10:00:04.109+0900] {processor.py:840} INFO - DAG(s) 'simple_bash' retrieved from /Users/DE32/airflow/dags/simple_bash.py
+[2024-08-01T10:00:04.115+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:00:04.115+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-01T10:00:04.146+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:00:04.146+0900] {dag.py:3947} INFO - Setting next_dagrun for simple_bash to 2024-07-31 00:00:00+00:00, run_after=2024-08-01 00:00:00+00:00
+[2024-08-01T10:00:04.179+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/simple_bash.py took 0.076 seconds
+[2024-08-01T10:00:36.210+0900] {processor.py:161} INFO - Started process (PID=4207) to work on /Users/DE32/airflow/dags/simple_bash.py
+[2024-08-01T10:00:36.211+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/simple_bash.py for tasks to queue
+[2024-08-01T10:00:36.211+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:00:36.211+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/simple_bash.py
+[2024-08-01T10:00:36.215+0900] {processor.py:840} INFO - DAG(s) 'simple_bash' retrieved from /Users/DE32/airflow/dags/simple_bash.py
+[2024-08-01T10:00:36.363+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:00:36.363+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-01T10:00:36.370+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:00:36.370+0900] {dag.py:3947} INFO - Setting next_dagrun for simple_bash to 2024-07-31 00:00:00+00:00, run_after=2024-08-01 00:00:00+00:00
+[2024-08-01T10:00:36.379+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/simple_bash.py took 0.170 seconds
+[2024-08-01T10:01:07.269+0900] {processor.py:161} INFO - Started process (PID=4217) to work on /Users/DE32/airflow/dags/simple_bash.py
+[2024-08-01T10:01:07.269+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/simple_bash.py for tasks to queue
+[2024-08-01T10:01:07.270+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:01:07.270+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/simple_bash.py
+[2024-08-01T10:01:07.274+0900] {processor.py:840} INFO - DAG(s) 'simple_bash' retrieved from /Users/DE32/airflow/dags/simple_bash.py
+[2024-08-01T10:01:07.313+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:01:07.313+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-01T10:01:07.345+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:01:07.345+0900] {dag.py:3947} INFO - Setting next_dagrun for simple_bash to 2024-07-31 00:00:00+00:00, run_after=2024-08-01 00:00:00+00:00
+[2024-08-01T10:01:07.352+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/simple_bash.py took 0.084 seconds
+[2024-08-01T10:01:38.282+0900] {processor.py:161} INFO - Started process (PID=4241) to work on /Users/DE32/airflow/dags/simple_bash.py
+[2024-08-01T10:01:38.283+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/simple_bash.py for tasks to queue
+[2024-08-01T10:01:38.283+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:01:38.283+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/simple_bash.py
+[2024-08-01T10:01:38.287+0900] {processor.py:840} INFO - DAG(s) 'simple_bash' retrieved from /Users/DE32/airflow/dags/simple_bash.py
+[2024-08-01T10:01:38.322+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:01:38.322+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-01T10:01:38.353+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:01:38.353+0900] {dag.py:3947} INFO - Setting next_dagrun for simple_bash to 2024-07-31 00:00:00+00:00, run_after=2024-08-01 00:00:00+00:00
+[2024-08-01T10:01:38.360+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/simple_bash.py took 0.079 seconds
+[2024-08-01T10:02:09.155+0900] {processor.py:161} INFO - Started process (PID=4246) to work on /Users/DE32/airflow/dags/simple_bash.py
+[2024-08-01T10:02:09.156+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/simple_bash.py for tasks to queue
+[2024-08-01T10:02:09.156+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:02:09.156+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/simple_bash.py
+[2024-08-01T10:02:09.159+0900] {processor.py:840} INFO - DAG(s) 'simple_bash' retrieved from /Users/DE32/airflow/dags/simple_bash.py
+[2024-08-01T10:02:09.194+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:02:09.194+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-01T10:02:09.226+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:02:09.226+0900] {dag.py:3947} INFO - Setting next_dagrun for simple_bash to 2024-07-31 00:00:00+00:00, run_after=2024-08-01 00:00:00+00:00
+[2024-08-01T10:02:09.233+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/simple_bash.py took 0.078 seconds
+[2024-08-01T10:02:40.019+0900] {processor.py:161} INFO - Started process (PID=4251) to work on /Users/DE32/airflow/dags/simple_bash.py
+[2024-08-01T10:02:40.019+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/simple_bash.py for tasks to queue
+[2024-08-01T10:02:40.019+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:02:40.019+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/simple_bash.py
+[2024-08-01T10:02:40.022+0900] {processor.py:840} INFO - DAG(s) 'simple_bash' retrieved from /Users/DE32/airflow/dags/simple_bash.py
+[2024-08-01T10:02:40.058+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:02:40.058+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-01T10:02:40.090+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:02:40.090+0900] {dag.py:3947} INFO - Setting next_dagrun for simple_bash to 2024-07-31 00:00:00+00:00, run_after=2024-08-01 00:00:00+00:00
+[2024-08-01T10:02:40.097+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/simple_bash.py took 0.080 seconds
+[2024-08-01T10:03:11.645+0900] {processor.py:161} INFO - Started process (PID=4257) to work on /Users/DE32/airflow/dags/simple_bash.py
+[2024-08-01T10:03:11.645+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/simple_bash.py for tasks to queue
+[2024-08-01T10:03:11.646+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:03:11.646+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/simple_bash.py
+[2024-08-01T10:03:11.649+0900] {processor.py:840} INFO - DAG(s) 'simple_bash' retrieved from /Users/DE32/airflow/dags/simple_bash.py
+[2024-08-01T10:03:11.684+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:03:11.684+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-01T10:03:11.715+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:03:11.715+0900] {dag.py:3947} INFO - Setting next_dagrun for simple_bash to 2024-07-31 00:00:00+00:00, run_after=2024-08-01 00:00:00+00:00
+[2024-08-01T10:03:11.725+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/simple_bash.py took 0.081 seconds
+[2024-08-01T10:03:42.463+0900] {processor.py:161} INFO - Started process (PID=4265) to work on /Users/DE32/airflow/dags/simple_bash.py
+[2024-08-01T10:03:42.464+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/simple_bash.py for tasks to queue
+[2024-08-01T10:03:42.464+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:03:42.464+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/simple_bash.py
+[2024-08-01T10:03:42.468+0900] {processor.py:840} INFO - DAG(s) 'simple_bash' retrieved from /Users/DE32/airflow/dags/simple_bash.py
+[2024-08-01T10:03:42.503+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:03:42.503+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-01T10:03:42.536+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:03:42.536+0900] {dag.py:3947} INFO - Setting next_dagrun for simple_bash to 2024-07-31 00:00:00+00:00, run_after=2024-08-01 00:00:00+00:00
+[2024-08-01T10:03:42.543+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/simple_bash.py took 0.081 seconds
+[2024-08-01T10:04:13.251+0900] {processor.py:161} INFO - Started process (PID=4274) to work on /Users/DE32/airflow/dags/simple_bash.py
+[2024-08-01T10:04:13.252+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/simple_bash.py for tasks to queue
+[2024-08-01T10:04:13.252+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:04:13.252+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/simple_bash.py
+[2024-08-01T10:04:13.256+0900] {processor.py:840} INFO - DAG(s) 'simple_bash' retrieved from /Users/DE32/airflow/dags/simple_bash.py
+[2024-08-01T10:04:13.291+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:04:13.291+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-01T10:04:13.324+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:04:13.324+0900] {dag.py:3947} INFO - Setting next_dagrun for simple_bash to 2024-07-31 00:00:00+00:00, run_after=2024-08-01 00:00:00+00:00
+[2024-08-01T10:04:13.331+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/simple_bash.py took 0.081 seconds
+[2024-08-01T10:04:44.070+0900] {processor.py:161} INFO - Started process (PID=4973) to work on /Users/DE32/airflow/dags/simple_bash.py
+[2024-08-01T10:04:44.071+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/simple_bash.py for tasks to queue
+[2024-08-01T10:04:44.071+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:04:44.071+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/simple_bash.py
+[2024-08-01T10:04:44.074+0900] {processor.py:840} INFO - DAG(s) 'simple_bash' retrieved from /Users/DE32/airflow/dags/simple_bash.py
+[2024-08-01T10:04:44.111+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:04:44.111+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-01T10:04:44.144+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:04:44.144+0900] {dag.py:3947} INFO - Setting next_dagrun for simple_bash to 2024-07-31 00:00:00+00:00, run_after=2024-08-01 00:00:00+00:00
+[2024-08-01T10:04:44.151+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/simple_bash.py took 0.082 seconds
+[2024-08-01T10:05:16.748+0900] {processor.py:161} INFO - Started process (PID=4981) to work on /Users/DE32/airflow/dags/simple_bash.py
+[2024-08-01T10:05:16.749+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/simple_bash.py for tasks to queue
+[2024-08-01T10:05:16.749+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:05:16.749+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/simple_bash.py
+[2024-08-01T10:05:16.753+0900] {processor.py:840} INFO - DAG(s) 'simple_bash' retrieved from /Users/DE32/airflow/dags/simple_bash.py
+[2024-08-01T10:05:16.788+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:05:16.788+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-01T10:05:16.821+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:05:16.821+0900] {dag.py:3947} INFO - Setting next_dagrun for simple_bash to 2024-07-31 00:00:00+00:00, run_after=2024-08-01 00:00:00+00:00
+[2024-08-01T10:05:16.828+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/simple_bash.py took 0.081 seconds
+[2024-08-01T10:05:48.512+0900] {processor.py:161} INFO - Started process (PID=5356) to work on /Users/DE32/airflow/dags/simple_bash.py
+[2024-08-01T10:05:48.512+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/simple_bash.py for tasks to queue
+[2024-08-01T10:05:48.513+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:05:48.513+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/simple_bash.py
+[2024-08-01T10:05:48.516+0900] {processor.py:840} INFO - DAG(s) 'simple_bash' retrieved from /Users/DE32/airflow/dags/simple_bash.py
+[2024-08-01T10:05:48.552+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:05:48.551+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-01T10:05:48.584+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:05:48.583+0900] {dag.py:3947} INFO - Setting next_dagrun for simple_bash to 2024-07-31 00:00:00+00:00, run_after=2024-08-01 00:00:00+00:00
+[2024-08-01T10:05:48.590+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/simple_bash.py took 0.079 seconds
+[2024-08-01T10:06:19.466+0900] {processor.py:161} INFO - Started process (PID=5837) to work on /Users/DE32/airflow/dags/simple_bash.py
+[2024-08-01T10:06:19.467+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/simple_bash.py for tasks to queue
+[2024-08-01T10:06:19.467+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:06:19.467+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/simple_bash.py
+[2024-08-01T10:06:19.470+0900] {processor.py:840} INFO - DAG(s) 'simple_bash' retrieved from /Users/DE32/airflow/dags/simple_bash.py
+[2024-08-01T10:06:19.507+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:06:19.507+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-01T10:06:19.542+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:06:19.542+0900] {dag.py:3947} INFO - Setting next_dagrun for simple_bash to 2024-07-31 00:00:00+00:00, run_after=2024-08-01 00:00:00+00:00
+[2024-08-01T10:06:19.549+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/simple_bash.py took 0.084 seconds

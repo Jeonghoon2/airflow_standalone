@@ -1,0 +1,72 @@
+[2024-07-24T14:11:53.700+0900] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-24T14:11:53.708+0900] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: simple_bash.copy.log scheduled__2024-07-23T00:00:00+00:00 [queued]>
+[2024-07-24T14:11:53.710+0900] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: simple_bash.copy.log scheduled__2024-07-23T00:00:00+00:00 [queued]>
+[2024-07-24T14:11:53.710+0900] {taskinstance.py:2306} INFO - Starting attempt 2 of 2
+[2024-07-24T14:11:53.714+0900] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): copy.log> on 2024-07-23 00:00:00+00:00
+[2024-07-24T14:11:53.716+0900] {standard_task_runner.py:64} INFO - Started process 89815 to run task
+[2024-07-24T14:11:53.719+0900] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'simple_bash', 'copy.log', 'scheduled__2024-07-23T00:00:00+00:00', '--job-id', '58', '--raw', '--subdir', 'DAGS_FOLDER/simple_bash.py', '--cfg-path', '/var/folders/qv/0knwm5h50ml0skpppwpbks_r0000gp/T/tmp1klvv68s']
+[2024-07-24T14:11:53.720+0900] {standard_task_runner.py:91} INFO - Job 58: Subtask copy.log
+[2024-07-24T14:11:53.733+0900] {task_command.py:426} INFO - Running <TaskInstance: simple_bash.copy.log scheduled__2024-07-23T00:00:00+00:00 [running]> on host jeongui-MacBookPro.local
+[2024-07-24T14:11:53.755+0900] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='simple_bash' AIRFLOW_CTX_TASK_ID='copy.log' AIRFLOW_CTX_EXECUTION_DATE='2024-07-23T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-23T00:00:00+00:00'
+[2024-07-24T14:11:53.755+0900] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-24T14:11:53.761+0900] {subprocess.py:63} INFO - Tmp dir root location: /var/folders/qv/0knwm5h50ml0skpppwpbks_r0000gp/T
+[2024-07-24T14:11:53.761+0900] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', '\n            mkdir -p ~/data/20240723\n            cp ~/logs/history_20240723*.log ~/data/20240723/\n        ']
+[2024-07-24T14:11:53.764+0900] {subprocess.py:86} INFO - Output:
+[2024-07-24T14:11:53.768+0900] {subprocess.py:93} INFO - cp: /Users/DE32/logs/history_20240723*.log: No such file or directory
+[2024-07-24T14:11:53.768+0900] {subprocess.py:97} INFO - Command exited with return code 1
+[2024-07-24T14:11:53.769+0900] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-24T14:11:53.771+0900] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/operators/bash.py", line 243, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2024-07-24T14:11:53.773+0900] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=simple_bash, task_id=copy.log, run_id=scheduled__2024-07-23T00:00:00+00:00, execution_date=20240723T000000, start_date=20240724T051153, end_date=20240724T051153
+[2024-07-24T14:11:53.776+0900] {standard_task_runner.py:110} ERROR - Failed to execute job 58 for task copy.log (Bash command failed. The command returned a non-zero exit code 1.; 89815)
+[2024-07-24T14:11:53.823+0900] {local_task_job_runner.py:243} INFO - Task exited with return code 1
+[2024-07-24T14:11:53.833+0900] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-07-24T14:11:53.834+0900] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-07-24T14:34:44.200+0900] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-24T14:34:44.209+0900] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: simple_bash.copy.log scheduled__2024-07-23T00:00:00+00:00 [queued]>
+[2024-07-24T14:34:44.211+0900] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: simple_bash.copy.log scheduled__2024-07-23T00:00:00+00:00 [queued]>
+[2024-07-24T14:34:44.211+0900] {taskinstance.py:2306} INFO - Starting attempt 2 of 2
+[2024-07-24T14:34:44.216+0900] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): copy.log> on 2024-07-23 00:00:00+00:00
+[2024-07-24T14:34:44.218+0900] {standard_task_runner.py:64} INFO - Started process 92345 to run task
+[2024-07-24T14:34:44.221+0900] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'simple_bash', 'copy.log', 'scheduled__2024-07-23T00:00:00+00:00', '--job-id', '175', '--raw', '--subdir', 'DAGS_FOLDER/simple_bash.py', '--cfg-path', '/var/folders/qv/0knwm5h50ml0skpppwpbks_r0000gp/T/tmpdydnxrq_']
+[2024-07-24T14:34:44.222+0900] {standard_task_runner.py:91} INFO - Job 175: Subtask copy.log
+[2024-07-24T14:34:44.237+0900] {task_command.py:426} INFO - Running <TaskInstance: simple_bash.copy.log scheduled__2024-07-23T00:00:00+00:00 [running]> on host jeongui-MacBookPro.local
+[2024-07-24T14:34:44.258+0900] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='simple_bash' AIRFLOW_CTX_TASK_ID='copy.log' AIRFLOW_CTX_EXECUTION_DATE='2024-07-23T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-23T00:00:00+00:00'
+[2024-07-24T14:34:44.259+0900] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-24T14:34:44.264+0900] {subprocess.py:63} INFO - Tmp dir root location: /var/folders/qv/0knwm5h50ml0skpppwpbks_r0000gp/T
+[2024-07-24T14:34:44.265+0900] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', '\n            mkdir -p ~/data/20240723\n            cp ~/logs/history_20240723*.log ~/data/20240723/\n        ']
+[2024-07-24T14:34:44.267+0900] {subprocess.py:86} INFO - Output:
+[2024-07-24T14:34:44.271+0900] {subprocess.py:93} INFO - cp: /Users/DE32/logs/history_20240723*.log: No such file or directory
+[2024-07-24T14:34:44.272+0900] {subprocess.py:97} INFO - Command exited with return code 1
+[2024-07-24T14:34:44.272+0900] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-24T14:34:44.275+0900] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/operators/bash.py", line 243, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2024-07-24T14:34:44.276+0900] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=simple_bash, task_id=copy.log, run_id=scheduled__2024-07-23T00:00:00+00:00, execution_date=20240723T000000, start_date=20240724T053444, end_date=20240724T053444
+[2024-07-24T14:34:44.280+0900] {standard_task_runner.py:110} ERROR - Failed to execute job 175 for task copy.log (Bash command failed. The command returned a non-zero exit code 1.; 92345)
+[2024-07-24T14:34:44.326+0900] {local_task_job_runner.py:243} INFO - Task exited with return code 1
+[2024-07-24T14:34:44.337+0900] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-07-24T14:34:44.338+0900] {local_task_job_runner.py:222} INFO - ::endgroup::

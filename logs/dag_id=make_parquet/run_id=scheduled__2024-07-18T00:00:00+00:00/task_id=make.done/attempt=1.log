@@ -1,0 +1,42 @@
+[2024-07-24T16:08:46.605+0900] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-24T16:08:46.612+0900] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: make_parquet.make.done scheduled__2024-07-18T00:00:00+00:00 [queued]>
+[2024-07-24T16:08:46.614+0900] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: make_parquet.make.done scheduled__2024-07-18T00:00:00+00:00 [queued]>
+[2024-07-24T16:08:46.614+0900] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-07-24T16:08:46.618+0900] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): make.done> on 2024-07-18 00:00:00+00:00
+[2024-07-24T16:08:46.620+0900] {standard_task_runner.py:64} INFO - Started process 98084 to run task
+[2024-07-24T16:08:46.623+0900] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'make_parquet', 'make.done', 'scheduled__2024-07-18T00:00:00+00:00', '--job-id', '389', '--raw', '--subdir', 'DAGS_FOLDER/make_parquet.py', '--cfg-path', '/var/folders/qv/0knwm5h50ml0skpppwpbks_r0000gp/T/tmp8yjms__2']
+[2024-07-24T16:08:46.624+0900] {standard_task_runner.py:91} INFO - Job 389: Subtask make.done
+[2024-07-24T16:08:46.637+0900] {task_command.py:426} INFO - Running <TaskInstance: make_parquet.make.done scheduled__2024-07-18T00:00:00+00:00 [running]> on host jeongui-MacBookPro.local
+[2024-07-24T16:08:46.659+0900] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='make_parquet' AIRFLOW_CTX_TASK_ID='make.done' AIRFLOW_CTX_EXECUTION_DATE='2024-07-18T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-18T00:00:00+00:00'
+[2024-07-24T16:08:46.660+0900] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-24T16:08:46.666+0900] {subprocess.py:63} INFO - Tmp dir root location: /var/folders/qv/0knwm5h50ml0skpppwpbks_r0000gp/T
+[2024-07-24T16:08:46.666+0900] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', '\n            echo "make.done"\n            ']
+[2024-07-24T16:08:46.669+0900] {subprocess.py:86} INFO - Output:
+[2024-07-24T16:08:46.670+0900] {subprocess.py:93} INFO - make.done
+[2024-07-24T16:08:46.671+0900] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-07-24T16:08:46.671+0900] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-24T16:08:46.677+0900] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=make_parquet, task_id=make.done, run_id=scheduled__2024-07-18T00:00:00+00:00, execution_date=20240718T000000, start_date=20240724T070846, end_date=20240724T070846
+[2024-07-24T16:08:46.684+0900] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2024-07-24T16:08:46.689+0900] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-07-24T16:08:46.690+0900] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-07-24T16:36:55.249+0900] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-24T16:36:55.256+0900] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: make_parquet.make.done scheduled__2024-07-18T00:00:00+00:00 [queued]>
+[2024-07-24T16:36:55.258+0900] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: make_parquet.make.done scheduled__2024-07-18T00:00:00+00:00 [queued]>
+[2024-07-24T16:36:55.258+0900] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2024-07-24T16:36:55.262+0900] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): make.done> on 2024-07-18 00:00:00+00:00
+[2024-07-24T16:36:55.265+0900] {standard_task_runner.py:64} INFO - Started process 1316 to run task
+[2024-07-24T16:36:55.267+0900] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'make_parquet', 'make.done', 'scheduled__2024-07-18T00:00:00+00:00', '--job-id', '395', '--raw', '--subdir', 'DAGS_FOLDER/make_parquet.py', '--cfg-path', '/var/folders/qv/0knwm5h50ml0skpppwpbks_r0000gp/T/tmpm4lkv062']
+[2024-07-24T16:36:55.268+0900] {standard_task_runner.py:91} INFO - Job 395: Subtask make.done
+[2024-07-24T16:36:55.284+0900] {task_command.py:426} INFO - Running <TaskInstance: make_parquet.make.done scheduled__2024-07-18T00:00:00+00:00 [running]> on host jeongui-MacBookPro.local
+[2024-07-24T16:36:55.306+0900] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='make_parquet' AIRFLOW_CTX_TASK_ID='make.done' AIRFLOW_CTX_EXECUTION_DATE='2024-07-18T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-18T00:00:00+00:00'
+[2024-07-24T16:36:55.306+0900] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-24T16:36:55.312+0900] {subprocess.py:63} INFO - Tmp dir root location: /var/folders/qv/0knwm5h50ml0skpppwpbks_r0000gp/T
+[2024-07-24T16:36:55.312+0900] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', '\n        PARQUET_DONE_PATH=~/data/done/_parquet/20240718\n        mkdir -p $PARQUET_DONE_PATH\n        echo "PATH=$PARQUET_DONE_PATH"\n        touch $PARQUET_DONE_PATH/_DONE\n        ']
+[2024-07-24T16:36:55.316+0900] {subprocess.py:86} INFO - Output:
+[2024-07-24T16:36:55.320+0900] {subprocess.py:93} INFO - PATH=/Users/DE32/data/done/_parquet/20240718
+[2024-07-24T16:36:55.321+0900] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-07-24T16:36:55.321+0900] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-24T16:36:55.328+0900] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=make_parquet, task_id=make.done, run_id=scheduled__2024-07-18T00:00:00+00:00, execution_date=20240718T000000, start_date=20240724T073655, end_date=20240724T073655
+[2024-07-24T16:36:55.374+0900] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2024-07-24T16:36:55.381+0900] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-07-24T16:36:55.381+0900] {local_task_job_runner.py:222} INFO - ::endgroup::

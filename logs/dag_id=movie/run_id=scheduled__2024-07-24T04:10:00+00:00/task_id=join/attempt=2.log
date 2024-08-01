@@ -1,0 +1,35 @@
+[2024-07-31T09:26:41.766+0900] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-31T09:26:41.779+0900] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: movie.join scheduled__2024-07-24T04:10:00+00:00 [queued]>
+[2024-07-31T09:26:41.782+0900] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: movie.join scheduled__2024-07-24T04:10:00+00:00 [queued]>
+[2024-07-31T09:26:41.783+0900] {taskinstance.py:2306} INFO - Starting attempt 2 of 2
+[2024-07-31T09:26:41.788+0900] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): join> on 2024-07-24 04:10:00+00:00
+[2024-07-31T09:26:41.791+0900] {standard_task_runner.py:64} INFO - Started process 5625 to run task
+[2024-07-31T09:26:41.794+0900] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'movie', 'join', 'scheduled__2024-07-24T04:10:00+00:00', '--job-id', '685', '--raw', '--subdir', 'DAGS_FOLDER/movie.py', '--cfg-path', '/var/folders/qv/0knwm5h50ml0skpppwpbks_r0000gp/T/tmp34jb71a3']
+[2024-07-31T09:26:41.795+0900] {standard_task_runner.py:91} INFO - Job 685: Subtask join
+[2024-07-31T09:26:41.810+0900] {task_command.py:426} INFO - Running <TaskInstance: movie.join scheduled__2024-07-24T04:10:00+00:00 [running]> on host jeongui-MacBookPro.local
+[2024-07-31T09:26:41.829+0900] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='movie' AIRFLOW_CTX_TASK_ID='join' AIRFLOW_CTX_EXECUTION_DATE='2024-07-24T04:10:00+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-24T04:10:00+00:00'
+[2024-07-31T09:26:41.829+0900] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-31T09:26:41.834+0900] {subprocess.py:63} INFO - Tmp dir root location: /var/folders/qv/0knwm5h50ml0skpppwpbks_r0000gp/T
+[2024-07-31T09:26:41.834+0900] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'exit 1']
+[2024-07-31T09:26:41.837+0900] {subprocess.py:86} INFO - Output:
+[2024-07-31T09:26:41.840+0900] {subprocess.py:97} INFO - Command exited with return code 1
+[2024-07-31T09:26:41.841+0900] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-31T09:26:41.844+0900] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/operators/bash.py", line 243, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2024-07-31T09:26:41.847+0900] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=movie, task_id=join, run_id=scheduled__2024-07-24T04:10:00+00:00, execution_date=20240724T041000, start_date=20240731T002641, end_date=20240731T002641
+[2024-07-31T09:26:41.850+0900] {standard_task_runner.py:110} ERROR - Failed to execute job 685 for task join (Bash command failed. The command returned a non-zero exit code 1.; 5625)
+[2024-07-31T09:26:41.856+0900] {local_task_job_runner.py:243} INFO - Task exited with return code 1
+[2024-07-31T09:26:41.863+0900] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-07-31T09:26:41.863+0900] {local_task_job_runner.py:222} INFO - ::endgroup::

@@ -1,0 +1,40 @@
+[2024-07-24T14:14:08.976+0900] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-24T14:14:08.983+0900] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: simple_bash.copy.log scheduled__2024-07-18T00:00:00+00:00 [queued]>
+[2024-07-24T14:14:08.985+0900] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: simple_bash.copy.log scheduled__2024-07-18T00:00:00+00:00 [queued]>
+[2024-07-24T14:14:08.985+0900] {taskinstance.py:2306} INFO - Starting attempt 2 of 3
+[2024-07-24T14:14:08.989+0900] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): copy.log> on 2024-07-18 00:00:00+00:00
+[2024-07-24T14:14:08.992+0900] {standard_task_runner.py:64} INFO - Started process 89938 to run task
+[2024-07-24T14:14:08.994+0900] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'simple_bash', 'copy.log', 'scheduled__2024-07-18T00:00:00+00:00', '--job-id', '78', '--raw', '--subdir', 'DAGS_FOLDER/simple_bash.py', '--cfg-path', '/var/folders/qv/0knwm5h50ml0skpppwpbks_r0000gp/T/tmp4w7v13et']
+[2024-07-24T14:14:08.995+0900] {standard_task_runner.py:91} INFO - Job 78: Subtask copy.log
+[2024-07-24T14:14:09.009+0900] {task_command.py:426} INFO - Running <TaskInstance: simple_bash.copy.log scheduled__2024-07-18T00:00:00+00:00 [running]> on host jeongui-MacBookPro.local
+[2024-07-24T14:14:09.031+0900] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='simple_bash' AIRFLOW_CTX_TASK_ID='copy.log' AIRFLOW_CTX_EXECUTION_DATE='2024-07-18T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-18T00:00:00+00:00'
+[2024-07-24T14:14:09.031+0900] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-24T14:14:09.037+0900] {subprocess.py:63} INFO - Tmp dir root location: /var/folders/qv/0knwm5h50ml0skpppwpbks_r0000gp/T
+[2024-07-24T14:14:09.037+0900] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', '\n            mkdir -p ~/data/20240718\n            cp ~/logs/history_20240718*.log ~/data/20240718/\n        ']
+[2024-07-24T14:14:09.040+0900] {subprocess.py:86} INFO - Output:
+[2024-07-24T14:14:09.045+0900] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-07-24T14:14:09.045+0900] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-24T14:14:09.051+0900] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=simple_bash, task_id=copy.log, run_id=scheduled__2024-07-18T00:00:00+00:00, execution_date=20240718T000000, start_date=20240724T051408, end_date=20240724T051409
+[2024-07-24T14:14:09.056+0900] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2024-07-24T14:14:09.064+0900] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-07-24T14:14:09.065+0900] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-07-24T14:34:14.817+0900] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-24T14:34:14.825+0900] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: simple_bash.copy.log scheduled__2024-07-18T00:00:00+00:00 [queued]>
+[2024-07-24T14:34:14.827+0900] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: simple_bash.copy.log scheduled__2024-07-18T00:00:00+00:00 [queued]>
+[2024-07-24T14:34:14.827+0900] {taskinstance.py:2306} INFO - Starting attempt 2 of 2
+[2024-07-24T14:34:14.831+0900] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): copy.log> on 2024-07-18 00:00:00+00:00
+[2024-07-24T14:34:14.833+0900] {standard_task_runner.py:64} INFO - Started process 92320 to run task
+[2024-07-24T14:34:14.835+0900] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'simple_bash', 'copy.log', 'scheduled__2024-07-18T00:00:00+00:00', '--job-id', '170', '--raw', '--subdir', 'DAGS_FOLDER/simple_bash.py', '--cfg-path', '/var/folders/qv/0knwm5h50ml0skpppwpbks_r0000gp/T/tmpukuqxg1x']
+[2024-07-24T14:34:14.837+0900] {standard_task_runner.py:91} INFO - Job 170: Subtask copy.log
+[2024-07-24T14:34:14.850+0900] {task_command.py:426} INFO - Running <TaskInstance: simple_bash.copy.log scheduled__2024-07-18T00:00:00+00:00 [running]> on host jeongui-MacBookPro.local
+[2024-07-24T14:34:14.871+0900] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='simple_bash' AIRFLOW_CTX_TASK_ID='copy.log' AIRFLOW_CTX_EXECUTION_DATE='2024-07-18T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-18T00:00:00+00:00'
+[2024-07-24T14:34:14.871+0900] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-24T14:34:14.877+0900] {subprocess.py:63} INFO - Tmp dir root location: /var/folders/qv/0knwm5h50ml0skpppwpbks_r0000gp/T
+[2024-07-24T14:34:14.877+0900] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', '\n            mkdir -p ~/data/20240718\n            cp ~/logs/history_20240718*.log ~/data/20240718/\n        ']
+[2024-07-24T14:34:14.880+0900] {subprocess.py:86} INFO - Output:
+[2024-07-24T14:34:14.885+0900] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-07-24T14:34:14.886+0900] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-24T14:34:14.892+0900] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=simple_bash, task_id=copy.log, run_id=scheduled__2024-07-18T00:00:00+00:00, execution_date=20240718T000000, start_date=20240724T053414, end_date=20240724T053414
+[2024-07-24T14:34:14.940+0900] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2024-07-24T14:34:14.949+0900] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-07-24T14:34:14.951+0900] {local_task_job_runner.py:222} INFO - ::endgroup::

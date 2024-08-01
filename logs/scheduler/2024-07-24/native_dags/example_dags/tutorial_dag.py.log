@@ -1,0 +1,32 @@
+[2024-07-24T12:27:36.532+0900] {processor.py:161} INFO - Started process (PID=86474) to work on /Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-24T12:27:36.532+0900] {processor.py:830} INFO - Processing file /Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py for tasks to queue
+[2024-07-24T12:27:36.533+0900] {logging_mixin.py:188} INFO - [2024-07-24T12:27:36.533+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-24T12:27:36.542+0900] {processor.py:840} INFO - DAG(s) 'tutorial_dag' retrieved from /Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-24T12:27:36.605+0900] {logging_mixin.py:188} INFO - [2024-07-24T12:27:36.605+0900] {override.py:1858} INFO - Created Permission View: can read on DAG:tutorial_dag
+[2024-07-24T12:27:36.608+0900] {logging_mixin.py:188} INFO - [2024-07-24T12:27:36.608+0900] {override.py:1858} INFO - Created Permission View: can delete on DAG:tutorial_dag
+[2024-07-24T12:27:36.610+0900] {logging_mixin.py:188} INFO - [2024-07-24T12:27:36.610+0900] {override.py:1858} INFO - Created Permission View: can edit on DAG:tutorial_dag
+[2024-07-24T12:27:36.610+0900] {logging_mixin.py:188} INFO - [2024-07-24T12:27:36.610+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T12:27:36.613+0900] {logging_mixin.py:188} INFO - [2024-07-24T12:27:36.613+0900] {dag.py:3111} INFO - Creating ORM DAG for tutorial_dag
+[2024-07-24T12:27:36.613+0900] {logging_mixin.py:188} INFO - [2024-07-24T12:27:36.613+0900] {dag.py:3947} INFO - Setting next_dagrun for tutorial_dag to None, run_after=None
+[2024-07-24T12:27:36.619+0900] {processor.py:183} INFO - Processing /Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py took 0.088 seconds
+[2024-07-24T12:29:04.123+0900] {processor.py:161} INFO - Started process (PID=86627) to work on /Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-24T12:29:04.123+0900] {processor.py:830} INFO - Processing file /Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py for tasks to queue
+[2024-07-24T12:29:04.123+0900] {logging_mixin.py:188} INFO - [2024-07-24T12:29:04.123+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-24T12:29:04.133+0900] {processor.py:840} INFO - DAG(s) 'tutorial_dag' retrieved from /Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-24T12:29:04.167+0900] {logging_mixin.py:188} INFO - [2024-07-24T12:29:04.166+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T12:29:04.170+0900] {logging_mixin.py:188} INFO - [2024-07-24T12:29:04.170+0900] {dag.py:3947} INFO - Setting next_dagrun for tutorial_dag to None, run_after=None
+[2024-07-24T12:29:04.177+0900] {processor.py:183} INFO - Processing /Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py took 0.055 seconds
+[2024-07-24T12:29:59.261+0900] {processor.py:161} INFO - Started process (PID=86742) to work on /Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-24T12:29:59.262+0900] {processor.py:830} INFO - Processing file /Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py for tasks to queue
+[2024-07-24T12:29:59.262+0900] {logging_mixin.py:188} INFO - [2024-07-24T12:29:59.262+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-24T12:29:59.271+0900] {processor.py:840} INFO - DAG(s) 'tutorial_dag' retrieved from /Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-24T12:29:59.305+0900] {logging_mixin.py:188} INFO - [2024-07-24T12:29:59.304+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T12:29:59.308+0900] {logging_mixin.py:188} INFO - [2024-07-24T12:29:59.308+0900] {dag.py:3947} INFO - Setting next_dagrun for tutorial_dag to None, run_after=None
+[2024-07-24T12:29:59.315+0900] {processor.py:183} INFO - Processing /Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py took 0.055 seconds
+[2024-07-24T12:30:57.745+0900] {processor.py:161} INFO - Started process (PID=86780) to work on /Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-24T12:30:57.746+0900] {processor.py:830} INFO - Processing file /Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py for tasks to queue
+[2024-07-24T12:30:57.746+0900] {logging_mixin.py:188} INFO - [2024-07-24T12:30:57.746+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-24T12:30:57.755+0900] {processor.py:840} INFO - DAG(s) 'tutorial_dag' retrieved from /Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-07-24T12:30:57.789+0900] {logging_mixin.py:188} INFO - [2024-07-24T12:30:57.788+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T12:30:57.792+0900] {logging_mixin.py:188} INFO - [2024-07-24T12:30:57.792+0900] {dag.py:3947} INFO - Setting next_dagrun for tutorial_dag to None, run_after=None
+[2024-07-24T12:30:57.799+0900] {processor.py:183} INFO - Processing /Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py took 0.054 seconds

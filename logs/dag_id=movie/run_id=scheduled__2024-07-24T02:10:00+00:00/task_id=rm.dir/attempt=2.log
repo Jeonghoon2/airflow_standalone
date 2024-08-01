@@ -1,0 +1,40 @@
+[2024-07-31T10:32:17.887+0900] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-31T10:32:17.901+0900] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: movie.rm.dir scheduled__2024-07-24T02:10:00+00:00 [queued]>
+[2024-07-31T10:32:17.905+0900] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: movie.rm.dir scheduled__2024-07-24T02:10:00+00:00 [queued]>
+[2024-07-31T10:32:17.905+0900] {taskinstance.py:2306} INFO - Starting attempt 2 of 3
+[2024-07-31T10:32:17.911+0900] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): rm.dir> on 2024-07-24 02:10:00+00:00
+[2024-07-31T10:32:17.914+0900] {standard_task_runner.py:64} INFO - Started process 9344 to run task
+[2024-07-31T10:32:17.917+0900] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'movie', 'rm.dir', 'scheduled__2024-07-24T02:10:00+00:00', '--job-id', '691', '--raw', '--subdir', 'DAGS_FOLDER/movie.py', '--cfg-path', '/var/folders/qv/0knwm5h50ml0skpppwpbks_r0000gp/T/tmpfpdkmeyx']
+[2024-07-31T10:32:17.918+0900] {standard_task_runner.py:91} INFO - Job 691: Subtask rm.dir
+[2024-07-31T10:32:17.933+0900] {task_command.py:426} INFO - Running <TaskInstance: movie.rm.dir scheduled__2024-07-24T02:10:00+00:00 [running]> on host jeongui-MacBookPro.local
+[2024-07-31T10:32:17.953+0900] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='movie' AIRFLOW_CTX_TASK_ID='rm.dir' AIRFLOW_CTX_EXECUTION_DATE='2024-07-24T02:10:00+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-24T02:10:00+00:00'
+[2024-07-31T10:32:17.953+0900] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-31T10:32:17.959+0900] {subprocess.py:63} INFO - Tmp dir root location: /var/folders/qv/0knwm5h50ml0skpppwpbks_r0000gp/T
+[2024-07-31T10:32:17.959+0900] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'rm -rf ~/tmp/test_parquet/load_dt=20240724']
+[2024-07-31T10:32:17.962+0900] {subprocess.py:86} INFO - Output:
+[2024-07-31T10:32:17.965+0900] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-07-31T10:32:17.966+0900] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-31T10:32:17.971+0900] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=movie, task_id=rm.dir, run_id=scheduled__2024-07-24T02:10:00+00:00, execution_date=20240724T021000, start_date=20240731T013217, end_date=20240731T013217
+[2024-07-31T10:32:17.979+0900] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2024-07-31T10:32:17.987+0900] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-07-31T10:32:17.988+0900] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-07-31T19:29:13.720+0900] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-31T19:29:13.733+0900] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: movie.rm.dir scheduled__2024-07-24T02:10:00+00:00 [queued]>
+[2024-07-31T19:29:13.737+0900] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: movie.rm.dir scheduled__2024-07-24T02:10:00+00:00 [queued]>
+[2024-07-31T19:29:13.737+0900] {taskinstance.py:2306} INFO - Starting attempt 2 of 3
+[2024-07-31T19:29:13.743+0900] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): rm.dir> on 2024-07-24 02:10:00+00:00
+[2024-07-31T19:29:13.746+0900] {standard_task_runner.py:64} INFO - Started process 31166 to run task
+[2024-07-31T19:29:13.749+0900] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'movie', 'rm.dir', 'scheduled__2024-07-24T02:10:00+00:00', '--job-id', '923', '--raw', '--subdir', 'DAGS_FOLDER/movie.py', '--cfg-path', '/var/folders/qv/0knwm5h50ml0skpppwpbks_r0000gp/T/tmp9cwyitmc']
+[2024-07-31T19:29:13.750+0900] {standard_task_runner.py:91} INFO - Job 923: Subtask rm.dir
+[2024-07-31T19:29:13.765+0900] {task_command.py:426} INFO - Running <TaskInstance: movie.rm.dir scheduled__2024-07-24T02:10:00+00:00 [running]> on host jeongui-MacBookPro.local
+[2024-07-31T19:29:13.786+0900] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='movie' AIRFLOW_CTX_TASK_ID='rm.dir' AIRFLOW_CTX_EXECUTION_DATE='2024-07-24T02:10:00+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-24T02:10:00+00:00'
+[2024-07-31T19:29:13.786+0900] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-31T19:29:13.792+0900] {subprocess.py:63} INFO - Tmp dir root location: /var/folders/qv/0knwm5h50ml0skpppwpbks_r0000gp/T
+[2024-07-31T19:29:13.792+0900] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'rm -rf ~/tmp/test_parquet/load_dt=20240724']
+[2024-07-31T19:29:13.795+0900] {subprocess.py:86} INFO - Output:
+[2024-07-31T19:29:13.801+0900] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-07-31T19:29:13.801+0900] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-31T19:29:13.808+0900] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=movie, task_id=rm.dir, run_id=scheduled__2024-07-24T02:10:00+00:00, execution_date=20240724T021000, start_date=20240731T102913, end_date=20240731T102913
+[2024-07-31T19:29:13.856+0900] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2024-07-31T19:29:13.866+0900] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-07-31T19:29:13.866+0900] {local_task_job_runner.py:222} INFO - ::endgroup::

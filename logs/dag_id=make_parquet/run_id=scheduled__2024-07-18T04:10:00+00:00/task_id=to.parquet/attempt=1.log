@@ -1,0 +1,61 @@
+[2024-07-24T16:27:38.110+0900] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-24T16:27:38.117+0900] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: make_parquet.to.parquet scheduled__2024-07-18T04:10:00+00:00 [queued]>
+[2024-07-24T16:27:38.119+0900] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: make_parquet.to.parquet scheduled__2024-07-18T04:10:00+00:00 [queued]>
+[2024-07-24T16:27:38.119+0900] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2024-07-24T16:27:38.123+0900] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): to.parquet> on 2024-07-18 04:10:00+00:00
+[2024-07-24T16:27:38.125+0900] {standard_task_runner.py:64} INFO - Started process 250 to run task
+[2024-07-24T16:27:38.128+0900] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'make_parquet', 'to.parquet', 'scheduled__2024-07-18T04:10:00+00:00', '--job-id', '458', '--raw', '--subdir', 'DAGS_FOLDER/make_parquet.py', '--cfg-path', '/var/folders/qv/0knwm5h50ml0skpppwpbks_r0000gp/T/tmp42f9p9im']
+[2024-07-24T16:27:38.129+0900] {standard_task_runner.py:91} INFO - Job 458: Subtask to.parquet
+[2024-07-24T16:27:38.144+0900] {task_command.py:426} INFO - Running <TaskInstance: make_parquet.to.parquet scheduled__2024-07-18T04:10:00+00:00 [running]> on host jeongui-MacBookPro.local
+[2024-07-24T16:27:38.167+0900] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='make_parquet' AIRFLOW_CTX_TASK_ID='to.parquet' AIRFLOW_CTX_EXECUTION_DATE='2024-07-18T04:10:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-18T04:10:00+00:00'
+[2024-07-24T16:27:38.168+0900] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-24T16:27:38.174+0900] {subprocess.py:63} INFO - Tmp dir root location: /var/folders/qv/0knwm5h50ml0skpppwpbks_r0000gp/T
+[2024-07-24T16:27:38.174+0900] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', '\n        echo "to.parquet"\n\n        READ_PATH=~/data/csv/20240718/csv.csv\n        SAVE_PATH=~/data/parquet/20240718/parquet.parquet\n\n        mkdir -p $SAVE_PATH\n\n        python ~/airflow/operator/csv2parquet.py $READ_PATH $SAVE_PATH\n        ']
+[2024-07-24T16:27:38.177+0900] {subprocess.py:86} INFO - Output:
+[2024-07-24T16:27:38.180+0900] {subprocess.py:93} INFO - to.parquet
+[2024-07-24T16:27:38.593+0900] {subprocess.py:93} INFO - Traceback (most recent call last):
+[2024-07-24T16:27:38.593+0900] {subprocess.py:93} INFO -   File "/Users/DE32/airflow/operator/csv2parquet.py", line 7, in <module>
+[2024-07-24T16:27:38.593+0900] {subprocess.py:93} INFO -     df = pd.read_csv(READ_PATH,
+[2024-07-24T16:27:38.594+0900] {subprocess.py:93} INFO -          ^^^^^^^^^^^^^^^^^^^^^^
+[2024-07-24T16:27:38.594+0900] {subprocess.py:93} INFO -   File "/Users/DE32/.pyenv/versions/note/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+[2024-07-24T16:27:38.594+0900] {subprocess.py:93} INFO -     return _read(filepath_or_buffer, kwds)
+[2024-07-24T16:27:38.594+0900] {subprocess.py:93} INFO -            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2024-07-24T16:27:38.594+0900] {subprocess.py:93} INFO -   File "/Users/DE32/.pyenv/versions/note/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 620, in _read
+[2024-07-24T16:27:38.594+0900] {subprocess.py:93} INFO -     parser = TextFileReader(filepath_or_buffer, **kwds)
+[2024-07-24T16:27:38.595+0900] {subprocess.py:93} INFO -              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2024-07-24T16:27:38.595+0900] {subprocess.py:93} INFO -   File "/Users/DE32/.pyenv/versions/note/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
+[2024-07-24T16:27:38.595+0900] {subprocess.py:93} INFO -     self._engine = self._make_engine(f, self.engine)
+[2024-07-24T16:27:38.595+0900] {subprocess.py:93} INFO -                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2024-07-24T16:27:38.595+0900] {subprocess.py:93} INFO -   File "/Users/DE32/.pyenv/versions/note/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1898, in _make_engine
+[2024-07-24T16:27:38.597+0900] {subprocess.py:93} INFO -     return mapping[engine](f, **self.options)
+[2024-07-24T16:27:38.598+0900] {subprocess.py:93} INFO -            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2024-07-24T16:27:38.598+0900] {subprocess.py:93} INFO -   File "/Users/DE32/.pyenv/versions/note/lib/python3.11/site-packages/pandas/io/parsers/c_parser_wrapper.py", line 93, in __init__
+[2024-07-24T16:27:38.598+0900] {subprocess.py:93} INFO -     self._reader = parsers.TextReader(src, **kwds)
+[2024-07-24T16:27:38.598+0900] {subprocess.py:93} INFO -                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2024-07-24T16:27:38.598+0900] {subprocess.py:93} INFO -   File "parsers.pyx", line 574, in pandas._libs.parsers.TextReader.__cinit__
+[2024-07-24T16:27:38.598+0900] {subprocess.py:93} INFO -   File "parsers.pyx", line 766, in pandas._libs.parsers.TextReader._get_header
+[2024-07-24T16:27:38.598+0900] {subprocess.py:93} INFO -   File "parsers.pyx", line 874, in pandas._libs.parsers.TextReader._tokenize_rows
+[2024-07-24T16:27:38.599+0900] {subprocess.py:93} INFO -   File "parsers.pyx", line 891, in pandas._libs.parsers.TextReader._check_tokenize_status
+[2024-07-24T16:27:38.599+0900] {subprocess.py:93} INFO -   File "parsers.pyx", line 2053, in pandas._libs.parsers.raise_parser_error
+[2024-07-24T16:27:38.599+0900] {subprocess.py:93} INFO - UnicodeDecodeError: 'utf-8' codec can't decode byte 0xa3 in position 3604: invalid start byte
+[2024-07-24T16:27:38.630+0900] {subprocess.py:97} INFO - Command exited with return code 1
+[2024-07-24T16:27:38.630+0900] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-24T16:27:38.634+0900] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/operators/bash.py", line 243, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2024-07-24T16:27:38.635+0900] {taskinstance.py:1206} INFO - Marking task as UP_FOR_RETRY. dag_id=make_parquet, task_id=to.parquet, run_id=scheduled__2024-07-18T04:10:00+00:00, execution_date=20240718T041000, start_date=20240724T072738, end_date=20240724T072738
+[2024-07-24T16:27:38.639+0900] {standard_task_runner.py:110} ERROR - Failed to execute job 458 for task to.parquet (Bash command failed. The command returned a non-zero exit code 1.; 250)
+[2024-07-24T16:27:38.674+0900] {local_task_job_runner.py:243} INFO - Task exited with return code 1
+[2024-07-24T16:27:38.682+0900] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-07-24T16:27:38.682+0900] {local_task_job_runner.py:222} INFO - ::endgroup::

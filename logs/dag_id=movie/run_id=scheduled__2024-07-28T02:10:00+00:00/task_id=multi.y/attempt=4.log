@@ -1,0 +1,112 @@
+[2024-07-31T19:50:52.969+0900] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-31T19:50:52.979+0900] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: movie.multi.y scheduled__2024-07-28T02:10:00+00:00 [queued]>
+[2024-07-31T19:50:52.982+0900] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: movie.multi.y scheduled__2024-07-28T02:10:00+00:00 [queued]>
+[2024-07-31T19:50:52.982+0900] {taskinstance.py:2306} INFO - Starting attempt 4 of 5
+[2024-07-31T19:50:52.988+0900] {taskinstance.py:2330} INFO - Executing <Task(PythonVirtualenvOperator): multi.y> on 2024-07-28 02:10:00+00:00
+[2024-07-31T19:50:52.991+0900] {standard_task_runner.py:64} INFO - Started process 33264 to run task
+[2024-07-31T19:50:52.993+0900] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'movie', 'multi.y', 'scheduled__2024-07-28T02:10:00+00:00', '--job-id', '978', '--raw', '--subdir', 'DAGS_FOLDER/movie.py', '--cfg-path', '/var/folders/qv/0knwm5h50ml0skpppwpbks_r0000gp/T/tmpuob107f_']
+[2024-07-31T19:50:52.995+0900] {standard_task_runner.py:91} INFO - Job 978: Subtask multi.y
+[2024-07-31T19:50:53.009+0900] {task_command.py:426} INFO - Running <TaskInstance: movie.multi.y scheduled__2024-07-28T02:10:00+00:00 [running]> on host jeongui-MacBookPro.local
+[2024-07-31T19:50:53.031+0900] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='movie' AIRFLOW_CTX_TASK_ID='multi.y' AIRFLOW_CTX_EXECUTION_DATE='2024-07-28T02:10:00+00:00' AIRFLOW_CTX_TRY_NUMBER='4' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-28T02:10:00+00:00'
+[2024-07-31T19:50:53.031+0900] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-31T19:50:53.036+0900] {baseoperator.py:400} WARNING - PythonVirtualenvOperator.execute cannot be called outside TaskInstance!
+[2024-07-31T19:50:53.037+0900] {process_utils.py:183} INFO - Executing cmd: /Users/DE32/.pyenv/versions/3.11.9/envs/note/bin/python -m virtualenv /var/folders/qv/0knwm5h50ml0skpppwpbks_r0000gp/T/venvp_v8a2o7 --python=python
+[2024-07-31T19:50:53.039+0900] {process_utils.py:187} INFO - Output:
+[2024-07-31T19:50:53.213+0900] {process_utils.py:191} INFO - created virtual environment CPython3.11.9.final.0-64 in 117ms
+[2024-07-31T19:50:53.214+0900] {process_utils.py:191} INFO -   creator CPython3Posix(dest=/private/var/folders/qv/0knwm5h50ml0skpppwpbks_r0000gp/T/venvp_v8a2o7, clear=False, no_vcs_ignore=False, global=False)
+[2024-07-31T19:50:53.214+0900] {process_utils.py:191} INFO -   seeder FromAppData(download=False, pip=bundle, setuptools=bundle, wheel=bundle, via=copy, app_data_dir=/Users/DE32/Library/Application Support/virtualenv)
+[2024-07-31T19:50:53.214+0900] {process_utils.py:191} INFO -     added seed packages: pip==24.1.2, setuptools==70.2.0, wheel==0.43.0
+[2024-07-31T19:50:53.214+0900] {process_utils.py:191} INFO -   activators BashActivator,CShellActivator,FishActivator,NushellActivator,PowerShellActivator,PythonActivator
+[2024-07-31T19:50:53.225+0900] {process_utils.py:183} INFO - Executing cmd: /var/folders/qv/0knwm5h50ml0skpppwpbks_r0000gp/T/venvp_v8a2o7/bin/pip install -r /var/folders/qv/0knwm5h50ml0skpppwpbks_r0000gp/T/venvp_v8a2o7/requirements.txt
+[2024-07-31T19:50:53.227+0900] {process_utils.py:187} INFO - Output:
+[2024-07-31T19:50:53.962+0900] {process_utils.py:191} INFO - Collecting git+https://github.com/Jeonghoon2/movie.git@0.2/api (from -r /var/folders/qv/0knwm5h50ml0skpppwpbks_r0000gp/T/venvp_v8a2o7/requirements.txt (line 1))
+[2024-07-31T19:50:53.962+0900] {process_utils.py:191} INFO -   Cloning https://github.com/Jeonghoon2/movie.git (to revision 0.2/api) to /private/var/folders/qv/0knwm5h50ml0skpppwpbks_r0000gp/T/pip-req-build-8nihxf9b
+[2024-07-31T19:50:53.974+0900] {process_utils.py:191} INFO -   Running command git clone --filter=blob:none --quiet https://github.com/Jeonghoon2/movie.git /private/var/folders/qv/0knwm5h50ml0skpppwpbks_r0000gp/T/pip-req-build-8nihxf9b
+[2024-07-31T19:50:55.253+0900] {process_utils.py:191} INFO -   Running command git checkout -b 0.2/api --track origin/0.2/api
+[2024-07-31T19:50:55.756+0900] {process_utils.py:191} INFO -   Switched to a new branch '0.2/api'
+[2024-07-31T19:50:55.757+0900] {process_utils.py:191} INFO -   branch '0.2/api' set up to track 'origin/0.2/api'.
+[2024-07-31T19:50:55.757+0900] {process_utils.py:191} INFO -   Resolved https://github.com/Jeonghoon2/movie.git to commit c2fdd392ce95b386519b05b3bab786608cdb1c58
+[2024-07-31T19:50:55.779+0900] {process_utils.py:191} INFO -   Installing build dependencies: started
+[2024-07-31T19:50:56.659+0900] {process_utils.py:191} INFO -   Installing build dependencies: finished with status 'done'
+[2024-07-31T19:50:56.660+0900] {process_utils.py:191} INFO -   Getting requirements to build wheel: started
+[2024-07-31T19:50:56.781+0900] {process_utils.py:191} INFO -   Getting requirements to build wheel: finished with status 'done'
+[2024-07-31T19:50:56.782+0900] {process_utils.py:191} INFO -   Preparing metadata (pyproject.toml): started
+[2024-07-31T19:50:56.920+0900] {process_utils.py:191} INFO -   Preparing metadata (pyproject.toml): finished with status 'done'
+[2024-07-31T19:50:56.983+0900] {process_utils.py:191} INFO - Collecting requests>=2.32.3 (from mov==0.1.0->-r /var/folders/qv/0knwm5h50ml0skpppwpbks_r0000gp/T/venvp_v8a2o7/requirements.txt (line 1))
+[2024-07-31T19:50:56.984+0900] {process_utils.py:191} INFO -   Using cached requests-2.32.3-py3-none-any.whl.metadata (4.6 kB)
+[2024-07-31T19:50:57.048+0900] {process_utils.py:191} INFO - Collecting pandas>=2.2.2 (from mov==0.1.0->-r /var/folders/qv/0knwm5h50ml0skpppwpbks_r0000gp/T/venvp_v8a2o7/requirements.txt (line 1))
+[2024-07-31T19:50:57.049+0900] {process_utils.py:191} INFO -   Using cached pandas-2.2.2-cp311-cp311-macosx_11_0_arm64.whl.metadata (19 kB)
+[2024-07-31T19:50:57.149+0900] {process_utils.py:191} INFO - Collecting numpy>=2.0.1 (from mov==0.1.0->-r /var/folders/qv/0knwm5h50ml0skpppwpbks_r0000gp/T/venvp_v8a2o7/requirements.txt (line 1))
+[2024-07-31T19:50:57.150+0900] {process_utils.py:191} INFO -   Using cached numpy-2.0.1-cp311-cp311-macosx_14_0_arm64.whl.metadata (60 kB)
+[2024-07-31T19:50:57.199+0900] {process_utils.py:191} INFO - Collecting pyarrow>=17.0.0 (from mov==0.1.0->-r /var/folders/qv/0knwm5h50ml0skpppwpbks_r0000gp/T/venvp_v8a2o7/requirements.txt (line 1))
+[2024-07-31T19:50:57.200+0900] {process_utils.py:191} INFO -   Using cached pyarrow-17.0.0-cp311-cp311-macosx_11_0_arm64.whl.metadata (3.3 kB)
+[2024-07-31T19:50:57.221+0900] {process_utils.py:191} INFO - Collecting python-dateutil>=2.8.2 (from pandas>=2.2.2->mov==0.1.0->-r /var/folders/qv/0knwm5h50ml0skpppwpbks_r0000gp/T/venvp_v8a2o7/requirements.txt (line 1))
+[2024-07-31T19:50:57.222+0900] {process_utils.py:191} INFO -   Using cached python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+[2024-07-31T19:50:57.250+0900] {process_utils.py:191} INFO - Collecting pytz>=2020.1 (from pandas>=2.2.2->mov==0.1.0->-r /var/folders/qv/0knwm5h50ml0skpppwpbks_r0000gp/T/venvp_v8a2o7/requirements.txt (line 1))
+[2024-07-31T19:50:57.251+0900] {process_utils.py:191} INFO -   Using cached pytz-2024.1-py2.py3-none-any.whl.metadata (22 kB)
+[2024-07-31T19:50:57.265+0900] {process_utils.py:191} INFO - Collecting tzdata>=2022.7 (from pandas>=2.2.2->mov==0.1.0->-r /var/folders/qv/0knwm5h50ml0skpppwpbks_r0000gp/T/venvp_v8a2o7/requirements.txt (line 1))
+[2024-07-31T19:50:57.266+0900] {process_utils.py:191} INFO -   Using cached tzdata-2024.1-py2.py3-none-any.whl.metadata (1.4 kB)
+[2024-07-31T19:50:57.308+0900] {process_utils.py:191} INFO - Collecting charset-normalizer<4,>=2 (from requests>=2.32.3->mov==0.1.0->-r /var/folders/qv/0knwm5h50ml0skpppwpbks_r0000gp/T/venvp_v8a2o7/requirements.txt (line 1))
+[2024-07-31T19:50:57.309+0900] {process_utils.py:191} INFO -   Using cached charset_normalizer-3.3.2-cp311-cp311-macosx_11_0_arm64.whl.metadata (33 kB)
+[2024-07-31T19:50:57.322+0900] {process_utils.py:191} INFO - Collecting idna<4,>=2.5 (from requests>=2.32.3->mov==0.1.0->-r /var/folders/qv/0knwm5h50ml0skpppwpbks_r0000gp/T/venvp_v8a2o7/requirements.txt (line 1))
+[2024-07-31T19:50:57.323+0900] {process_utils.py:191} INFO -   Using cached idna-3.7-py3-none-any.whl.metadata (9.9 kB)
+[2024-07-31T19:50:57.349+0900] {process_utils.py:191} INFO - Collecting urllib3<3,>=1.21.1 (from requests>=2.32.3->mov==0.1.0->-r /var/folders/qv/0knwm5h50ml0skpppwpbks_r0000gp/T/venvp_v8a2o7/requirements.txt (line 1))
+[2024-07-31T19:50:57.350+0900] {process_utils.py:191} INFO -   Using cached urllib3-2.2.2-py3-none-any.whl.metadata (6.4 kB)
+[2024-07-31T19:50:57.378+0900] {process_utils.py:191} INFO - Collecting certifi>=2017.4.17 (from requests>=2.32.3->mov==0.1.0->-r /var/folders/qv/0knwm5h50ml0skpppwpbks_r0000gp/T/venvp_v8a2o7/requirements.txt (line 1))
+[2024-07-31T19:50:57.379+0900] {process_utils.py:191} INFO -   Using cached certifi-2024.7.4-py3-none-any.whl.metadata (2.2 kB)
+[2024-07-31T19:50:57.392+0900] {process_utils.py:191} INFO - Collecting six>=1.5 (from python-dateutil>=2.8.2->pandas>=2.2.2->mov==0.1.0->-r /var/folders/qv/0knwm5h50ml0skpppwpbks_r0000gp/T/venvp_v8a2o7/requirements.txt (line 1))
+[2024-07-31T19:50:57.393+0900] {process_utils.py:191} INFO -   Using cached six-1.16.0-py2.py3-none-any.whl.metadata (1.8 kB)
+[2024-07-31T19:50:57.396+0900] {process_utils.py:191} INFO - Using cached numpy-2.0.1-cp311-cp311-macosx_14_0_arm64.whl (5.3 MB)
+[2024-07-31T19:50:57.402+0900] {process_utils.py:191} INFO - Using cached pandas-2.2.2-cp311-cp311-macosx_11_0_arm64.whl (11.3 MB)
+[2024-07-31T19:50:57.414+0900] {process_utils.py:191} INFO - Using cached pyarrow-17.0.0-cp311-cp311-macosx_11_0_arm64.whl (27.2 MB)
+[2024-07-31T19:50:57.440+0900] {process_utils.py:191} INFO - Using cached requests-2.32.3-py3-none-any.whl (64 kB)
+[2024-07-31T19:50:57.441+0900] {process_utils.py:191} INFO - Using cached certifi-2024.7.4-py3-none-any.whl (162 kB)
+[2024-07-31T19:50:57.442+0900] {process_utils.py:191} INFO - Using cached charset_normalizer-3.3.2-cp311-cp311-macosx_11_0_arm64.whl (118 kB)
+[2024-07-31T19:50:57.443+0900] {process_utils.py:191} INFO - Using cached idna-3.7-py3-none-any.whl (66 kB)
+[2024-07-31T19:50:57.444+0900] {process_utils.py:191} INFO - Using cached python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+[2024-07-31T19:50:57.445+0900] {process_utils.py:191} INFO - Using cached pytz-2024.1-py2.py3-none-any.whl (505 kB)
+[2024-07-31T19:50:57.446+0900] {process_utils.py:191} INFO - Using cached tzdata-2024.1-py2.py3-none-any.whl (345 kB)
+[2024-07-31T19:50:57.447+0900] {process_utils.py:191} INFO - Using cached urllib3-2.2.2-py3-none-any.whl (121 kB)
+[2024-07-31T19:50:57.448+0900] {process_utils.py:191} INFO - Using cached six-1.16.0-py2.py3-none-any.whl (11 kB)
+[2024-07-31T19:50:57.490+0900] {process_utils.py:191} INFO - Building wheels for collected packages: mov
+[2024-07-31T19:50:57.503+0900] {process_utils.py:191} INFO -   Building wheel for mov (pyproject.toml): started
+[2024-07-31T19:50:57.636+0900] {process_utils.py:191} INFO -   Building wheel for mov (pyproject.toml): finished with status 'done'
+[2024-07-31T19:50:57.637+0900] {process_utils.py:191} INFO -   Created wheel for mov: filename=mov-0.1.0-py3-none-any.whl size=3056 sha256=d1d7947afedb78fcb0cc753cb5d366aec3220c6ccfa0154dc599ddd2a04f0680
+[2024-07-31T19:50:57.637+0900] {process_utils.py:191} INFO -   Stored in directory: /private/var/folders/qv/0knwm5h50ml0skpppwpbks_r0000gp/T/pip-ephem-wheel-cache-4vh9s9q9/wheels/cf/ab/a7/d0c528d20fa8a5f19e169bdf1d98f2b2cefe79d8527bb89200
+[2024-07-31T19:50:57.639+0900] {process_utils.py:191} INFO - Successfully built mov
+[2024-07-31T19:50:57.666+0900] {process_utils.py:191} INFO - Installing collected packages: pytz, urllib3, tzdata, six, numpy, idna, charset-normalizer, certifi, requests, python-dateutil, pyarrow, pandas, mov
+[2024-07-31T19:51:02.156+0900] {process_utils.py:191} INFO - Successfully installed certifi-2024.7.4 charset-normalizer-3.3.2 idna-3.7 mov-0.1.0 numpy-2.0.1 pandas-2.2.2 pyarrow-17.0.0 python-dateutil-2.9.0.post0 pytz-2024.1 requests-2.32.3 six-1.16.0 tzdata-2024.1 urllib3-2.2.2
+[2024-07-31T19:51:02.159+0900] {process_utils.py:191} INFO - 
+[2024-07-31T19:51:02.159+0900] {process_utils.py:191} INFO - [notice] A new release of pip is available: 24.1.2 -> 24.2
+[2024-07-31T19:51:02.160+0900] {process_utils.py:191} INFO - [notice] To update, run: python -m pip install --upgrade pip
+[2024-07-31T19:51:02.288+0900] {logging_mixin.py:188} WARNING - /Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/utils/context.py:212 AirflowContextDeprecationWarning: Accessing 'next_ds' from the template is deprecated and will be removed in a future version. Please use '{{ data_interval_end | ds }}' instead.
+[2024-07-31T19:51:02.288+0900] {logging_mixin.py:188} WARNING - /Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/utils/context.py:212 AirflowContextDeprecationWarning: Accessing 'next_ds_nodash' from the template is deprecated and will be removed in a future version. Please use '{{ data_interval_end | ds_nodash }}' instead.
+[2024-07-31T19:51:02.289+0900] {logging_mixin.py:188} WARNING - /Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/utils/context.py:212 AirflowContextDeprecationWarning: Accessing 'prev_ds' from the template is deprecated and will be removed in a future version.
+[2024-07-31T19:51:02.289+0900] {logging_mixin.py:188} WARNING - /Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/utils/context.py:212 AirflowContextDeprecationWarning: Accessing 'prev_ds_nodash' from the template is deprecated and will be removed in a future version.
+[2024-07-31T19:51:02.290+0900] {logging_mixin.py:188} WARNING - /Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/utils/context.py:212 AirflowContextDeprecationWarning: Accessing 'tomorrow_ds' from the template is deprecated and will be removed in a future version.
+[2024-07-31T19:51:02.290+0900] {logging_mixin.py:188} WARNING - /Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/utils/context.py:212 AirflowContextDeprecationWarning: Accessing 'tomorrow_ds_nodash' from the template is deprecated and will be removed in a future version.
+[2024-07-31T19:51:02.290+0900] {logging_mixin.py:188} WARNING - /Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/utils/context.py:212 AirflowContextDeprecationWarning: Accessing 'yesterday_ds' from the template is deprecated and will be removed in a future version.
+[2024-07-31T19:51:02.291+0900] {logging_mixin.py:188} WARNING - /Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/utils/context.py:212 AirflowContextDeprecationWarning: Accessing 'yesterday_ds_nodash' from the template is deprecated and will be removed in a future version.
+[2024-07-31T19:51:02.294+0900] {process_utils.py:183} INFO - Executing cmd: /var/folders/qv/0knwm5h50ml0skpppwpbks_r0000gp/T/venvp_v8a2o7/bin/python /var/folders/qv/0knwm5h50ml0skpppwpbks_r0000gp/T/venv-callarn2i73w/script.py /var/folders/qv/0knwm5h50ml0skpppwpbks_r0000gp/T/venv-callarn2i73w/script.in /var/folders/qv/0knwm5h50ml0skpppwpbks_r0000gp/T/venv-callarn2i73w/script.out /var/folders/qv/0knwm5h50ml0skpppwpbks_r0000gp/T/venv-callarn2i73w/string_args.txt /var/folders/qv/0knwm5h50ml0skpppwpbks_r0000gp/T/venv-callarn2i73w/termination.log
+[2024-07-31T19:51:02.296+0900] {process_utils.py:187} INFO - Output:
+[2024-07-31T19:51:17.010+0900] {process_utils.py:191} INFO - {'boxOfficeResult': {'boxofficeType': '일별 박스오피스', 'showRange': '20240728~20240728', 'dailyBoxOfficeList': [{'rnum': '1', 'rank': '1', 'rankInten': '0', 'rankOldAndNew': 'OLD', 'movieCd': '20235926', 'movieNm': '퍼펙트 데이즈', 'openDt': '2024-07-03', 'salesAmt': '31272195', 'salesShare': '35.4', 'salesInten': '-3393139', 'salesChange': '-9.8', 'salesAcc': '621719087', 'audiCnt': '3246', 'audiInten': '-285', 'audiChange': '-8.1', 'audiAcc': '65643', 'scrnCnt': '53', 'showCnt': '69'}, {'rnum': '2', 'rank': '2', 'rankInten': '0', 'rankOldAndNew': 'OLD', 'movieCd': '19960126', 'movieNm': '비포 선라이즈', 'openDt': '1996-03-30', 'salesAmt': '13726078', 'salesShare': '15.6', 'salesInten': '1972739', 'salesChange': '16.8', 'salesAcc': '669729635', 'audiCnt': '1353', 'audiInten': '224', 'audiChange': '19.8', 'audiAcc': '78172', 'scrnCnt': '36', 'showCnt': '47'}, {'rnum': '3', 'rank': '3', 'rankInten': '0', 'rankOldAndNew': 'OLD', 'movieCd': '20148830', 'movieNm': '마담 프루스트의 비밀정원', 'openDt': '2014-07-24', 'salesAmt': '7568739', 'salesShare': '8.6', 'salesInten': '-1998461', 'salesChange': '-20.9', 'salesAcc': '1312674418', 'audiCnt': '716', 'audiInten': '-146', 'audiChange': '-16.9', 'audiAcc': '166409', 'scrnCnt': '39', 'showCnt': '43'}, {'rnum': '4', 'rank': '4', 'rankInten': '0', 'rankOldAndNew': 'OLD', 'movieCd': '20247397', 'movieNm': '존 오브 인터레스트', 'openDt': '2024-06-05', 'salesAmt': '5735339', 'salesShare': '6.5', 'salesInten': '984500', 'salesChange': '20.7', 'salesAcc': '1923008014', 'audiCnt': '584', 'audiInten': '103', 'audiChange': '21.4', 'audiAcc': '193492', 'scrnCnt': '26', 'showCnt': '30'}, {'rnum': '5', 'rank': '5', 'rankInten': '5', 'rankOldAndNew': 'OLD', 'movieCd': '20234413', 'movieNm': '프렌치 수프', 'openDt': '2024-06-19', 'salesAmt': '3892000', 'salesShare': '4.4', 'salesInten': '2469500', 'salesChange': '173.6', 'salesAcc': '408221056', 'audiCnt': '441', 'audiInten': '278', 'audiChange': '170.6', 'audiAcc': '43381', 'scrnCnt': '14', 'showCnt': '16'}, {'rnum': '6', 'rank': '6', 'rankInten': '-1', 'rankOldAndNew': 'OLD', 'movieCd': '20240735', 'movieNm': '러브 라이즈 블리딩', 'openDt': '2024-07-10', 'salesAmt': '3727000', 'salesShare': '4.2', 'salesInten': '635900', 'salesChange': '20.6', 'salesAcc': '213449150', 'audiCnt': '364', 'audiInten': '76', 'audiChange': '26.4', 'audiAcc': '27519', 'scrnCnt': '25', 'showCnt': '26'}, {'rnum': '7', 'rank': '7', 'rankInten': '46', 'rankOldAndNew': 'OLD', 'movieCd': '20191801', 'movieNm': '행복한 라짜로', 'openDt': '2019-06-20', 'salesAmt': '2443100', 'salesShare': '2.8', 'salesInten': '2318600', 'salesChange': '1862.3', 'salesAcc': '138913240', 'audiCnt': '229', 'audiInten': '218', 'audiChange': '1981.8', 'audiAcc': '17302', 'scrnCnt': '8', 'showCnt': '8'}, {'rnum': '8', 'rank': '8', 'rankInten': '-1', 'rankOldAndNew': 'OLD', 'movieCd': '19978805', 'movieNm': '큐어', 'openDt': '2022-07-06', 'salesAmt': '1736900', 'salesShare': '2.0', 'salesInten': '-211100', 'salesChange': '-10.8', 'salesAcc': '299848625', 'audiCnt': '175', 'audiInten': '-19', 'audiChange': '-9.8', 'audiAcc': '28671', 'scrnCnt': '11', 'showCnt': '13'}, {'rnum': '9', 'rank': '9', 'rankInten': '6', 'rankOldAndNew': 'OLD', 'movieCd': '20236233', 'movieNm': '엄마의 왕국', 'openDt': '2024-07-24', 'salesAmt': '1549000', 'salesShare': '1.8', 'salesInten': '443000', 'salesChange': '40.1', 'salesAcc': '23982300', 'audiCnt': '167', 'audiInten': '50', 'audiChange': '42.7', 'audiAcc': '2579', 'scrnCnt': '23', 'showCnt': '27'}, {'rnum': '10', 'rank': '10', 'rankInten': '-4', 'rankOldAndNew': 'OLD', 'movieCd': '20158948', 'movieNm': '더 원더스', 'openDt': '2024-07-31', 'salesAmt': '1694100', 'salesShare': '1.9', 'salesInten': '-934100', 'salesChange': '-35.5', 'salesAcc': '7632800', 'audiCnt': '156', 'audiInten': '-86', 'audiChange': '-35.5', 'audiAcc': '757', 'scrnCnt': '8', 'showCnt': '8'}]}}
+[2024-07-31T19:51:17.011+0900] {process_utils.py:191} INFO - partitioning List : ['load_dt', 'multiMovieYn']
+[2024-07-31T19:51:17.012+0900] {process_utils.py:191} INFO -   rnum rank rankInten rankOldAndNew  ... scrnCnt showCnt   load_dt multiMovieYn
+[2024-07-31T19:51:17.012+0900] {process_utils.py:191} INFO - 0    1    1         0           OLD  ...      53      69  20240728            Y
+[2024-07-31T19:51:17.013+0900] {process_utils.py:191} INFO - 1    2    2         0           OLD  ...      36      47  20240728            Y
+[2024-07-31T19:51:17.013+0900] {process_utils.py:191} INFO - 2    3    3         0           OLD  ...      39      43  20240728            Y
+[2024-07-31T19:51:17.013+0900] {process_utils.py:191} INFO - 3    4    4         0           OLD  ...      26      30  20240728            Y
+[2024-07-31T19:51:17.014+0900] {process_utils.py:191} INFO - 4    5    5         5           OLD  ...      14      16  20240728            Y
+[2024-07-31T19:51:17.014+0900] {process_utils.py:191} INFO - 5    6    6        -1           OLD  ...      25      26  20240728            Y
+[2024-07-31T19:51:17.014+0900] {process_utils.py:191} INFO - 6    7    7        46           OLD  ...       8       8  20240728            Y
+[2024-07-31T19:51:17.015+0900] {process_utils.py:191} INFO - 7    8    8        -1           OLD  ...      11      13  20240728            Y
+[2024-07-31T19:51:17.015+0900] {process_utils.py:191} INFO - 8    9    9         6           OLD  ...      23      27  20240728            Y
+[2024-07-31T19:51:17.015+0900] {process_utils.py:191} INFO - 9   10   10        -4           OLD  ...       8       8  20240728            Y
+[2024-07-31T19:51:17.015+0900] {process_utils.py:191} INFO - 
+[2024-07-31T19:51:17.016+0900] {process_utils.py:191} INFO - [10 rows x 20 columns]
+[2024-07-31T19:51:17.462+0900] {python.py:237} INFO - Done. Returned value was: None
+[2024-07-31T19:51:17.462+0900] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-31T19:51:17.466+0900] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=movie, task_id=multi.y, run_id=scheduled__2024-07-28T02:10:00+00:00, execution_date=20240728T021000, start_date=20240731T105052, end_date=20240731T105117
+[2024-07-31T19:51:17.486+0900] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2024-07-31T19:51:17.493+0900] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-07-31T19:51:17.493+0900] {local_task_job_runner.py:222} INFO - ::endgroup::

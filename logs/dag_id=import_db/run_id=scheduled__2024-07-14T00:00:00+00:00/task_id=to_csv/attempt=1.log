@@ -1,0 +1,22 @@
+[2024-07-24T15:08:00.753+0900] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-24T15:08:00.761+0900] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: import_db.to_csv scheduled__2024-07-14T00:00:00+00:00 [queued]>
+[2024-07-24T15:08:00.763+0900] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: import_db.to_csv scheduled__2024-07-14T00:00:00+00:00 [queued]>
+[2024-07-24T15:08:00.763+0900] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-07-24T15:08:00.767+0900] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): to_csv> on 2024-07-14 00:00:00+00:00
+[2024-07-24T15:08:00.770+0900] {standard_task_runner.py:64} INFO - Started process 94648 to run task
+[2024-07-24T15:08:00.772+0900] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'import_db', 'to_csv', 'scheduled__2024-07-14T00:00:00+00:00', '--job-id', '259', '--raw', '--subdir', 'DAGS_FOLDER/import_db.py', '--cfg-path', '/var/folders/qv/0knwm5h50ml0skpppwpbks_r0000gp/T/tmpm7tylvlu']
+[2024-07-24T15:08:00.773+0900] {standard_task_runner.py:91} INFO - Job 259: Subtask to_csv
+[2024-07-24T15:08:00.787+0900] {task_command.py:426} INFO - Running <TaskInstance: import_db.to_csv scheduled__2024-07-14T00:00:00+00:00 [running]> on host jeongui-MacBookPro.local
+[2024-07-24T15:08:00.809+0900] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='import_db' AIRFLOW_CTX_TASK_ID='to_csv' AIRFLOW_CTX_EXECUTION_DATE='2024-07-14T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-14T00:00:00+00:00'
+[2024-07-24T15:08:00.809+0900] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-24T15:08:00.815+0900] {subprocess.py:63} INFO - Tmp dir root location: /var/folders/qv/0knwm5h50ml0skpppwpbks_r0000gp/T
+[2024-07-24T15:08:00.815+0900] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', '\n            echo "to.csv"\n\n            U_PATH=~/data/count/20240714/count.log\n            CSV_PATH=~/data/csv/20240714\n            CSV_FILE=~/data/csv/20240714/csv.csv\n\n            mkdir -p $CSV_PATH\n            cat $U_PATH | awk \'{print "^2024-07-14^,^" $2 "^,^" $1 "^"}\' > ${CSV_FILE}\n            echo "transfer done"\n            ']
+[2024-07-24T15:08:00.818+0900] {subprocess.py:86} INFO - Output:
+[2024-07-24T15:08:00.820+0900] {subprocess.py:93} INFO - to.csv
+[2024-07-24T15:08:00.823+0900] {subprocess.py:93} INFO - transfer done
+[2024-07-24T15:08:00.823+0900] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-07-24T15:08:00.824+0900] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-24T15:08:00.830+0900] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=import_db, task_id=to_csv, run_id=scheduled__2024-07-14T00:00:00+00:00, execution_date=20240714T000000, start_date=20240724T060800, end_date=20240724T060800
+[2024-07-24T15:08:00.878+0900] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2024-07-24T15:08:00.888+0900] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-07-24T15:08:00.889+0900] {local_task_job_runner.py:222} INFO - ::endgroup::

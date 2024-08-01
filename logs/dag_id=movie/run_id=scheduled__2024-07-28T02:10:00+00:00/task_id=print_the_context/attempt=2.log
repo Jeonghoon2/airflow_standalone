@@ -1,0 +1,152 @@
+[2024-07-29T12:31:47.204+0900] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-29T12:31:47.219+0900] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: movie.print_the_context scheduled__2024-07-28T02:10:00+00:00 [queued]>
+[2024-07-29T12:31:47.229+0900] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: movie.print_the_context scheduled__2024-07-28T02:10:00+00:00 [queued]>
+[2024-07-29T12:31:47.229+0900] {taskinstance.py:2306} INFO - Starting attempt 2 of 3
+[2024-07-29T12:31:47.235+0900] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): print_the_context> on 2024-07-28 02:10:00+00:00
+[2024-07-29T12:31:47.239+0900] {standard_task_runner.py:64} INFO - Started process 72076 to run task
+[2024-07-29T12:31:47.245+0900] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'movie', 'print_the_context', 'scheduled__2024-07-28T02:10:00+00:00', '--job-id', '526', '--raw', '--subdir', 'DAGS_FOLDER/movie.py', '--cfg-path', '/var/folders/qv/0knwm5h50ml0skpppwpbks_r0000gp/T/tmp1oacwhks']
+[2024-07-29T12:31:47.247+0900] {standard_task_runner.py:91} INFO - Job 526: Subtask print_the_context
+[2024-07-29T12:31:47.263+0900] {task_command.py:426} INFO - Running <TaskInstance: movie.print_the_context scheduled__2024-07-28T02:10:00+00:00 [running]> on host jeongui-MacBookPro.local
+[2024-07-29T12:31:47.298+0900] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='movie' AIRFLOW_CTX_TASK_ID='print_the_context' AIRFLOW_CTX_EXECUTION_DATE='2024-07-28T02:10:00+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-28T02:10:00+00:00'
+[2024-07-29T12:31:47.299+0900] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-29T12:31:47.305+0900] {logging_mixin.py:188} INFO - ::group::All kwargs
+[2024-07-29T12:31:47.308+0900] {logging_mixin.py:188} WARNING - /Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/utils/context.py:320 AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+[2024-07-29T12:31:47.308+0900] {logging_mixin.py:188} WARNING - /Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/utils/context.py:320 AirflowContextDeprecationWarning: Accessing 'next_ds' from the template is deprecated and will be removed in a future version. Please use '{{ data_interval_end | ds }}' instead.
+[2024-07-29T12:31:47.309+0900] {logging_mixin.py:188} WARNING - /Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/utils/context.py:320 AirflowContextDeprecationWarning: Accessing 'next_ds_nodash' from the template is deprecated and will be removed in a future version. Please use '{{ data_interval_end | ds_nodash }}' instead.
+[2024-07-29T12:31:47.309+0900] {logging_mixin.py:188} WARNING - /Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/utils/context.py:320 AirflowContextDeprecationWarning: Accessing 'next_execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_end' instead.
+[2024-07-29T12:31:47.309+0900] {logging_mixin.py:188} WARNING - /Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/utils/context.py:320 AirflowContextDeprecationWarning: Accessing 'prev_ds' from the template is deprecated and will be removed in a future version.
+[2024-07-29T12:31:47.310+0900] {logging_mixin.py:188} WARNING - /Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/utils/context.py:320 AirflowContextDeprecationWarning: Accessing 'prev_ds_nodash' from the template is deprecated and will be removed in a future version.
+[2024-07-29T12:31:47.310+0900] {logging_mixin.py:188} WARNING - /Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/utils/context.py:320 AirflowContextDeprecationWarning: Accessing 'prev_execution_date' from the template is deprecated and will be removed in a future version.
+[2024-07-29T12:31:47.311+0900] {logging_mixin.py:188} WARNING - /Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/utils/context.py:320 AirflowContextDeprecationWarning: Accessing 'prev_execution_date_success' from the template is deprecated and will be removed in a future version. Please use 'prev_data_interval_start_success' instead.
+[2024-07-29T12:31:47.311+0900] {logging_mixin.py:188} WARNING - /Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/utils/context.py:320 AirflowContextDeprecationWarning: Accessing 'tomorrow_ds' from the template is deprecated and will be removed in a future version.
+[2024-07-29T12:31:47.311+0900] {logging_mixin.py:188} WARNING - /Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/utils/context.py:320 AirflowContextDeprecationWarning: Accessing 'tomorrow_ds_nodash' from the template is deprecated and will be removed in a future version.
+[2024-07-29T12:31:47.313+0900] {logging_mixin.py:188} WARNING - /Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/utils/context.py:320 AirflowContextDeprecationWarning: Accessing 'yesterday_ds' from the template is deprecated and will be removed in a future version.
+[2024-07-29T12:31:47.314+0900] {logging_mixin.py:188} WARNING - /Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/utils/context.py:320 AirflowContextDeprecationWarning: Accessing 'yesterday_ds_nodash' from the template is deprecated and will be removed in a future version.
+[2024-07-29T12:31:47.314+0900] {logging_mixin.py:188} INFO - {'conf': <airflow.configuration.AirflowConfigParser object at 0x103333250>,
+ 'conn': None,
+ 'dag': <DAG: movie>,
+ 'dag_run': <DagRun movie @ 2024-07-28 02:10:00+00:00: scheduled__2024-07-28T02:10:00+00:00, state:running, queued_at: 2024-07-29 03:30:18.790219+00:00. externally triggered: False>,
+ 'data_interval_end': DateTime(2024, 7, 29, 2, 10, 0, tzinfo=Timezone('UTC')),
+ 'data_interval_start': DateTime(2024, 7, 28, 2, 10, 0, tzinfo=Timezone('UTC')),
+ 'ds_nodash': '20240728',
+ 'execution_date': <Proxy at 0x10acf9fc0 with factory functools.partial(<function lazy_mapping_from_context.<locals>._deprecated_proxy_factory at 0x108c90e00>, 'execution_date', DateTime(2024, 7, 28, 2, 10, 0, tzinfo=Timezone('UTC')))>,
+ 'expanded_ti_count': None,
+ 'inlets': [],
+ 'logical_date': DateTime(2024, 7, 28, 2, 10, 0, tzinfo=Timezone('UTC')),
+ 'macros': <module 'airflow.macros' from '/Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/macros/__init__.py'>,
+ 'map_index_template': None,
+ 'next_ds': <Proxy at 0x108cdbc80 with factory functools.partial(<function lazy_mapping_from_context.<locals>._deprecated_proxy_factory at 0x108c90e00>, 'next_ds', '2024-07-29')>,
+ 'next_ds_nodash': <Proxy at 0x10ac79f00 with factory functools.partial(<function lazy_mapping_from_context.<locals>._deprecated_proxy_factory at 0x108c90e00>, 'next_ds_nodash', '20240729')>,
+ 'next_execution_date': <Proxy at 0x108cd2340 with factory functools.partial(<function lazy_mapping_from_context.<locals>._deprecated_proxy_factory at 0x108c90e00>, 'next_execution_date', DateTime(2024, 7, 29, 2, 10, 0, tzinfo=Timezone('UTC')))>,
+ 'outlets': [],
+ 'params': {},
+ 'prev_data_interval_end_success': DateTime(2024, 7, 26, 2, 10, 0, tzinfo=Timezone('UTC')),
+ 'prev_data_interval_start_success': DateTime(2024, 7, 25, 2, 10, 0, tzinfo=Timezone('UTC')),
+ 'prev_ds': <Proxy at 0x10ad04680 with factory functools.partial(<function lazy_mapping_from_context.<locals>._deprecated_proxy_factory at 0x108c90e00>, 'prev_ds', '2024-07-27')>,
+ 'prev_ds_nodash': <Proxy at 0x10ad05440 with factory functools.partial(<function lazy_mapping_from_context.<locals>._deprecated_proxy_factory at 0x108c90e00>, 'prev_ds_nodash', '20240727')>,
+ 'prev_end_date_success': DateTime(2024, 7, 29, 3, 31, 29, 728709, tzinfo=Timezone('UTC')),
+ 'prev_execution_date': <Proxy at 0x10ad40e80 with factory functools.partial(<function lazy_mapping_from_context.<locals>._deprecated_proxy_factory at 0x108c90e00>, 'prev_execution_date', DateTime(2024, 7, 27, 2, 10, 0, tzinfo=Timezone('UTC')))>,
+ 'prev_execution_date_success': <Proxy at 0x10ad40f40 with factory functools.partial(<function lazy_mapping_from_context.<locals>._deprecated_proxy_factory at 0x108c90e00>, 'prev_execution_date_success', DateTime(2024, 7, 25, 2, 10, 0, tzinfo=Timezone('UTC')))>,
+ 'prev_start_date_success': DateTime(2024, 7, 29, 3, 30, 20, 516511, tzinfo=Timezone('UTC')),
+ 'run_id': 'scheduled__2024-07-28T02:10:00+00:00',
+ 'task': <Task(PythonOperator): print_the_context>,
+ 'task_instance': <TaskInstance: movie.print_the_context scheduled__2024-07-28T02:10:00+00:00 [running]>,
+ 'task_instance_key_str': 'movie__print_the_context__20240728',
+ 'templates_dict': None,
+ 'test_mode': False,
+ 'ti': <TaskInstance: movie.print_the_context scheduled__2024-07-28T02:10:00+00:00 [running]>,
+ 'tomorrow_ds': <Proxy at 0x10ad41000 with factory functools.partial(<function lazy_mapping_from_context.<locals>._deprecated_proxy_factory at 0x108c90e00>, 'tomorrow_ds', '2024-07-29')>,
+ 'tomorrow_ds_nodash': <Proxy at 0x10ad410c0 with factory functools.partial(<function lazy_mapping_from_context.<locals>._deprecated_proxy_factory at 0x108c90e00>, 'tomorrow_ds_nodash', '20240729')>,
+ 'triggering_dataset_events': <Proxy at 0x10ac86fc0 with factory <function _get_template_context.<locals>.get_triggering_events at 0x10ac80400>>,
+ 'ts': '2024-07-28T02:10:00+00:00',
+ 'ts_nodash': '20240728T021000',
+ 'ts_nodash_with_tz': '20240728T021000+0000',
+ 'var': {'json': None, 'value': None},
+ 'yesterday_ds': <Proxy at 0x10ad41180 with factory functools.partial(<function lazy_mapping_from_context.<locals>._deprecated_proxy_factory at 0x108c90e00>, 'yesterday_ds', '2024-07-27')>,
+ 'yesterday_ds_nodash': <Proxy at 0x10ad41240 with factory functools.partial(<function lazy_mapping_from_context.<locals>._deprecated_proxy_factory at 0x108c90e00>, 'yesterday_ds_nodash', '20240727')>}
+[2024-07-29T12:31:47.314+0900] {logging_mixin.py:188} INFO - ::endgroup::
+[2024-07-29T12:31:47.314+0900] {logging_mixin.py:188} INFO - ::group::Context variable ds
+[2024-07-29T12:31:47.314+0900] {logging_mixin.py:188} INFO - 2024-07-28
+[2024-07-29T12:31:47.315+0900] {logging_mixin.py:188} INFO - ::endgroup::
+[2024-07-29T12:31:47.315+0900] {python.py:237} INFO - Done. Returned value was: Whatever you return gets printed in the logs
+[2024-07-29T12:31:47.315+0900] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-29T12:31:47.318+0900] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=movie, task_id=print_the_context, run_id=scheduled__2024-07-28T02:10:00+00:00, execution_date=20240728T021000, start_date=20240729T033147, end_date=20240729T033147
+[2024-07-29T12:31:47.352+0900] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2024-07-29T12:31:47.361+0900] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-07-29T12:31:47.361+0900] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-07-29T16:02:23.158+0900] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-29T16:02:23.169+0900] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: movie.print_the_context scheduled__2024-07-28T02:10:00+00:00 [queued]>
+[2024-07-29T16:02:23.171+0900] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: movie.print_the_context scheduled__2024-07-28T02:10:00+00:00 [queued]>
+[2024-07-29T16:02:23.172+0900] {taskinstance.py:2306} INFO - Starting attempt 2 of 3
+[2024-07-29T16:02:23.177+0900] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): print_the_context> on 2024-07-28 02:10:00+00:00
+[2024-07-29T16:02:23.180+0900] {standard_task_runner.py:64} INFO - Started process 4733 to run task
+[2024-07-29T16:02:23.182+0900] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'movie', 'print_the_context', 'scheduled__2024-07-28T02:10:00+00:00', '--job-id', '559', '--raw', '--subdir', 'DAGS_FOLDER/movie.py', '--cfg-path', '/var/folders/qv/0knwm5h50ml0skpppwpbks_r0000gp/T/tmp1q8sdb4i']
+[2024-07-29T16:02:23.184+0900] {standard_task_runner.py:91} INFO - Job 559: Subtask print_the_context
+[2024-07-29T16:02:23.202+0900] {task_command.py:426} INFO - Running <TaskInstance: movie.print_the_context scheduled__2024-07-28T02:10:00+00:00 [running]> on host jeongui-MacBookPro.local
+[2024-07-29T16:02:23.224+0900] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='movie' AIRFLOW_CTX_TASK_ID='print_the_context' AIRFLOW_CTX_EXECUTION_DATE='2024-07-28T02:10:00+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-28T02:10:00+00:00'
+[2024-07-29T16:02:23.225+0900] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-29T16:02:23.229+0900] {logging_mixin.py:188} INFO - ::group::All kwargs
+[2024-07-29T16:02:23.232+0900] {logging_mixin.py:188} WARNING - /Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/utils/context.py:320 AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+[2024-07-29T16:02:23.232+0900] {logging_mixin.py:188} WARNING - /Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/utils/context.py:320 AirflowContextDeprecationWarning: Accessing 'next_ds' from the template is deprecated and will be removed in a future version. Please use '{{ data_interval_end | ds }}' instead.
+[2024-07-29T16:02:23.233+0900] {logging_mixin.py:188} WARNING - /Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/utils/context.py:320 AirflowContextDeprecationWarning: Accessing 'next_ds_nodash' from the template is deprecated and will be removed in a future version. Please use '{{ data_interval_end | ds_nodash }}' instead.
+[2024-07-29T16:02:23.233+0900] {logging_mixin.py:188} WARNING - /Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/utils/context.py:320 AirflowContextDeprecationWarning: Accessing 'next_execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_end' instead.
+[2024-07-29T16:02:23.234+0900] {logging_mixin.py:188} WARNING - /Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/utils/context.py:320 AirflowContextDeprecationWarning: Accessing 'prev_ds' from the template is deprecated and will be removed in a future version.
+[2024-07-29T16:02:23.234+0900] {logging_mixin.py:188} WARNING - /Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/utils/context.py:320 AirflowContextDeprecationWarning: Accessing 'prev_ds_nodash' from the template is deprecated and will be removed in a future version.
+[2024-07-29T16:02:23.234+0900] {logging_mixin.py:188} WARNING - /Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/utils/context.py:320 AirflowContextDeprecationWarning: Accessing 'prev_execution_date' from the template is deprecated and will be removed in a future version.
+[2024-07-29T16:02:23.235+0900] {logging_mixin.py:188} WARNING - /Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/utils/context.py:320 AirflowContextDeprecationWarning: Accessing 'prev_execution_date_success' from the template is deprecated and will be removed in a future version. Please use 'prev_data_interval_start_success' instead.
+[2024-07-29T16:02:23.235+0900] {logging_mixin.py:188} WARNING - /Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/utils/context.py:320 AirflowContextDeprecationWarning: Accessing 'tomorrow_ds' from the template is deprecated and will be removed in a future version.
+[2024-07-29T16:02:23.236+0900] {logging_mixin.py:188} WARNING - /Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/utils/context.py:320 AirflowContextDeprecationWarning: Accessing 'tomorrow_ds_nodash' from the template is deprecated and will be removed in a future version.
+[2024-07-29T16:02:23.238+0900] {logging_mixin.py:188} WARNING - /Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/utils/context.py:320 AirflowContextDeprecationWarning: Accessing 'yesterday_ds' from the template is deprecated and will be removed in a future version.
+[2024-07-29T16:02:23.238+0900] {logging_mixin.py:188} WARNING - /Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/utils/context.py:320 AirflowContextDeprecationWarning: Accessing 'yesterday_ds_nodash' from the template is deprecated and will be removed in a future version.
+[2024-07-29T16:02:23.238+0900] {logging_mixin.py:188} INFO - {'conf': <airflow.configuration.AirflowConfigParser object at 0x101336150>,
+ 'conn': None,
+ 'dag': <DAG: movie>,
+ 'dag_run': <DagRun movie @ 2024-07-28 02:10:00+00:00: scheduled__2024-07-28T02:10:00+00:00, state:running, queued_at: 2024-07-29 07:01:50.409031+00:00. externally triggered: False>,
+ 'data_interval_end': DateTime(2024, 7, 29, 2, 10, 0, tzinfo=Timezone('UTC')),
+ 'data_interval_start': DateTime(2024, 7, 28, 2, 10, 0, tzinfo=Timezone('UTC')),
+ 'ds_nodash': '20240728',
+ 'execution_date': <Proxy at 0x1123d6b00 with factory functools.partial(<function lazy_mapping_from_context.<locals>._deprecated_proxy_factory at 0x112412660>, 'execution_date', DateTime(2024, 7, 28, 2, 10, 0, tzinfo=Timezone('UTC')))>,
+ 'expanded_ti_count': None,
+ 'inlets': [],
+ 'logical_date': DateTime(2024, 7, 28, 2, 10, 0, tzinfo=Timezone('UTC')),
+ 'macros': <module 'airflow.macros' from '/Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/macros/__init__.py'>,
+ 'map_index_template': None,
+ 'next_ds': <Proxy at 0x1123964c0 with factory functools.partial(<function lazy_mapping_from_context.<locals>._deprecated_proxy_factory at 0x112412660>, 'next_ds', '2024-07-28')>,
+ 'next_ds_nodash': <Proxy at 0x112491400 with factory functools.partial(<function lazy_mapping_from_context.<locals>._deprecated_proxy_factory at 0x112412660>, 'next_ds_nodash', '20240728')>,
+ 'next_execution_date': <Proxy at 0x112492440 with factory functools.partial(<function lazy_mapping_from_context.<locals>._deprecated_proxy_factory at 0x112412660>, 'next_execution_date', DateTime(2024, 7, 28, 4, 10, 0, tzinfo=Timezone('UTC')))>,
+ 'outlets': [],
+ 'params': {},
+ 'prev_data_interval_end_success': None,
+ 'prev_data_interval_start_success': None,
+ 'prev_ds': <Proxy at 0x112492980 with factory functools.partial(<function lazy_mapping_from_context.<locals>._deprecated_proxy_factory at 0x112412660>, 'prev_ds', '2024-07-27')>,
+ 'prev_ds_nodash': <Proxy at 0x1124baa00 with factory functools.partial(<function lazy_mapping_from_context.<locals>._deprecated_proxy_factory at 0x112412660>, 'prev_ds_nodash', '20240727')>,
+ 'prev_end_date_success': None,
+ 'prev_execution_date': <Proxy at 0x1124baac0 with factory functools.partial(<function lazy_mapping_from_context.<locals>._deprecated_proxy_factory at 0x112412660>, 'prev_execution_date', DateTime(2024, 7, 27, 4, 10, 0, tzinfo=Timezone('UTC')))>,
+ 'prev_execution_date_success': <Proxy at 0x1124bab80 with factory functools.partial(<function lazy_mapping_from_context.<locals>._deprecated_proxy_factory at 0x112412660>, 'prev_execution_date_success', None)>,
+ 'prev_start_date_success': None,
+ 'run_id': 'scheduled__2024-07-28T02:10:00+00:00',
+ 'task': <Task(PythonOperator): print_the_context>,
+ 'task_instance': <TaskInstance: movie.print_the_context scheduled__2024-07-28T02:10:00+00:00 [running]>,
+ 'task_instance_key_str': 'movie__print_the_context__20240728',
+ 'templates_dict': None,
+ 'test_mode': False,
+ 'ti': <TaskInstance: movie.print_the_context scheduled__2024-07-28T02:10:00+00:00 [running]>,
+ 'tomorrow_ds': <Proxy at 0x1124bac40 with factory functools.partial(<function lazy_mapping_from_context.<locals>._deprecated_proxy_factory at 0x112412660>, 'tomorrow_ds', '2024-07-29')>,
+ 'tomorrow_ds_nodash': <Proxy at 0x1124bad00 with factory functools.partial(<function lazy_mapping_from_context.<locals>._deprecated_proxy_factory at 0x112412660>, 'tomorrow_ds_nodash', '20240729')>,
+ 'triggering_dataset_events': <Proxy at 0x112417740 with factory <function _get_template_context.<locals>.get_triggering_events at 0x1123c77e0>>,
+ 'ts': '2024-07-28T02:10:00+00:00',
+ 'ts_nodash': '20240728T021000',
+ 'ts_nodash_with_tz': '20240728T021000+0000',
+ 'var': {'json': None, 'value': None},
+ 'yesterday_ds': <Proxy at 0x1124badc0 with factory functools.partial(<function lazy_mapping_from_context.<locals>._deprecated_proxy_factory at 0x112412660>, 'yesterday_ds', '2024-07-27')>,
+ 'yesterday_ds_nodash': <Proxy at 0x1124bae80 with factory functools.partial(<function lazy_mapping_from_context.<locals>._deprecated_proxy_factory at 0x112412660>, 'yesterday_ds_nodash', '20240727')>}
+[2024-07-29T16:02:23.238+0900] {logging_mixin.py:188} INFO - ::endgroup::
+[2024-07-29T16:02:23.238+0900] {logging_mixin.py:188} INFO - ::group::Context variable ds
+[2024-07-29T16:02:23.239+0900] {logging_mixin.py:188} INFO - 2024-07-28
+[2024-07-29T16:02:23.239+0900] {logging_mixin.py:188} INFO - ::endgroup::
+[2024-07-29T16:02:23.239+0900] {python.py:237} INFO - Done. Returned value was: Whatever you return gets printed in the logs
+[2024-07-29T16:02:23.239+0900] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-29T16:02:23.245+0900] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=movie, task_id=print_the_context, run_id=scheduled__2024-07-28T02:10:00+00:00, execution_date=20240728T021000, start_date=20240729T070223, end_date=20240729T070223
+[2024-07-29T16:02:23.289+0900] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2024-07-29T16:02:23.298+0900] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-07-29T16:02:23.298+0900] {local_task_job_runner.py:222} INFO - ::endgroup::

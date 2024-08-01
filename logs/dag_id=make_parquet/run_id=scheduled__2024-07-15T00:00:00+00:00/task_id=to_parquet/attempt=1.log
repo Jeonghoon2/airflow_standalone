@@ -1,0 +1,22 @@
+[2024-07-24T16:07:38.380+0900] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-24T16:07:38.387+0900] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: make_parquet.to_parquet scheduled__2024-07-15T00:00:00+00:00 [queued]>
+[2024-07-24T16:07:38.389+0900] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: make_parquet.to_parquet scheduled__2024-07-15T00:00:00+00:00 [queued]>
+[2024-07-24T16:07:38.389+0900] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-07-24T16:07:38.393+0900] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): to_parquet> on 2024-07-15 00:00:00+00:00
+[2024-07-24T16:07:38.396+0900] {standard_task_runner.py:64} INFO - Started process 98018 to run task
+[2024-07-24T16:07:38.399+0900] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'make_parquet', 'to_parquet', 'scheduled__2024-07-15T00:00:00+00:00', '--job-id', '378', '--raw', '--subdir', 'DAGS_FOLDER/make_parquet.py', '--cfg-path', '/var/folders/qv/0knwm5h50ml0skpppwpbks_r0000gp/T/tmpxy20zs7r']
+[2024-07-24T16:07:38.400+0900] {standard_task_runner.py:91} INFO - Job 378: Subtask to_parquet
+[2024-07-24T16:07:38.414+0900] {task_command.py:426} INFO - Running <TaskInstance: make_parquet.to_parquet scheduled__2024-07-15T00:00:00+00:00 [running]> on host jeongui-MacBookPro.local
+[2024-07-24T16:07:38.436+0900] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='make_parquet' AIRFLOW_CTX_TASK_ID='to_parquet' AIRFLOW_CTX_EXECUTION_DATE='2024-07-15T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-15T00:00:00+00:00'
+[2024-07-24T16:07:38.437+0900] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-24T16:07:38.443+0900] {subprocess.py:63} INFO - Tmp dir root location: /var/folders/qv/0knwm5h50ml0skpppwpbks_r0000gp/T
+[2024-07-24T16:07:38.443+0900] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', '\n            echo "to.csv"\n\n            U_PATH=~/data/count/20240715/count.log\n            CSV_PATH=~/data/csv/20240715\n            CSV_FILE=~/data/csv/20240715/csv.csv\n\n            mkdir -p $CSV_PATH\n            cat $U_PATH | awk \'{print "^2024-07-15^,^" $2 "^,^" $1 "^"}\' > ${CSV_FILE}\n            echo "transfer done"\n            ']
+[2024-07-24T16:07:38.446+0900] {subprocess.py:86} INFO - Output:
+[2024-07-24T16:07:38.448+0900] {subprocess.py:93} INFO - to.csv
+[2024-07-24T16:07:38.452+0900] {subprocess.py:93} INFO - transfer done
+[2024-07-24T16:07:38.453+0900] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-07-24T16:07:38.453+0900] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-24T16:07:38.461+0900] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=make_parquet, task_id=to_parquet, run_id=scheduled__2024-07-15T00:00:00+00:00, execution_date=20240715T000000, start_date=20240724T070738, end_date=20240724T070738
+[2024-07-24T16:07:38.505+0900] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2024-07-24T16:07:38.514+0900] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-07-24T16:07:38.514+0900] {local_task_job_runner.py:222} INFO - ::endgroup::

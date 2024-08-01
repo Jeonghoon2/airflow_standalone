@@ -1,0 +1,91 @@
+[2024-08-01T10:00:02.214+0900] {processor.py:161} INFO - Started process (PID=4185) to work on /Users/DE32/airflow/dags/import_db.py
+[2024-08-01T10:00:02.214+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/import_db.py for tasks to queue
+[2024-08-01T10:00:02.215+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:00:02.214+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/import_db.py
+[2024-08-01T10:00:02.218+0900] {processor.py:840} INFO - DAG(s) 'import_db' retrieved from /Users/DE32/airflow/dags/import_db.py
+[2024-08-01T10:00:02.223+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:00:02.223+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-01T10:00:02.256+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:00:02.256+0900] {dag.py:3947} INFO - Setting next_dagrun for import_db to 2024-07-31 00:00:00+00:00, run_after=2024-08-01 00:00:00+00:00
+[2024-08-01T10:00:02.294+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/import_db.py took 0.081 seconds
+[2024-08-01T10:00:34.302+0900] {processor.py:161} INFO - Started process (PID=4206) to work on /Users/DE32/airflow/dags/import_db.py
+[2024-08-01T10:00:34.303+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/import_db.py for tasks to queue
+[2024-08-01T10:00:34.304+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:00:34.304+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/import_db.py
+[2024-08-01T10:00:34.307+0900] {processor.py:840} INFO - DAG(s) 'import_db' retrieved from /Users/DE32/airflow/dags/import_db.py
+[2024-08-01T10:00:34.398+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:00:34.398+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-01T10:00:34.404+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:00:34.404+0900] {dag.py:3947} INFO - Setting next_dagrun for import_db to 2024-07-31 00:00:00+00:00, run_after=2024-08-01 00:00:00+00:00
+[2024-08-01T10:00:34.411+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/import_db.py took 0.109 seconds
+[2024-08-01T10:01:05.906+0900] {processor.py:161} INFO - Started process (PID=4216) to work on /Users/DE32/airflow/dags/import_db.py
+[2024-08-01T10:01:05.906+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/import_db.py for tasks to queue
+[2024-08-01T10:01:05.906+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:01:05.906+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/import_db.py
+[2024-08-01T10:01:05.910+0900] {processor.py:840} INFO - DAG(s) 'import_db' retrieved from /Users/DE32/airflow/dags/import_db.py
+[2024-08-01T10:01:05.945+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:01:05.945+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-01T10:01:05.981+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:01:05.981+0900] {dag.py:3947} INFO - Setting next_dagrun for import_db to 2024-07-31 00:00:00+00:00, run_after=2024-08-01 00:00:00+00:00
+[2024-08-01T10:01:05.989+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/import_db.py took 0.084 seconds
+[2024-08-01T10:01:36.903+0900] {processor.py:161} INFO - Started process (PID=4238) to work on /Users/DE32/airflow/dags/import_db.py
+[2024-08-01T10:01:36.904+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/import_db.py for tasks to queue
+[2024-08-01T10:01:36.905+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:01:36.905+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/import_db.py
+[2024-08-01T10:01:36.908+0900] {processor.py:840} INFO - DAG(s) 'import_db' retrieved from /Users/DE32/airflow/dags/import_db.py
+[2024-08-01T10:01:36.944+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:01:36.943+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-01T10:01:36.975+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:01:36.975+0900] {dag.py:3947} INFO - Setting next_dagrun for import_db to 2024-07-31 00:00:00+00:00, run_after=2024-08-01 00:00:00+00:00
+[2024-08-01T10:01:36.982+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/import_db.py took 0.080 seconds
+[2024-08-01T10:02:07.959+0900] {processor.py:161} INFO - Started process (PID=4245) to work on /Users/DE32/airflow/dags/import_db.py
+[2024-08-01T10:02:07.960+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/import_db.py for tasks to queue
+[2024-08-01T10:02:07.960+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:02:07.960+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/import_db.py
+[2024-08-01T10:02:07.963+0900] {processor.py:840} INFO - DAG(s) 'import_db' retrieved from /Users/DE32/airflow/dags/import_db.py
+[2024-08-01T10:02:07.998+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:02:07.998+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-01T10:02:08.030+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:02:08.030+0900] {dag.py:3947} INFO - Setting next_dagrun for import_db to 2024-07-31 00:00:00+00:00, run_after=2024-08-01 00:00:00+00:00
+[2024-08-01T10:02:08.037+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/import_db.py took 0.079 seconds
+[2024-08-01T10:02:39.067+0900] {processor.py:161} INFO - Started process (PID=4250) to work on /Users/DE32/airflow/dags/import_db.py
+[2024-08-01T10:02:39.067+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/import_db.py for tasks to queue
+[2024-08-01T10:02:39.067+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:02:39.067+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/import_db.py
+[2024-08-01T10:02:39.070+0900] {processor.py:840} INFO - DAG(s) 'import_db' retrieved from /Users/DE32/airflow/dags/import_db.py
+[2024-08-01T10:02:39.105+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:02:39.105+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-01T10:02:39.137+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:02:39.137+0900] {dag.py:3947} INFO - Setting next_dagrun for import_db to 2024-07-31 00:00:00+00:00, run_after=2024-08-01 00:00:00+00:00
+[2024-08-01T10:02:39.144+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/import_db.py took 0.078 seconds
+[2024-08-01T10:03:10.163+0900] {processor.py:161} INFO - Started process (PID=4255) to work on /Users/DE32/airflow/dags/import_db.py
+[2024-08-01T10:03:10.164+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/import_db.py for tasks to queue
+[2024-08-01T10:03:10.164+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:03:10.164+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/import_db.py
+[2024-08-01T10:03:10.167+0900] {processor.py:840} INFO - DAG(s) 'import_db' retrieved from /Users/DE32/airflow/dags/import_db.py
+[2024-08-01T10:03:10.202+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:03:10.202+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-01T10:03:10.234+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:03:10.234+0900] {dag.py:3947} INFO - Setting next_dagrun for import_db to 2024-07-31 00:00:00+00:00, run_after=2024-08-01 00:00:00+00:00
+[2024-08-01T10:03:10.240+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/import_db.py took 0.078 seconds
+[2024-08-01T10:03:41.022+0900] {processor.py:161} INFO - Started process (PID=4264) to work on /Users/DE32/airflow/dags/import_db.py
+[2024-08-01T10:03:41.023+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/import_db.py for tasks to queue
+[2024-08-01T10:03:41.023+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:03:41.023+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/import_db.py
+[2024-08-01T10:03:41.027+0900] {processor.py:840} INFO - DAG(s) 'import_db' retrieved from /Users/DE32/airflow/dags/import_db.py
+[2024-08-01T10:03:41.063+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:03:41.063+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-01T10:03:41.094+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:03:41.094+0900] {dag.py:3947} INFO - Setting next_dagrun for import_db to 2024-07-31 00:00:00+00:00, run_after=2024-08-01 00:00:00+00:00
+[2024-08-01T10:03:41.101+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/import_db.py took 0.080 seconds
+[2024-08-01T10:04:11.898+0900] {processor.py:161} INFO - Started process (PID=4273) to work on /Users/DE32/airflow/dags/import_db.py
+[2024-08-01T10:04:11.899+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/import_db.py for tasks to queue
+[2024-08-01T10:04:11.900+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:04:11.900+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/import_db.py
+[2024-08-01T10:04:11.903+0900] {processor.py:840} INFO - DAG(s) 'import_db' retrieved from /Users/DE32/airflow/dags/import_db.py
+[2024-08-01T10:04:11.938+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:04:11.938+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-01T10:04:11.970+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:04:11.970+0900] {dag.py:3947} INFO - Setting next_dagrun for import_db to 2024-07-31 00:00:00+00:00, run_after=2024-08-01 00:00:00+00:00
+[2024-08-01T10:04:11.977+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/import_db.py took 0.080 seconds
+[2024-08-01T10:04:42.743+0900] {processor.py:161} INFO - Started process (PID=4970) to work on /Users/DE32/airflow/dags/import_db.py
+[2024-08-01T10:04:42.744+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/import_db.py for tasks to queue
+[2024-08-01T10:04:42.744+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:04:42.744+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/import_db.py
+[2024-08-01T10:04:42.748+0900] {processor.py:840} INFO - DAG(s) 'import_db' retrieved from /Users/DE32/airflow/dags/import_db.py
+[2024-08-01T10:04:42.785+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:04:42.785+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-01T10:04:42.820+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:04:42.820+0900] {dag.py:3947} INFO - Setting next_dagrun for import_db to 2024-07-31 00:00:00+00:00, run_after=2024-08-01 00:00:00+00:00
+[2024-08-01T10:04:42.827+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/import_db.py took 0.084 seconds
+[2024-08-01T10:05:14.917+0900] {processor.py:161} INFO - Started process (PID=4980) to work on /Users/DE32/airflow/dags/import_db.py
+[2024-08-01T10:05:14.918+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/import_db.py for tasks to queue
+[2024-08-01T10:05:14.918+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:05:14.918+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/import_db.py
+[2024-08-01T10:05:14.922+0900] {processor.py:840} INFO - DAG(s) 'import_db' retrieved from /Users/DE32/airflow/dags/import_db.py
+[2024-08-01T10:05:14.959+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:05:14.959+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-01T10:05:14.992+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:05:14.992+0900] {dag.py:3947} INFO - Setting next_dagrun for import_db to 2024-07-31 00:00:00+00:00, run_after=2024-08-01 00:00:00+00:00
+[2024-08-01T10:05:14.999+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/import_db.py took 0.083 seconds
+[2024-08-01T10:05:45.731+0900] {processor.py:161} INFO - Started process (PID=5355) to work on /Users/DE32/airflow/dags/import_db.py
+[2024-08-01T10:05:45.732+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/import_db.py for tasks to queue
+[2024-08-01T10:05:45.732+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:05:45.732+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/import_db.py
+[2024-08-01T10:05:45.735+0900] {processor.py:840} INFO - DAG(s) 'import_db' retrieved from /Users/DE32/airflow/dags/import_db.py
+[2024-08-01T10:05:45.771+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:05:45.771+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-01T10:05:45.803+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:05:45.803+0900] {dag.py:3947} INFO - Setting next_dagrun for import_db to 2024-07-31 00:00:00+00:00, run_after=2024-08-01 00:00:00+00:00
+[2024-08-01T10:05:45.810+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/import_db.py took 0.080 seconds
+[2024-08-01T10:06:16.775+0900] {processor.py:161} INFO - Started process (PID=5834) to work on /Users/DE32/airflow/dags/import_db.py
+[2024-08-01T10:06:16.776+0900] {processor.py:830} INFO - Processing file /Users/DE32/airflow/dags/import_db.py for tasks to queue
+[2024-08-01T10:06:16.776+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:06:16.776+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/airflow/dags/import_db.py
+[2024-08-01T10:06:16.780+0900] {processor.py:840} INFO - DAG(s) 'import_db' retrieved from /Users/DE32/airflow/dags/import_db.py
+[2024-08-01T10:06:16.817+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:06:16.816+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-01T10:06:16.851+0900] {logging_mixin.py:188} INFO - [2024-08-01T10:06:16.851+0900] {dag.py:3947} INFO - Setting next_dagrun for import_db to 2024-07-31 00:00:00+00:00, run_after=2024-08-01 00:00:00+00:00
+[2024-08-01T10:06:16.858+0900] {processor.py:183} INFO - Processing /Users/DE32/airflow/dags/import_db.py took 0.083 seconds

@@ -1,0 +1,58 @@
+[2024-07-24T14:15:09.305+0900] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-24T14:15:09.315+0900] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: simple_bash.cut.log scheduled__2024-07-12T00:00:00+00:00 [queued]>
+[2024-07-24T14:15:09.317+0900] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: simple_bash.cut.log scheduled__2024-07-12T00:00:00+00:00 [queued]>
+[2024-07-24T14:15:09.317+0900] {taskinstance.py:2306} INFO - Starting attempt 2 of 3
+[2024-07-24T14:15:09.322+0900] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): cut.log> on 2024-07-12 00:00:00+00:00
+[2024-07-24T14:15:09.324+0900] {standard_task_runner.py:64} INFO - Started process 90226 to run task
+[2024-07-24T14:15:09.328+0900] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'simple_bash', 'cut.log', 'scheduled__2024-07-12T00:00:00+00:00', '--job-id', '88', '--raw', '--subdir', 'DAGS_FOLDER/simple_bash.py', '--cfg-path', '/var/folders/qv/0knwm5h50ml0skpppwpbks_r0000gp/T/tmpb04xddam']
+[2024-07-24T14:15:09.329+0900] {standard_task_runner.py:91} INFO - Job 88: Subtask cut.log
+[2024-07-24T14:15:09.344+0900] {task_command.py:426} INFO - Running <TaskInstance: simple_bash.cut.log scheduled__2024-07-12T00:00:00+00:00 [running]> on host jeongui-MacBookPro.local
+[2024-07-24T14:15:09.369+0900] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='simple_bash' AIRFLOW_CTX_TASK_ID='cut.log' AIRFLOW_CTX_EXECUTION_DATE='2024-07-12T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-12T00:00:00+00:00'
+[2024-07-24T14:15:09.369+0900] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-24T14:15:09.376+0900] {subprocess.py:63} INFO - Tmp dir root location: /var/folders/qv/0knwm5h50ml0skpppwpbks_r0000gp/T
+[2024-07-24T14:15:09.377+0900] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', '\n            echo "cut"\n\t\t\tmkdir -p ~/data/cut/20240712\n\t\t\tcat ~/data/20240712/*.log | cut -d\' \' -f1 > ~/data/cut/20240712/cut.log\n        ']
+[2024-07-24T14:15:09.380+0900] {subprocess.py:86} INFO - Output:
+[2024-07-24T14:15:09.381+0900] {subprocess.py:93} INFO - cut
+[2024-07-24T14:15:09.384+0900] {subprocess.py:93} INFO - cut: stdin: Illegal byte sequence
+[2024-07-24T14:15:09.385+0900] {subprocess.py:97} INFO - Command exited with return code 1
+[2024-07-24T14:15:09.385+0900] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-24T14:15:09.388+0900] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/operators/bash.py", line 243, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2024-07-24T14:15:09.391+0900] {taskinstance.py:1206} INFO - Marking task as UP_FOR_RETRY. dag_id=simple_bash, task_id=cut.log, run_id=scheduled__2024-07-12T00:00:00+00:00, execution_date=20240712T000000, start_date=20240724T051509, end_date=20240724T051509
+[2024-07-24T14:15:09.395+0900] {standard_task_runner.py:110} ERROR - Failed to execute job 88 for task cut.log (Bash command failed. The command returned a non-zero exit code 1.; 90226)
+[2024-07-24T14:15:09.425+0900] {local_task_job_runner.py:243} INFO - Task exited with return code 1
+[2024-07-24T14:15:09.433+0900] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-07-24T14:15:09.433+0900] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-07-24T14:34:51.615+0900] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-24T14:34:51.623+0900] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: simple_bash.cut.log scheduled__2024-07-12T00:00:00+00:00 [queued]>
+[2024-07-24T14:34:51.626+0900] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: simple_bash.cut.log scheduled__2024-07-12T00:00:00+00:00 [queued]>
+[2024-07-24T14:34:51.626+0900] {taskinstance.py:2306} INFO - Starting attempt 2 of 2
+[2024-07-24T14:34:51.630+0900] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): cut.log> on 2024-07-12 00:00:00+00:00
+[2024-07-24T14:34:51.633+0900] {standard_task_runner.py:64} INFO - Started process 92407 to run task
+[2024-07-24T14:34:51.635+0900] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'simple_bash', 'cut.log', 'scheduled__2024-07-12T00:00:00+00:00', '--job-id', '176', '--raw', '--subdir', 'DAGS_FOLDER/simple_bash.py', '--cfg-path', '/var/folders/qv/0knwm5h50ml0skpppwpbks_r0000gp/T/tmp_3tx6402']
+[2024-07-24T14:34:51.636+0900] {standard_task_runner.py:91} INFO - Job 176: Subtask cut.log
+[2024-07-24T14:34:51.650+0900] {task_command.py:426} INFO - Running <TaskInstance: simple_bash.cut.log scheduled__2024-07-12T00:00:00+00:00 [running]> on host jeongui-MacBookPro.local
+[2024-07-24T14:34:51.671+0900] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='simple_bash' AIRFLOW_CTX_TASK_ID='cut.log' AIRFLOW_CTX_EXECUTION_DATE='2024-07-12T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-12T00:00:00+00:00'
+[2024-07-24T14:34:51.672+0900] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-24T14:34:51.677+0900] {subprocess.py:63} INFO - Tmp dir root location: /var/folders/qv/0knwm5h50ml0skpppwpbks_r0000gp/T
+[2024-07-24T14:34:51.678+0900] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', '\n            echo "cut"\n\t\t\tLANG=C\n\t\t\tmkdir -p ~/data/cut/20240712\n\t\t\tcat ~/data/20240712/*.log | cut -d\' \' -f1 > ~/data/cut/20240712/cut.log\n        ']
+[2024-07-24T14:34:51.681+0900] {subprocess.py:86} INFO - Output:
+[2024-07-24T14:34:51.682+0900] {subprocess.py:93} INFO - cut
+[2024-07-24T14:34:51.686+0900] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-07-24T14:34:51.686+0900] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-24T14:34:51.692+0900] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=simple_bash, task_id=cut.log, run_id=scheduled__2024-07-12T00:00:00+00:00, execution_date=20240712T000000, start_date=20240724T053451, end_date=20240724T053451
+[2024-07-24T14:34:51.741+0900] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2024-07-24T14:34:51.752+0900] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-07-24T14:34:51.752+0900] {local_task_job_runner.py:222} INFO - ::endgroup::

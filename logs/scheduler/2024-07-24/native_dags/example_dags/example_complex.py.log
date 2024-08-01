@@ -1,0 +1,18 @@
+[2024-07-24T12:28:37.059+0900] {processor.py:161} INFO - Started process (PID=86518) to work on /Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/example_dags/example_complex.py
+[2024-07-24T12:28:37.059+0900] {processor.py:830} INFO - Processing file /Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2024-07-24T12:28:37.059+0900] {logging_mixin.py:188} INFO - [2024-07-24T12:28:37.059+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/example_dags/example_complex.py
+[2024-07-24T12:28:37.064+0900] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/example_dags/example_complex.py
+[2024-07-24T12:28:37.133+0900] {logging_mixin.py:188} INFO - [2024-07-24T12:28:37.133+0900] {override.py:1858} INFO - Created Permission View: can delete on DAG:example_complex
+[2024-07-24T12:28:37.136+0900] {logging_mixin.py:188} INFO - [2024-07-24T12:28:37.135+0900] {override.py:1858} INFO - Created Permission View: can edit on DAG:example_complex
+[2024-07-24T12:28:37.137+0900] {logging_mixin.py:188} INFO - [2024-07-24T12:28:37.137+0900] {override.py:1858} INFO - Created Permission View: can read on DAG:example_complex
+[2024-07-24T12:28:37.137+0900] {logging_mixin.py:188} INFO - [2024-07-24T12:28:37.137+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T12:28:37.141+0900] {logging_mixin.py:188} INFO - [2024-07-24T12:28:37.141+0900] {dag.py:3111} INFO - Creating ORM DAG for example_complex
+[2024-07-24T12:28:37.141+0900] {logging_mixin.py:188} INFO - [2024-07-24T12:28:37.141+0900] {dag.py:3947} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2024-07-24T12:28:37.147+0900] {processor.py:183} INFO - Processing /Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/example_dags/example_complex.py took 0.089 seconds
+[2024-07-24T12:30:28.562+0900] {processor.py:161} INFO - Started process (PID=86760) to work on /Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/example_dags/example_complex.py
+[2024-07-24T12:30:28.563+0900] {processor.py:830} INFO - Processing file /Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2024-07-24T12:30:28.563+0900] {logging_mixin.py:188} INFO - [2024-07-24T12:30:28.563+0900] {dagbag.py:545} INFO - Filling up the DagBag from /Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/example_dags/example_complex.py
+[2024-07-24T12:30:28.567+0900] {processor.py:840} INFO - DAG(s) 'example_complex' retrieved from /Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/example_dags/example_complex.py
+[2024-07-24T12:30:28.606+0900] {logging_mixin.py:188} INFO - [2024-07-24T12:30:28.606+0900] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-07-24T12:30:28.610+0900] {logging_mixin.py:188} INFO - [2024-07-24T12:30:28.609+0900] {dag.py:3947} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2024-07-24T12:30:28.616+0900] {processor.py:183} INFO - Processing /Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/example_dags/example_complex.py took 0.055 seconds

@@ -1,0 +1,63 @@
+[2024-07-31T09:22:11.685+0900] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-31T09:22:11.697+0900] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: movie.branch.op scheduled__2024-07-29T02:10:00+00:00 [queued]>
+[2024-07-31T09:22:11.702+0900] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: movie.branch.op scheduled__2024-07-29T02:10:00+00:00 [queued]>
+[2024-07-31T09:22:11.702+0900] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2024-07-31T09:22:11.707+0900] {taskinstance.py:2330} INFO - Executing <Task(BranchPythonOperator): branch.op> on 2024-07-29 02:10:00+00:00
+[2024-07-31T09:22:11.710+0900] {standard_task_runner.py:64} INFO - Started process 3787 to run task
+[2024-07-31T09:22:11.712+0900] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'movie', 'branch.op', 'scheduled__2024-07-29T02:10:00+00:00', '--job-id', '673', '--raw', '--subdir', 'DAGS_FOLDER/movie.py', '--cfg-path', '/var/folders/qv/0knwm5h50ml0skpppwpbks_r0000gp/T/tmp580crfm3']
+[2024-07-31T09:22:11.714+0900] {standard_task_runner.py:91} INFO - Job 673: Subtask branch.op
+[2024-07-31T09:22:11.729+0900] {task_command.py:426} INFO - Running <TaskInstance: movie.branch.op scheduled__2024-07-29T02:10:00+00:00 [running]> on host jeongui-MacBookPro.local
+[2024-07-31T09:22:11.750+0900] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='movie' AIRFLOW_CTX_TASK_ID='branch.op' AIRFLOW_CTX_EXECUTION_DATE='2024-07-29T02:10:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-29T02:10:00+00:00'
+[2024-07-31T09:22:11.750+0900] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-31T09:22:11.756+0900] {baseoperator.py:400} WARNING - BranchPythonOperator.execute cannot be called outside TaskInstance!
+[2024-07-31T09:22:11.756+0900] {python.py:237} INFO - Done. Returned value was: ('get.data', 'echo.task')
+[2024-07-31T09:22:11.756+0900] {branch.py:36} INFO - Branch into ('get.data', 'echo.task')
+[2024-07-31T09:22:11.756+0900] {skipmixin.py:178} INFO - Following branch ('get.data', 'echo.task')
+[2024-07-31T09:22:11.759+0900] {skipmixin.py:246} INFO - Skipping tasks [('rm.dir', -1)]
+[2024-07-31T09:22:11.763+0900] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-31T09:22:11.766+0900] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=movie, task_id=branch.op, run_id=scheduled__2024-07-29T02:10:00+00:00, execution_date=20240729T021000, start_date=20240731T002211, end_date=20240731T002211
+[2024-07-31T09:22:11.771+0900] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2024-07-31T09:22:11.785+0900] {taskinstance.py:3503} INFO - 2 downstream tasks scheduled from follow-on schedule check
+[2024-07-31T09:22:11.786+0900] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-07-31T10:38:13.380+0900] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-31T10:38:13.390+0900] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: movie.branch.op scheduled__2024-07-29T02:10:00+00:00 [queued]>
+[2024-07-31T10:38:13.393+0900] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: movie.branch.op scheduled__2024-07-29T02:10:00+00:00 [queued]>
+[2024-07-31T10:38:13.393+0900] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2024-07-31T10:38:13.399+0900] {taskinstance.py:2330} INFO - Executing <Task(BranchPythonOperator): branch.op> on 2024-07-29 02:10:00+00:00
+[2024-07-31T10:38:13.402+0900] {standard_task_runner.py:64} INFO - Started process 9652 to run task
+[2024-07-31T10:38:13.404+0900] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'movie', 'branch.op', 'scheduled__2024-07-29T02:10:00+00:00', '--job-id', '713', '--raw', '--subdir', 'DAGS_FOLDER/movie.py', '--cfg-path', '/var/folders/qv/0knwm5h50ml0skpppwpbks_r0000gp/T/tmp2zdaxn33']
+[2024-07-31T10:38:13.406+0900] {standard_task_runner.py:91} INFO - Job 713: Subtask branch.op
+[2024-07-31T10:38:13.420+0900] {task_command.py:426} INFO - Running <TaskInstance: movie.branch.op scheduled__2024-07-29T02:10:00+00:00 [running]> on host jeongui-MacBookPro.local
+[2024-07-31T10:38:13.440+0900] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='movie' AIRFLOW_CTX_TASK_ID='branch.op' AIRFLOW_CTX_EXECUTION_DATE='2024-07-29T02:10:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-29T02:10:00+00:00'
+[2024-07-31T10:38:13.441+0900] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-31T10:38:13.446+0900] {baseoperator.py:400} WARNING - BranchPythonOperator.execute cannot be called outside TaskInstance!
+[2024-07-31T10:38:13.446+0900] {python.py:237} INFO - Done. Returned value was: rm.dir
+[2024-07-31T10:38:13.446+0900] {branch.py:36} INFO - Branch into rm.dir
+[2024-07-31T10:38:13.447+0900] {skipmixin.py:178} INFO - Following branch rm.dir
+[2024-07-31T10:38:13.449+0900] {skipmixin.py:246} INFO - Skipping tasks [('echo.task', -1)]
+[2024-07-31T10:38:13.453+0900] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-31T10:38:13.456+0900] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=movie, task_id=branch.op, run_id=scheduled__2024-07-29T02:10:00+00:00, execution_date=20240729T021000, start_date=20240731T013813, end_date=20240731T013813
+[2024-07-31T10:38:13.467+0900] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2024-07-31T10:38:13.477+0900] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-07-31T10:38:13.477+0900] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-07-31T16:43:43.024+0900] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-31T16:43:43.038+0900] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: movie.branch.op scheduled__2024-07-29T02:10:00+00:00 [queued]>
+[2024-07-31T16:43:43.042+0900] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: movie.branch.op scheduled__2024-07-29T02:10:00+00:00 [queued]>
+[2024-07-31T16:43:43.042+0900] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2024-07-31T16:43:43.050+0900] {taskinstance.py:2330} INFO - Executing <Task(BranchPythonOperator): branch.op> on 2024-07-29 02:10:00+00:00
+[2024-07-31T16:43:43.054+0900] {standard_task_runner.py:64} INFO - Started process 20023 to run task
+[2024-07-31T16:43:43.057+0900] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'movie', 'branch.op', 'scheduled__2024-07-29T02:10:00+00:00', '--job-id', '835', '--raw', '--subdir', 'DAGS_FOLDER/movie.py', '--cfg-path', '/var/folders/qv/0knwm5h50ml0skpppwpbks_r0000gp/T/tmp54to0e__']
+[2024-07-31T16:43:43.058+0900] {standard_task_runner.py:91} INFO - Job 835: Subtask branch.op
+[2024-07-31T16:43:43.074+0900] {task_command.py:426} INFO - Running <TaskInstance: movie.branch.op scheduled__2024-07-29T02:10:00+00:00 [running]> on host jeongui-MacBookPro.local
+[2024-07-31T16:43:43.094+0900] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='movie' AIRFLOW_CTX_TASK_ID='branch.op' AIRFLOW_CTX_EXECUTION_DATE='2024-07-29T02:10:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-29T02:10:00+00:00'
+[2024-07-31T16:43:43.094+0900] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-31T16:43:43.100+0900] {baseoperator.py:400} WARNING - BranchPythonOperator.execute cannot be called outside TaskInstance!
+[2024-07-31T16:43:43.100+0900] {python.py:237} INFO - Done. Returned value was: rm.dir
+[2024-07-31T16:43:43.100+0900] {branch.py:36} INFO - Branch into rm.dir
+[2024-07-31T16:43:43.100+0900] {skipmixin.py:178} INFO - Following branch rm.dir
+[2024-07-31T16:43:43.105+0900] {skipmixin.py:246} INFO - Skipping tasks [('echo.task', -1)]
+[2024-07-31T16:43:43.109+0900] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-31T16:43:43.112+0900] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=movie, task_id=branch.op, run_id=scheduled__2024-07-29T02:10:00+00:00, execution_date=20240729T021000, start_date=20240731T074343, end_date=20240731T074343
+[2024-07-31T16:43:43.118+0900] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2024-07-31T16:43:43.129+0900] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-07-31T16:43:43.130+0900] {local_task_job_runner.py:222} INFO - ::endgroup::

@@ -1,0 +1,40 @@
+[2024-07-30T10:28:12.081+0900] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-30T10:28:12.092+0900] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: movie.branch.op scheduled__2024-07-28T04:10:00+00:00 [queued]>
+[2024-07-30T10:28:12.096+0900] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: movie.branch.op scheduled__2024-07-28T04:10:00+00:00 [queued]>
+[2024-07-30T10:28:12.096+0900] {taskinstance.py:2306} INFO - Starting attempt 7 of 8
+[2024-07-30T10:28:12.102+0900] {taskinstance.py:2330} INFO - Executing <Task(BranchPythonOperator): branch.op> on 2024-07-28 04:10:00+00:00
+[2024-07-30T10:28:12.106+0900] {standard_task_runner.py:64} INFO - Started process 4225 to run task
+[2024-07-30T10:28:12.109+0900] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'movie', 'branch.op', 'scheduled__2024-07-28T04:10:00+00:00', '--job-id', '620', '--raw', '--subdir', 'DAGS_FOLDER/movie.py', '--cfg-path', '/var/folders/qv/0knwm5h50ml0skpppwpbks_r0000gp/T/tmpciix8m6i']
+[2024-07-30T10:28:12.111+0900] {standard_task_runner.py:91} INFO - Job 620: Subtask branch.op
+[2024-07-30T10:28:12.131+0900] {task_command.py:426} INFO - Running <TaskInstance: movie.branch.op scheduled__2024-07-28T04:10:00+00:00 [running]> on host jeongui-MacBookPro.local
+[2024-07-30T10:28:12.197+0900] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='movie' AIRFLOW_CTX_TASK_ID='branch.op' AIRFLOW_CTX_EXECUTION_DATE='2024-07-28T04:10:00+00:00' AIRFLOW_CTX_TRY_NUMBER='7' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-28T04:10:00+00:00'
+[2024-07-30T10:28:12.198+0900] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-30T10:28:12.202+0900] {baseoperator.py:400} WARNING - BranchPythonOperator.execute cannot be called outside TaskInstance!
+[2024-07-30T10:28:12.202+0900] {python.py:237} INFO - Done. Returned value was: get_data(dn)
+[2024-07-30T10:28:12.202+0900] {branch.py:36} INFO - Branch into get_data(dn)
+[2024-07-30T10:28:12.203+0900] {skipmixin.py:178} INFO - Following branch get_data(dn)
+[2024-07-30T10:28:12.203+0900] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-30T10:28:12.204+0900] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/operators/python.py", line 269, in execute
+    return self.do_branch(context, super().execute(context))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/operators/branch.py", line 37, in do_branch
+    self.skip_all_except(context["ti"], branches_to_execute)
+  File "/Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/models/skipmixin.py", line 215, in skip_all_except
+    raise AirflowException(
+airflow.exceptions.AirflowException: 'branch_task_ids' must contain only valid task_ids. Invalid tasks found: {'get_data(dn)'}.
+[2024-07-30T10:28:12.206+0900] {taskinstance.py:1206} INFO - Marking task as UP_FOR_RETRY. dag_id=movie, task_id=branch.op, run_id=scheduled__2024-07-28T04:10:00+00:00, execution_date=20240728T041000, start_date=20240730T012812, end_date=20240730T012812
+[2024-07-30T10:28:12.210+0900] {standard_task_runner.py:110} ERROR - Failed to execute job 620 for task branch.op ('branch_task_ids' must contain only valid task_ids. Invalid tasks found: {'get_data(dn)'}.; 4225)
+[2024-07-30T10:28:12.216+0900] {local_task_job_runner.py:243} INFO - Task exited with return code 1
+[2024-07-30T10:28:12.263+0900] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-07-30T10:28:12.264+0900] {local_task_job_runner.py:222} INFO - ::endgroup::

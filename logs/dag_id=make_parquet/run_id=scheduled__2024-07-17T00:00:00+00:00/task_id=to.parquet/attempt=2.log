@@ -1,0 +1,121 @@
+[2024-07-24T16:24:30.461+0900] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-24T16:24:30.469+0900] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: make_parquet.to.parquet scheduled__2024-07-17T00:00:00+00:00 [queued]>
+[2024-07-24T16:24:30.471+0900] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: make_parquet.to.parquet scheduled__2024-07-17T00:00:00+00:00 [queued]>
+[2024-07-24T16:24:30.471+0900] {taskinstance.py:2306} INFO - Starting attempt 2 of 2
+[2024-07-24T16:24:30.475+0900] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): to.parquet> on 2024-07-17 00:00:00+00:00
+[2024-07-24T16:24:30.478+0900] {standard_task_runner.py:64} INFO - Started process 99094 to run task
+[2024-07-24T16:24:30.480+0900] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'make_parquet', 'to.parquet', 'scheduled__2024-07-17T00:00:00+00:00', '--job-id', '432', '--raw', '--subdir', 'DAGS_FOLDER/make_parquet.py', '--cfg-path', '/var/folders/qv/0knwm5h50ml0skpppwpbks_r0000gp/T/tmpq0fn9egm']
+[2024-07-24T16:24:30.481+0900] {standard_task_runner.py:91} INFO - Job 432: Subtask to.parquet
+[2024-07-24T16:24:30.496+0900] {task_command.py:426} INFO - Running <TaskInstance: make_parquet.to.parquet scheduled__2024-07-17T00:00:00+00:00 [running]> on host jeongui-MacBookPro.local
+[2024-07-24T16:24:30.510+0900] {abstractoperator.py:725} ERROR - Exception rendering Jinja template for task 'to.parquet', field 'bash_command'. Template: '\n        echo "to.parquet"\n\n        READ_PATH=~/data/csv/{{ds_nodash}}/csv.csv\n        SAVE_PATH={{var.value.PARQUET_DONE_PATH}}/{{ds_nodash}}/parquet.parquet\n\n        mkdir -p $SAVE_PATH\n\n        python {{var.value.OP_HOME}}/csv2parquet.py $READ_PATH $SAVE_PATH\n        '
+Traceback (most recent call last):
+  File "/Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/models/abstractoperator.py", line 717, in _do_render_template_fields
+    rendered_content = self.render_template(
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/template/templater.py", line 169, in render_template
+    return self._render(template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/models/abstractoperator.py", line 675, in _render
+    return super()._render(template, context, dag=dag)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/template/templater.py", line 126, in _render
+    return render_template_to_string(template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/utils/helpers.py", line 289, in render_template_to_string
+    return render_template(template, cast(MutableMapping[str, Any], context), native=False)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/utils/helpers.py", line 284, in render_template
+    return "".join(nodes)
+           ^^^^^^^^^^^^^^
+  File "<template>", line 16, in root
+  File "/Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/jinja2/sandbox.py", line 327, in getattr
+    value = getattr(obj, attribute)
+            ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/utils/context.py", line 110, in __getattr__
+    self.var = Variable.get(key, deserialize_json=self._deserialize_json)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/models/variable.py", line 143, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable PARQUET_DONE_PATH does not exist'
+[2024-07-24T16:24:30.512+0900] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 2479, in _run_raw_task
+    self._execute_task_with_callbacks(context, test_mode, session=session)
+  File "/Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 2633, in _execute_task_with_callbacks
+    task_orig = self.render_templates(context=context, jinja_env=jinja_env)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 3094, in render_templates
+    original_task.render_template_fields(context, jinja_env)
+  File "/Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 1337, in render_template_fields
+    self._do_render_template_fields(self, self.template_fields, context, jinja_env, set())
+  File "/Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/models/abstractoperator.py", line 717, in _do_render_template_fields
+    rendered_content = self.render_template(
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/template/templater.py", line 169, in render_template
+    return self._render(template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/models/abstractoperator.py", line 675, in _render
+    return super()._render(template, context, dag=dag)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/template/templater.py", line 126, in _render
+    return render_template_to_string(template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/utils/helpers.py", line 289, in render_template_to_string
+    return render_template(template, cast(MutableMapping[str, Any], context), native=False)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/utils/helpers.py", line 284, in render_template
+    return "".join(nodes)
+           ^^^^^^^^^^^^^^
+  File "<template>", line 16, in root
+  File "/Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/jinja2/sandbox.py", line 327, in getattr
+    value = getattr(obj, attribute)
+            ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/utils/context.py", line 110, in __getattr__
+    self.var = Variable.get(key, deserialize_json=self._deserialize_json)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/models/variable.py", line 143, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable PARQUET_DONE_PATH does not exist'
+[2024-07-24T16:24:30.513+0900] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=make_parquet, task_id=to.parquet, run_id=scheduled__2024-07-17T00:00:00+00:00, execution_date=20240717T000000, start_date=20240724T072430, end_date=20240724T072430
+[2024-07-24T16:24:30.516+0900] {standard_task_runner.py:110} ERROR - Failed to execute job 432 for task to.parquet ('Variable PARQUET_DONE_PATH does not exist'; 99094)
+[2024-07-24T16:24:30.539+0900] {local_task_job_runner.py:243} INFO - Task exited with return code 1
+[2024-07-24T16:24:30.546+0900] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-07-24T16:24:30.548+0900] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-07-24T17:13:48.029+0900] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-24T17:13:48.037+0900] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: make_parquet.to.parquet scheduled__2024-07-17T00:00:00+00:00 [queued]>
+[2024-07-24T17:13:48.039+0900] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: make_parquet.to.parquet scheduled__2024-07-17T00:00:00+00:00 [queued]>
+[2024-07-24T17:13:48.039+0900] {taskinstance.py:2306} INFO - Starting attempt 2 of 3
+[2024-07-24T17:13:48.044+0900] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): to.parquet> on 2024-07-17 00:00:00+00:00
+[2024-07-24T17:13:48.046+0900] {standard_task_runner.py:64} INFO - Started process 5060 to run task
+[2024-07-24T17:13:48.048+0900] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'make_parquet', 'to.parquet', 'scheduled__2024-07-17T00:00:00+00:00', '--job-id', '437', '--raw', '--subdir', 'DAGS_FOLDER/make_parquet2.py', '--cfg-path', '/var/folders/qv/0knwm5h50ml0skpppwpbks_r0000gp/T/tmpwqwi3j_n']
+[2024-07-24T17:13:48.050+0900] {standard_task_runner.py:91} INFO - Job 437: Subtask to.parquet
+[2024-07-24T17:13:48.064+0900] {task_command.py:426} INFO - Running <TaskInstance: make_parquet.to.parquet scheduled__2024-07-17T00:00:00+00:00 [running]> on host jeongui-MacBookPro.local
+[2024-07-24T17:13:48.086+0900] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='make_parquet' AIRFLOW_CTX_TASK_ID='to.parquet' AIRFLOW_CTX_EXECUTION_DATE='2024-07-17T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-17T00:00:00+00:00'
+[2024-07-24T17:13:48.086+0900] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-24T17:13:48.092+0900] {subprocess.py:63} INFO - Tmp dir root location: /var/folders/qv/0knwm5h50ml0skpppwpbks_r0000gp/T
+[2024-07-24T17:13:48.093+0900] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', '\n        echo "to.parquet"\n\n        READ_PATH="~/data/csv/20240717/csv.csv"\n        SAVE_PATH="~/data/parquet/"\n\n        mkdir -p $SAVE_PATH\n        echo "$SAVE_PATH"\n        python ~/airflow/py/csv2parquet.py $READ_PATH $SAVE_PATH\n        ']
+[2024-07-24T17:13:48.095+0900] {subprocess.py:86} INFO - Output:
+[2024-07-24T17:13:48.097+0900] {subprocess.py:93} INFO - to.parquet
+[2024-07-24T17:13:48.098+0900] {subprocess.py:93} INFO - ~/data/parquet/
+[2024-07-24T17:13:48.106+0900] {subprocess.py:93} INFO - python: can't open file '/Users/DE32/airflow/py/csv2parquet.py': [Errno 2] No such file or directory
+[2024-07-24T17:13:48.108+0900] {subprocess.py:97} INFO - Command exited with return code 2
+[2024-07-24T17:13:48.108+0900] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-24T17:13:48.111+0900] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/operators/bash.py", line 243, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 2.
+[2024-07-24T17:13:48.113+0900] {taskinstance.py:1206} INFO - Marking task as UP_FOR_RETRY. dag_id=make_parquet, task_id=to.parquet, run_id=scheduled__2024-07-17T00:00:00+00:00, execution_date=20240717T000000, start_date=20240724T081348, end_date=20240724T081348
+[2024-07-24T17:13:48.116+0900] {standard_task_runner.py:110} ERROR - Failed to execute job 437 for task to.parquet (Bash command failed. The command returned a non-zero exit code 2.; 5060)
+[2024-07-24T17:13:48.155+0900] {local_task_job_runner.py:243} INFO - Task exited with return code 1
+[2024-07-24T17:13:48.163+0900] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-07-24T17:13:48.163+0900] {local_task_job_runner.py:222} INFO - ::endgroup::

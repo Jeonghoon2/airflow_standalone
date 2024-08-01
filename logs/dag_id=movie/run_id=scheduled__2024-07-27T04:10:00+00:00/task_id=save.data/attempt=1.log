@@ -1,0 +1,133 @@
+[2024-07-31T09:31:09.269+0900] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-31T09:31:09.282+0900] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: movie.save.data scheduled__2024-07-27T04:10:00+00:00 [queued]>
+[2024-07-31T09:31:09.287+0900] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: movie.save.data scheduled__2024-07-27T04:10:00+00:00 [queued]>
+[2024-07-31T09:31:09.287+0900] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2024-07-31T09:31:09.292+0900] {taskinstance.py:2330} INFO - Executing <Task(PythonVirtualenvOperator): save.data> on 2024-07-27 04:10:00+00:00
+[2024-07-31T09:31:09.294+0900] {standard_task_runner.py:64} INFO - Started process 6679 to run task
+[2024-07-31T09:31:09.297+0900] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'movie', 'save.data', 'scheduled__2024-07-27T04:10:00+00:00', '--job-id', '700', '--raw', '--subdir', 'DAGS_FOLDER/movie.py', '--cfg-path', '/var/folders/qv/0knwm5h50ml0skpppwpbks_r0000gp/T/tmpbgsu2acz']
+[2024-07-31T09:31:09.298+0900] {standard_task_runner.py:91} INFO - Job 700: Subtask save.data
+[2024-07-31T09:31:09.312+0900] {task_command.py:426} INFO - Running <TaskInstance: movie.save.data scheduled__2024-07-27T04:10:00+00:00 [running]> on host jeongui-MacBookPro.local
+[2024-07-31T09:31:09.332+0900] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='movie' AIRFLOW_CTX_TASK_ID='save.data' AIRFLOW_CTX_EXECUTION_DATE='2024-07-27T04:10:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-27T04:10:00+00:00'
+[2024-07-31T09:31:09.332+0900] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-31T09:31:09.338+0900] {baseoperator.py:400} WARNING - PythonVirtualenvOperator.execute cannot be called outside TaskInstance!
+[2024-07-31T09:31:09.338+0900] {process_utils.py:183} INFO - Executing cmd: /Users/DE32/.pyenv/versions/3.11.9/envs/note/bin/python -m virtualenv /var/folders/qv/0knwm5h50ml0skpppwpbks_r0000gp/T/venvdeacdj29 --python=python
+[2024-07-31T09:31:09.340+0900] {process_utils.py:187} INFO - Output:
+[2024-07-31T09:31:09.519+0900] {process_utils.py:191} INFO - created virtual environment CPython3.11.9.final.0-64 in 120ms
+[2024-07-31T09:31:09.519+0900] {process_utils.py:191} INFO -   creator CPython3Posix(dest=/private/var/folders/qv/0knwm5h50ml0skpppwpbks_r0000gp/T/venvdeacdj29, clear=False, no_vcs_ignore=False, global=False)
+[2024-07-31T09:31:09.520+0900] {process_utils.py:191} INFO -   seeder FromAppData(download=False, pip=bundle, setuptools=bundle, wheel=bundle, via=copy, app_data_dir=/Users/DE32/Library/Application Support/virtualenv)
+[2024-07-31T09:31:09.520+0900] {process_utils.py:191} INFO -     added seed packages: pip==24.1.2, setuptools==70.2.0, wheel==0.43.0
+[2024-07-31T09:31:09.520+0900] {process_utils.py:191} INFO -   activators BashActivator,CShellActivator,FishActivator,NushellActivator,PowerShellActivator,PythonActivator
+[2024-07-31T09:31:09.531+0900] {process_utils.py:183} INFO - Executing cmd: /var/folders/qv/0knwm5h50ml0skpppwpbks_r0000gp/T/venvdeacdj29/bin/pip install -r /var/folders/qv/0knwm5h50ml0skpppwpbks_r0000gp/T/venvdeacdj29/requirements.txt
+[2024-07-31T09:31:09.533+0900] {process_utils.py:187} INFO - Output:
+[2024-07-31T09:31:10.250+0900] {process_utils.py:191} INFO - Collecting git+https://github.com/Jeonghoon2/movie.git@0.2/api (from -r /var/folders/qv/0knwm5h50ml0skpppwpbks_r0000gp/T/venvdeacdj29/requirements.txt (line 1))
+[2024-07-31T09:31:10.250+0900] {process_utils.py:191} INFO -   Cloning https://github.com/Jeonghoon2/movie.git (to revision 0.2/api) to /private/var/folders/qv/0knwm5h50ml0skpppwpbks_r0000gp/T/pip-req-build-r33afcgb
+[2024-07-31T09:31:10.262+0900] {process_utils.py:191} INFO -   Running command git clone --filter=blob:none --quiet https://github.com/Jeonghoon2/movie.git /private/var/folders/qv/0knwm5h50ml0skpppwpbks_r0000gp/T/pip-req-build-r33afcgb
+[2024-07-31T09:31:11.824+0900] {process_utils.py:191} INFO -   Running command git checkout -b 0.2/api --track origin/0.2/api
+[2024-07-31T09:31:12.485+0900] {process_utils.py:191} INFO -   Switched to a new branch '0.2/api'
+[2024-07-31T09:31:12.485+0900] {process_utils.py:191} INFO -   branch '0.2/api' set up to track 'origin/0.2/api'.
+[2024-07-31T09:31:12.486+0900] {process_utils.py:191} INFO -   Resolved https://github.com/Jeonghoon2/movie.git to commit 514cfb45f6fa577ee07d4fa2076f9283780af81e
+[2024-07-31T09:31:12.507+0900] {process_utils.py:191} INFO -   Installing build dependencies: started
+[2024-07-31T09:31:13.416+0900] {process_utils.py:191} INFO -   Installing build dependencies: finished with status 'done'
+[2024-07-31T09:31:13.417+0900] {process_utils.py:191} INFO -   Getting requirements to build wheel: started
+[2024-07-31T09:31:13.540+0900] {process_utils.py:191} INFO -   Getting requirements to build wheel: finished with status 'done'
+[2024-07-31T09:31:13.541+0900] {process_utils.py:191} INFO -   Preparing metadata (pyproject.toml): started
+[2024-07-31T09:31:13.666+0900] {process_utils.py:191} INFO -   Preparing metadata (pyproject.toml): finished with status 'done'
+[2024-07-31T09:31:13.731+0900] {process_utils.py:191} INFO - Collecting requests>=2.32.3 (from mov==0.1.0->-r /var/folders/qv/0knwm5h50ml0skpppwpbks_r0000gp/T/venvdeacdj29/requirements.txt (line 1))
+[2024-07-31T09:31:13.732+0900] {process_utils.py:191} INFO -   Using cached requests-2.32.3-py3-none-any.whl.metadata (4.6 kB)
+[2024-07-31T09:31:13.799+0900] {process_utils.py:191} INFO - Collecting pandas>=2.2.2 (from mov==0.1.0->-r /var/folders/qv/0knwm5h50ml0skpppwpbks_r0000gp/T/venvdeacdj29/requirements.txt (line 1))
+[2024-07-31T09:31:13.800+0900] {process_utils.py:191} INFO -   Using cached pandas-2.2.2-cp311-cp311-macosx_11_0_arm64.whl.metadata (19 kB)
+[2024-07-31T09:31:13.900+0900] {process_utils.py:191} INFO - Collecting numpy>=2.0.1 (from mov==0.1.0->-r /var/folders/qv/0knwm5h50ml0skpppwpbks_r0000gp/T/venvdeacdj29/requirements.txt (line 1))
+[2024-07-31T09:31:13.901+0900] {process_utils.py:191} INFO -   Using cached numpy-2.0.1-cp311-cp311-macosx_14_0_arm64.whl.metadata (60 kB)
+[2024-07-31T09:31:13.953+0900] {process_utils.py:191} INFO - Collecting pyarrow>=17.0.0 (from mov==0.1.0->-r /var/folders/qv/0knwm5h50ml0skpppwpbks_r0000gp/T/venvdeacdj29/requirements.txt (line 1))
+[2024-07-31T09:31:13.954+0900] {process_utils.py:191} INFO -   Using cached pyarrow-17.0.0-cp311-cp311-macosx_11_0_arm64.whl.metadata (3.3 kB)
+[2024-07-31T09:31:13.976+0900] {process_utils.py:191} INFO - Collecting python-dateutil>=2.8.2 (from pandas>=2.2.2->mov==0.1.0->-r /var/folders/qv/0knwm5h50ml0skpppwpbks_r0000gp/T/venvdeacdj29/requirements.txt (line 1))
+[2024-07-31T09:31:13.977+0900] {process_utils.py:191} INFO -   Using cached python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+[2024-07-31T09:31:14.006+0900] {process_utils.py:191} INFO - Collecting pytz>=2020.1 (from pandas>=2.2.2->mov==0.1.0->-r /var/folders/qv/0knwm5h50ml0skpppwpbks_r0000gp/T/venvdeacdj29/requirements.txt (line 1))
+[2024-07-31T09:31:14.007+0900] {process_utils.py:191} INFO -   Using cached pytz-2024.1-py2.py3-none-any.whl.metadata (22 kB)
+[2024-07-31T09:31:14.025+0900] {process_utils.py:191} INFO - Collecting tzdata>=2022.7 (from pandas>=2.2.2->mov==0.1.0->-r /var/folders/qv/0knwm5h50ml0skpppwpbks_r0000gp/T/venvdeacdj29/requirements.txt (line 1))
+[2024-07-31T09:31:14.026+0900] {process_utils.py:191} INFO -   Using cached tzdata-2024.1-py2.py3-none-any.whl.metadata (1.4 kB)
+[2024-07-31T09:31:14.071+0900] {process_utils.py:191} INFO - Collecting charset-normalizer<4,>=2 (from requests>=2.32.3->mov==0.1.0->-r /var/folders/qv/0knwm5h50ml0skpppwpbks_r0000gp/T/venvdeacdj29/requirements.txt (line 1))
+[2024-07-31T09:31:14.072+0900] {process_utils.py:191} INFO -   Using cached charset_normalizer-3.3.2-cp311-cp311-macosx_11_0_arm64.whl.metadata (33 kB)
+[2024-07-31T09:31:14.088+0900] {process_utils.py:191} INFO - Collecting idna<4,>=2.5 (from requests>=2.32.3->mov==0.1.0->-r /var/folders/qv/0knwm5h50ml0skpppwpbks_r0000gp/T/venvdeacdj29/requirements.txt (line 1))
+[2024-07-31T09:31:14.089+0900] {process_utils.py:191} INFO -   Using cached idna-3.7-py3-none-any.whl.metadata (9.9 kB)
+[2024-07-31T09:31:14.115+0900] {process_utils.py:191} INFO - Collecting urllib3<3,>=1.21.1 (from requests>=2.32.3->mov==0.1.0->-r /var/folders/qv/0knwm5h50ml0skpppwpbks_r0000gp/T/venvdeacdj29/requirements.txt (line 1))
+[2024-07-31T09:31:14.116+0900] {process_utils.py:191} INFO -   Using cached urllib3-2.2.2-py3-none-any.whl.metadata (6.4 kB)
+[2024-07-31T09:31:14.137+0900] {process_utils.py:191} INFO - Collecting certifi>=2017.4.17 (from requests>=2.32.3->mov==0.1.0->-r /var/folders/qv/0knwm5h50ml0skpppwpbks_r0000gp/T/venvdeacdj29/requirements.txt (line 1))
+[2024-07-31T09:31:14.138+0900] {process_utils.py:191} INFO -   Using cached certifi-2024.7.4-py3-none-any.whl.metadata (2.2 kB)
+[2024-07-31T09:31:14.164+0900] {process_utils.py:191} INFO - Collecting six>=1.5 (from python-dateutil>=2.8.2->pandas>=2.2.2->mov==0.1.0->-r /var/folders/qv/0knwm5h50ml0skpppwpbks_r0000gp/T/venvdeacdj29/requirements.txt (line 1))
+[2024-07-31T09:31:14.165+0900] {process_utils.py:191} INFO -   Using cached six-1.16.0-py2.py3-none-any.whl.metadata (1.8 kB)
+[2024-07-31T09:31:14.168+0900] {process_utils.py:191} INFO - Using cached numpy-2.0.1-cp311-cp311-macosx_14_0_arm64.whl (5.3 MB)
+[2024-07-31T09:31:14.174+0900] {process_utils.py:191} INFO - Using cached pandas-2.2.2-cp311-cp311-macosx_11_0_arm64.whl (11.3 MB)
+[2024-07-31T09:31:14.185+0900] {process_utils.py:191} INFO - Using cached pyarrow-17.0.0-cp311-cp311-macosx_11_0_arm64.whl (27.2 MB)
+[2024-07-31T09:31:14.212+0900] {process_utils.py:191} INFO - Using cached requests-2.32.3-py3-none-any.whl (64 kB)
+[2024-07-31T09:31:14.213+0900] {process_utils.py:191} INFO - Using cached certifi-2024.7.4-py3-none-any.whl (162 kB)
+[2024-07-31T09:31:14.214+0900] {process_utils.py:191} INFO - Using cached charset_normalizer-3.3.2-cp311-cp311-macosx_11_0_arm64.whl (118 kB)
+[2024-07-31T09:31:14.215+0900] {process_utils.py:191} INFO - Using cached idna-3.7-py3-none-any.whl (66 kB)
+[2024-07-31T09:31:14.216+0900] {process_utils.py:191} INFO - Using cached python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+[2024-07-31T09:31:14.217+0900] {process_utils.py:191} INFO - Using cached pytz-2024.1-py2.py3-none-any.whl (505 kB)
+[2024-07-31T09:31:14.218+0900] {process_utils.py:191} INFO - Using cached tzdata-2024.1-py2.py3-none-any.whl (345 kB)
+[2024-07-31T09:31:14.219+0900] {process_utils.py:191} INFO - Using cached urllib3-2.2.2-py3-none-any.whl (121 kB)
+[2024-07-31T09:31:14.220+0900] {process_utils.py:191} INFO - Using cached six-1.16.0-py2.py3-none-any.whl (11 kB)
+[2024-07-31T09:31:14.262+0900] {process_utils.py:191} INFO - Building wheels for collected packages: mov
+[2024-07-31T09:31:14.274+0900] {process_utils.py:191} INFO -   Building wheel for mov (pyproject.toml): started
+[2024-07-31T09:31:14.412+0900] {process_utils.py:191} INFO -   Building wheel for mov (pyproject.toml): finished with status 'done'
+[2024-07-31T09:31:14.413+0900] {process_utils.py:191} INFO -   Created wheel for mov: filename=mov-0.1.0-py3-none-any.whl size=3017 sha256=60734a9f702dd747ffc13b19d6b3d5058a917523cf3563be219ecccedc03de29
+[2024-07-31T09:31:14.413+0900] {process_utils.py:191} INFO -   Stored in directory: /private/var/folders/qv/0knwm5h50ml0skpppwpbks_r0000gp/T/pip-ephem-wheel-cache-jo5r_ud5/wheels/cf/ab/a7/d0c528d20fa8a5f19e169bdf1d98f2b2cefe79d8527bb89200
+[2024-07-31T09:31:14.414+0900] {process_utils.py:191} INFO - Successfully built mov
+[2024-07-31T09:31:14.442+0900] {process_utils.py:191} INFO - Installing collected packages: pytz, urllib3, tzdata, six, numpy, idna, charset-normalizer, certifi, requests, python-dateutil, pyarrow, pandas, mov
+[2024-07-31T09:31:18.961+0900] {process_utils.py:191} INFO - Successfully installed certifi-2024.7.4 charset-normalizer-3.3.2 idna-3.7 mov-0.1.0 numpy-2.0.1 pandas-2.2.2 pyarrow-17.0.0 python-dateutil-2.9.0.post0 pytz-2024.1 requests-2.32.3 six-1.16.0 tzdata-2024.1 urllib3-2.2.2
+[2024-07-31T09:31:18.964+0900] {process_utils.py:191} INFO - 
+[2024-07-31T09:31:18.964+0900] {process_utils.py:191} INFO - [notice] A new release of pip is available: 24.1.2 -> 24.2
+[2024-07-31T09:31:18.964+0900] {process_utils.py:191} INFO - [notice] To update, run: python -m pip install --upgrade pip
+[2024-07-31T09:31:19.094+0900] {process_utils.py:183} INFO - Executing cmd: /var/folders/qv/0knwm5h50ml0skpppwpbks_r0000gp/T/venvdeacdj29/bin/python /var/folders/qv/0knwm5h50ml0skpppwpbks_r0000gp/T/venv-callaj2vz__c/script.py /var/folders/qv/0knwm5h50ml0skpppwpbks_r0000gp/T/venv-callaj2vz__c/script.in /var/folders/qv/0knwm5h50ml0skpppwpbks_r0000gp/T/venv-callaj2vz__c/script.out /var/folders/qv/0knwm5h50ml0skpppwpbks_r0000gp/T/venv-callaj2vz__c/string_args.txt /var/folders/qv/0knwm5h50ml0skpppwpbks_r0000gp/T/venv-callaj2vz__c/termination.log
+[2024-07-31T09:31:19.096+0900] {process_utils.py:187} INFO - Output:
+[2024-07-31T09:31:33.430+0900] {process_utils.py:191} INFO - *********************************
+[2024-07-31T09:31:33.431+0900] {process_utils.py:191} INFO -    rnum  rank  rankInten rankOldAndNew  ... audiChange  audiAcc scrnCnt  showCnt
+[2024-07-31T09:31:33.431+0900] {process_utils.py:191} INFO - 0     1     1          0           OLD  ...       89.2   839696    1948     8847
+[2024-07-31T09:31:33.432+0900] {process_utils.py:191} INFO - 1     2     2          0           OLD  ...      124.0   442931    1167     4490
+[2024-07-31T09:31:33.432+0900] {process_utils.py:191} INFO - 2     3     3          0           OLD  ...       95.0  2199605     875     2337
+[2024-07-31T09:31:33.432+0900] {process_utils.py:191} INFO - 3     4     4          0           OLD  ...      116.9  8233699     769     1616
+[2024-07-31T09:31:33.433+0900] {process_utils.py:191} INFO - 4     5     5          0           OLD  ...       50.9   530083     587     1055
+[2024-07-31T09:31:33.433+0900] {process_utils.py:191} INFO - 5     6     6          0           OLD  ...       87.3  1693336     516      843
+[2024-07-31T09:31:33.433+0900] {process_utils.py:191} INFO - 6     7     7          4           OLD  ...      565.6    42425      38       47
+[2024-07-31T09:31:33.434+0900] {process_utils.py:191} INFO - 7     8     8         -1           OLD  ...       34.7   663939     323      480
+[2024-07-31T09:31:33.434+0900] {process_utils.py:191} INFO - 8     9     9          0           NEW  ...      100.0     8111      15       17
+[2024-07-31T09:31:33.434+0900] {process_utils.py:191} INFO - 9    10    10          2           OLD  ...       98.5    62397      57       75
+[2024-07-31T09:31:33.435+0900] {process_utils.py:191} INFO - 
+[2024-07-31T09:31:33.435+0900] {process_utils.py:191} INFO - [10 rows x 18 columns]
+[2024-07-31T09:31:33.435+0900] {process_utils.py:191} INFO - *********************************
+[2024-07-31T09:31:33.436+0900] {process_utils.py:191} INFO - rnum               int64
+[2024-07-31T09:31:33.436+0900] {process_utils.py:191} INFO - rank               int64
+[2024-07-31T09:31:33.436+0900] {process_utils.py:191} INFO - rankInten          int64
+[2024-07-31T09:31:33.436+0900] {process_utils.py:191} INFO - rankOldAndNew     object
+[2024-07-31T09:31:33.437+0900] {process_utils.py:191} INFO - movieCd           object
+[2024-07-31T09:31:33.437+0900] {process_utils.py:191} INFO - movieNm           object
+[2024-07-31T09:31:33.437+0900] {process_utils.py:191} INFO - openDt            object
+[2024-07-31T09:31:33.437+0900] {process_utils.py:191} INFO - salesAmt           int64
+[2024-07-31T09:31:33.438+0900] {process_utils.py:191} INFO - salesShare       float64
+[2024-07-31T09:31:33.438+0900] {process_utils.py:191} INFO - salesInten         int64
+[2024-07-31T09:31:33.438+0900] {process_utils.py:191} INFO - salesChange      float64
+[2024-07-31T09:31:33.438+0900] {process_utils.py:191} INFO - salesAcc          object
+[2024-07-31T09:31:33.439+0900] {process_utils.py:191} INFO - audiCnt            int64
+[2024-07-31T09:31:33.439+0900] {process_utils.py:191} INFO - audiInten          int64
+[2024-07-31T09:31:33.439+0900] {process_utils.py:191} INFO - audiChange       float64
+[2024-07-31T09:31:33.439+0900] {process_utils.py:191} INFO - audiAcc            int64
+[2024-07-31T09:31:33.440+0900] {process_utils.py:191} INFO - scrnCnt            int64
+[2024-07-31T09:31:33.440+0900] {process_utils.py:191} INFO - showCnt            int64
+[2024-07-31T09:31:33.440+0900] {process_utils.py:191} INFO - dtype: object
+[2024-07-31T09:31:33.440+0900] {process_utils.py:191} INFO - 개봉일 기준 그룹핑 누적 관객수 합
+[2024-07-31T09:31:33.441+0900] {process_utils.py:191} INFO -        openDt  audiCnt
+[2024-07-31T09:31:33.441+0900] {process_utils.py:191} INFO - 0  2024-06-12    55961
+[2024-07-31T09:31:33.441+0900] {process_utils.py:191} INFO - 1  2024-06-26    25681
+[2024-07-31T09:31:33.441+0900] {process_utils.py:191} INFO - 2  2024-07-03    86134
+[2024-07-31T09:31:33.442+0900] {process_utils.py:191} INFO - 3  2024-07-12     8198
+[2024-07-31T09:31:33.442+0900] {process_utils.py:191} INFO - 4  2024-07-17    27516
+[2024-07-31T09:31:33.442+0900] {process_utils.py:191} INFO - 5  2024-07-24   457477
+[2024-07-31T09:31:33.442+0900] {process_utils.py:191} INFO - 6  2024-07-31    12120
+[2024-07-31T09:31:33.442+0900] {process_utils.py:191} INFO - 7  2024-08-07     4061
+[2024-07-31T09:31:33.860+0900] {python.py:237} INFO - Done. Returned value was: None
+[2024-07-31T09:31:33.860+0900] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-31T09:31:33.865+0900] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=movie, task_id=save.data, run_id=scheduled__2024-07-27T04:10:00+00:00, execution_date=20240727T041000, start_date=20240731T003109, end_date=20240731T003133
+[2024-07-31T09:31:33.901+0900] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2024-07-31T09:31:33.907+0900] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-07-31T09:31:33.908+0900] {local_task_job_runner.py:222} INFO - ::endgroup::

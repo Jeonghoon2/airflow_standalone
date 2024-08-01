@@ -1,0 +1,66 @@
+[2024-07-24T14:12:20.645+0900] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-24T14:12:20.652+0900] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: simple_bash.print.date scheduled__2024-07-12T00:00:00+00:00 [queued]>
+[2024-07-24T14:12:20.654+0900] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: simple_bash.print.date scheduled__2024-07-12T00:00:00+00:00 [queued]>
+[2024-07-24T14:12:20.654+0900] {taskinstance.py:2306} INFO - Starting attempt 2 of 3
+[2024-07-24T14:12:20.658+0900] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): print.date> on 2024-07-12 00:00:00+00:00
+[2024-07-24T14:12:20.661+0900] {standard_task_runner.py:64} INFO - Started process 89825 to run task
+[2024-07-24T14:12:20.663+0900] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'simple_bash', 'print.date', 'scheduled__2024-07-12T00:00:00+00:00', '--job-id', '60', '--raw', '--subdir', 'DAGS_FOLDER/simple_bash.py', '--cfg-path', '/var/folders/qv/0knwm5h50ml0skpppwpbks_r0000gp/T/tmptbib5mch']
+[2024-07-24T14:12:20.664+0900] {standard_task_runner.py:91} INFO - Job 60: Subtask print.date
+[2024-07-24T14:12:20.678+0900] {task_command.py:426} INFO - Running <TaskInstance: simple_bash.print.date scheduled__2024-07-12T00:00:00+00:00 [running]> on host jeongui-MacBookPro.local
+[2024-07-24T14:12:20.694+0900] {logging_mixin.py:188} WARNING - /Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/utils/context.py:212 AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+[2024-07-24T14:12:20.694+0900] {logging_mixin.py:188} WARNING - /Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/utils/context.py:212 AirflowContextDeprecationWarning: Accessing 'next_execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_end' instead.
+[2024-07-24T14:12:20.695+0900] {logging_mixin.py:188} WARNING - /Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/utils/context.py:212 AirflowContextDeprecationWarning: Accessing 'prev_execution_date' from the template is deprecated and will be removed in a future version.
+[2024-07-24T14:12:20.702+0900] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='simple_bash' AIRFLOW_CTX_TASK_ID='print.date' AIRFLOW_CTX_EXECUTION_DATE='2024-07-12T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-12T00:00:00+00:00'
+[2024-07-24T14:12:20.702+0900] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-24T14:12:20.708+0900] {subprocess.py:63} INFO - Tmp dir root location: /var/folders/qv/0knwm5h50ml0skpppwpbks_r0000gp/T
+[2024-07-24T14:12:20.708+0900] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', '\n            echo "date => `date`"\n            echo "ds => 2024-07-12"\n            echo "ds_nodash => 20240712"\n            echo "logical_date => 2024-07-12 00:00:00+00:00"\n            echo "logical_date => 2024-07-12 00:00:00"\n            echo "execution_date => 2024-07-12 00:00:00+00:00"\n            echo "execution_date => 2024-07-12 00:00:00"\n            echo "next_execution_date => 2024-07-13 00:00:00"\n            echo "prev_execution_date => 2024-07-11 00:00:00"\n            echo "ts => 2024-07-12T00:00:00+00:00"\n        ']
+[2024-07-24T14:12:20.711+0900] {subprocess.py:86} INFO - Output:
+[2024-07-24T14:12:20.715+0900] {subprocess.py:93} INFO - date => 2024년 7월 24일 수요일 14시 12분 20초 KST
+[2024-07-24T14:12:20.715+0900] {subprocess.py:93} INFO - ds => 2024-07-12
+[2024-07-24T14:12:20.715+0900] {subprocess.py:93} INFO - ds_nodash => 20240712
+[2024-07-24T14:12:20.716+0900] {subprocess.py:93} INFO - logical_date => 2024-07-12 00:00:00+00:00
+[2024-07-24T14:12:20.716+0900] {subprocess.py:93} INFO - logical_date => 2024-07-12 00:00:00
+[2024-07-24T14:12:20.716+0900] {subprocess.py:93} INFO - execution_date => 2024-07-12 00:00:00+00:00
+[2024-07-24T14:12:20.716+0900] {subprocess.py:93} INFO - execution_date => 2024-07-12 00:00:00
+[2024-07-24T14:12:20.716+0900] {subprocess.py:93} INFO - next_execution_date => 2024-07-13 00:00:00
+[2024-07-24T14:12:20.716+0900] {subprocess.py:93} INFO - prev_execution_date => 2024-07-11 00:00:00
+[2024-07-24T14:12:20.716+0900] {subprocess.py:93} INFO - ts => 2024-07-12T00:00:00+00:00
+[2024-07-24T14:12:20.717+0900] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-07-24T14:12:20.717+0900] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-24T14:12:20.723+0900] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=simple_bash, task_id=print.date, run_id=scheduled__2024-07-12T00:00:00+00:00, execution_date=20240712T000000, start_date=20240724T051220, end_date=20240724T051220
+[2024-07-24T14:12:20.770+0900] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2024-07-24T14:12:20.780+0900] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-07-24T14:12:20.781+0900] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-07-24T14:32:26.876+0900] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-24T14:32:26.883+0900] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: simple_bash.print.date scheduled__2024-07-12T00:00:00+00:00 [queued]>
+[2024-07-24T14:32:26.885+0900] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: simple_bash.print.date scheduled__2024-07-12T00:00:00+00:00 [queued]>
+[2024-07-24T14:32:26.885+0900] {taskinstance.py:2306} INFO - Starting attempt 2 of 2
+[2024-07-24T14:32:26.889+0900] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): print.date> on 2024-07-12 00:00:00+00:00
+[2024-07-24T14:32:26.892+0900] {standard_task_runner.py:64} INFO - Started process 92217 to run task
+[2024-07-24T14:32:26.895+0900] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'simple_bash', 'print.date', 'scheduled__2024-07-12T00:00:00+00:00', '--job-id', '152', '--raw', '--subdir', 'DAGS_FOLDER/simple_bash.py', '--cfg-path', '/var/folders/qv/0knwm5h50ml0skpppwpbks_r0000gp/T/tmpm5zese85']
+[2024-07-24T14:32:26.896+0900] {standard_task_runner.py:91} INFO - Job 152: Subtask print.date
+[2024-07-24T14:32:26.911+0900] {task_command.py:426} INFO - Running <TaskInstance: simple_bash.print.date scheduled__2024-07-12T00:00:00+00:00 [running]> on host jeongui-MacBookPro.local
+[2024-07-24T14:32:26.932+0900] {logging_mixin.py:188} WARNING - /Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/utils/context.py:212 AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+[2024-07-24T14:32:26.933+0900] {logging_mixin.py:188} WARNING - /Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/utils/context.py:212 AirflowContextDeprecationWarning: Accessing 'next_execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_end' instead.
+[2024-07-24T14:32:26.933+0900] {logging_mixin.py:188} WARNING - /Users/DE32/.pyenv/versions/3.11.9/envs/note/lib/python3.11/site-packages/airflow/utils/context.py:212 AirflowContextDeprecationWarning: Accessing 'prev_execution_date' from the template is deprecated and will be removed in a future version.
+[2024-07-24T14:32:26.941+0900] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='simple_bash' AIRFLOW_CTX_TASK_ID='print.date' AIRFLOW_CTX_EXECUTION_DATE='2024-07-12T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-12T00:00:00+00:00'
+[2024-07-24T14:32:26.942+0900] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-24T14:32:26.948+0900] {subprocess.py:63} INFO - Tmp dir root location: /var/folders/qv/0knwm5h50ml0skpppwpbks_r0000gp/T
+[2024-07-24T14:32:26.948+0900] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', '\n            echo "date => `date`"\n            echo "ds => 2024-07-12"\n            echo "ds_nodash => 20240712"\n            echo "logical_date => 2024-07-12 00:00:00+00:00"\n            echo "logical_date => 2024-07-12 00:00:00"\n            echo "execution_date => 2024-07-12 00:00:00+00:00"\n            echo "execution_date => 2024-07-12 00:00:00"\n            echo "next_execution_date => 2024-07-13 00:00:00"\n            echo "prev_execution_date => 2024-07-11 00:00:00"\n            echo "ts => 2024-07-12T00:00:00+00:00"\n        ']
+[2024-07-24T14:32:26.951+0900] {subprocess.py:86} INFO - Output:
+[2024-07-24T14:32:26.956+0900] {subprocess.py:93} INFO - date => 2024년 7월 24일 수요일 14시 32분 26초 KST
+[2024-07-24T14:32:26.956+0900] {subprocess.py:93} INFO - ds => 2024-07-12
+[2024-07-24T14:32:26.956+0900] {subprocess.py:93} INFO - ds_nodash => 20240712
+[2024-07-24T14:32:26.956+0900] {subprocess.py:93} INFO - logical_date => 2024-07-12 00:00:00+00:00
+[2024-07-24T14:32:26.957+0900] {subprocess.py:93} INFO - logical_date => 2024-07-12 00:00:00
+[2024-07-24T14:32:26.957+0900] {subprocess.py:93} INFO - execution_date => 2024-07-12 00:00:00+00:00
+[2024-07-24T14:32:26.957+0900] {subprocess.py:93} INFO - execution_date => 2024-07-12 00:00:00
+[2024-07-24T14:32:26.957+0900] {subprocess.py:93} INFO - next_execution_date => 2024-07-13 00:00:00
+[2024-07-24T14:32:26.957+0900] {subprocess.py:93} INFO - prev_execution_date => 2024-07-11 00:00:00
+[2024-07-24T14:32:26.957+0900] {subprocess.py:93} INFO - ts => 2024-07-12T00:00:00+00:00
+[2024-07-24T14:32:26.957+0900] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-07-24T14:32:26.958+0900] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-24T14:32:26.964+0900] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=simple_bash, task_id=print.date, run_id=scheduled__2024-07-12T00:00:00+00:00, execution_date=20240712T000000, start_date=20240724T053226, end_date=20240724T053226
+[2024-07-24T14:32:26.998+0900] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2024-07-24T14:32:27.007+0900] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-07-24T14:32:27.008+0900] {local_task_job_runner.py:222} INFO - ::endgroup::
